@@ -6,7 +6,144 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="612b2ffa-8663-4474-bfe8-481ae9118e12" name="Default Changelist" comment="" />
+    <list default="true" id="612b2ffa-8663-4474-bfe8-481ae9118e12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Bot_main_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bot_logs.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/Demo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/callbacks/AbstractCallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/callbacks/Callback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/callbacks/CallbackDouble.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/callbacks/CallbackFourth.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/callbacks/CallbackTriple.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/clients/Client$Command.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/clients/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/clients/Group.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/clients/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/longpoll/LongPoll.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/longpoll/Queue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/longpoll/UpdatesHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/longpoll/responses/GetLongPollServerResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/objects/Button.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/objects/Chat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/objects/Color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/objects/Keyboard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/objects/Message$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/objects/Message.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/API.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/CallbackApiHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/CallbackApiSettings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/Executor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/calls/Call.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/calls/CallAsync.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/calls/CallSync.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/docs/DocTypes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/web/Connection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/web/MultipartUtility.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ru/nop/DataBase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ru/nop/Keyboards.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ru/nop/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ru/nop/Time.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/ru/nop/Weather.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Bot_main_jar/Bot_main.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/Demo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/callbacks/AbstractCallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/callbacks/Callback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/callbacks/CallbackDouble.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/callbacks/CallbackFourth.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/callbacks/CallbackTriple.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/clients/Client$Command.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/clients/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/clients/Group.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/clients/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/longpoll/LongPoll.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/longpoll/Queue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/longpoll/UpdatesHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/longpoll/responses/GetLongPollServerResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/objects/Button.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/objects/Chat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/objects/Color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/objects/Keyboard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/objects/Message$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/objects/Message.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/utils/Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/utils/vkapi/API.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/utils/vkapi/CallbackApiHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/utils/vkapi/CallbackApiSettings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/utils/vkapi/Executor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/utils/vkapi/calls/Call.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/utils/vkapi/calls/CallAsync.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/utils/vkapi/calls/CallSync.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/utils/vkapi/docs/DocTypes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/utils/web/Connection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/petersamokhin/bots/sdk/utils/web/MultipartUtility.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/ru/nop/DataBase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/ru/nop/Keyboards.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/ru/nop/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/ru/nop/Time.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/ru/nop/Weather.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/callbacks/AbstractCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/callbacks/Callback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/callbacks/CallbackDouble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/callbacks/CallbackFourth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/callbacks/CallbackTriple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/clients/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/clients/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/clients/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/longpoll/LongPoll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/longpoll/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/longpoll/UpdatesHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/longpoll/responses/GetLongPollServerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/objects/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/objects/Chat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/objects/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/objects/Keyboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/objects/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/API.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/CallbackApiHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/CallbackApiSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/Executor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/calls/Call.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/calls/CallAsync.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/calls/CallSync.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/docs/DocTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/web/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/web/MultipartUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nop/DataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nop/Keyboards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nop/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nop/Time.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nop/Weather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -153,16 +290,16 @@
         <counts>
           <entry key="cfg" value="4" />
           <entry key="gradle" value="5" />
-          <entry key="java" value="36" />
-          <entry key="log" value="10" />
+          <entry key="java" value="37" />
+          <entry key="log" value="11" />
           <entry key="properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="5" />
-          <entry key="JAVA" value="36" />
-          <entry key="Log" value="10" />
+          <entry key="JAVA" value="37" />
+          <entry key="Log" value="11" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="1" />
         </counts>
@@ -214,42 +351,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/DataBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="310" column="57" lean-forward="true" selection-start-line="310" selection-start-column="57" selection-end-line="310" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getTime#0;class#DataBase#0" />
-                <element signature="method#getKey#0;class#DataBase#0" />
-                <element signature="method#getGroups#0;class#DataBase#0" />
-                <element signature="method#getGroupsNames#0;class#DataBase#0" />
-                <element signature="method#getGroupsNumbers#0;class#DataBase#0" />
-                <element signature="method#addUser#0;class#DataBase#0" />
-                <element signature="method#getUsers#0;class#DataBase#0" />
-                <element signature="method#removeUser#0;class#DataBase#0" />
-                <element signature="method#setDateBase#0;class#DataBase#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Weather.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bot_logs.log">
           <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="320">
+            <state relative-caret-position="-832">
               <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
@@ -285,6 +389,9 @@
       <find>system.out.println</find>
       <find>Blob</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -678,7 +785,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="318" />
     <option name="y" value="-17" />
     <option name="width" value="989" />
@@ -729,6 +836,32 @@
               <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nop" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -736,9 +869,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547554005818" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547555146797" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Ditch/Bot" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15625" />
     <property name="project.structure.side.proportion" value="0.20804597" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -898,10 +1031,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1753" height="954" extended-state="7" />
+    <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.1522124" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.1522124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -915,7 +1048,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3296837" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014749" side_tool="true" weight="0.39902675" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49970502" weight="0.3296837" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3296837" />
@@ -1192,13 +1325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bot_logs.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="320">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Weather.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4">
@@ -1206,6 +1332,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bot_logs.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-832">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>

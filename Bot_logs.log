@@ -398,3 +398,17 @@ java.lang.NullPointerException
 2019-01-15 17:04:13 INFO  Main:232 - Checking message
 2019-01-15 17:04:13 INFO  DataBase:59 - Getting Changes
 2019-01-15 17:04:13 INFO  DataBase:60 - SELECT date, groupname, action, number, lesson, teacher, room FROM `changes` WHERE groupname = 'ССА 18-11-2' AND date = '2019-01-16'
+2019-01-15 17:25:32 INFO  Main:114 - Starting...
+2019-01-15 17:25:32 INFO  Main:75 - Reading config file
+2019-01-15 17:25:32 INFO  Main:58 - Getting data
+2019-01-15 17:25:32 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 17:25:33 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 17:25:33 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 17:25:33 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 17:25:33 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 17:25:34 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"3736c14bff6d3df975e597927bf60770cbd4c92e","pts":10005982,"ts":1816984367}}
+
+2019-01-15 17:25:34 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 17:25:34 INFO  Main:116 - Successfully Started
+2019-01-15 17:25:34 INFO  Main:118 - Waiting messages...
