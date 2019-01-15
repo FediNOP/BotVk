@@ -1,0 +1,400 @@
+2019-01-15 16:24:54 INFO  Main:114 - Starting...
+2019-01-15 16:24:55 INFO  Main:75 - Reading config file
+2019-01-15 16:24:55 INFO  Main:58 - Getting data
+2019-01-15 16:24:55 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 16:24:55 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 16:24:56 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 16:24:56 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 16:24:56 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 16:24:57 ERROR Weather:63 - From Weather
+java.lang.NullPointerException
+	at ru.nop.Weather.parseWeather(Weather.java:49)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Main.Start(Main.java:66)
+	at ru.nop.Main.main(Main.java:115)
+2019-01-15 16:24:57 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"72506fe48e2214cbb2e5a4a1800e4fbfbd6d0a4d","pts":10005944,"ts":1816984320}}
+
+2019-01-15 16:24:57 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 16:24:57 INFO  Main:116 - Successfully Started
+2019-01-15 16:24:57 INFO  Main:118 - Waiting messages...
+2019-01-15 16:26:33 INFO  Main:114 - Starting...
+2019-01-15 16:26:33 INFO  Main:75 - Reading config file
+2019-01-15 16:26:33 INFO  Main:58 - Getting data
+2019-01-15 16:26:33 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 16:26:34 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 16:26:34 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 16:26:34 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 16:26:34 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 16:26:35 ERROR Weather:63 - From Weather
+java.lang.NullPointerException
+	at ru.nop.Weather.parseWeather(Weather.java:49)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Main.Start(Main.java:66)
+	at ru.nop.Main.main(Main.java:115)
+2019-01-15 16:26:36 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"c326a3cc0324f1ed23e3c7ab94cfee0506dae152","pts":10005944,"ts":1816984320}}
+
+2019-01-15 16:26:36 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 16:26:36 INFO  Main:116 - Successfully Started
+2019-01-15 16:26:36 INFO  Main:118 - Waiting messages...
+2019-01-15 16:26:52 INFO  Main:114 - Starting...
+2019-01-15 16:26:52 INFO  Main:75 - Reading config file
+2019-01-15 16:26:52 INFO  Main:58 - Getting data
+2019-01-15 16:26:52 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 16:26:52 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 16:26:52 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 16:26:52 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 16:26:53 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 16:26:54 ERROR Weather:64 - From Weather
+java.lang.NullPointerException
+	at ru.nop.Weather.parseWeather(Weather.java:49)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Main.Start(Main.java:66)
+	at ru.nop.Main.main(Main.java:115)
+2019-01-15 16:26:54 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"57c3667df713484b441463563164829a8b97cb75","pts":10005944,"ts":1816984320}}
+
+2019-01-15 16:26:54 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 16:26:54 INFO  Main:116 - Successfully Started
+2019-01-15 16:26:54 INFO  Main:118 - Waiting messages...
+2019-01-15 16:27:37 INFO  Main:125 - 195267161: Погода
+2019-01-15 16:27:37 INFO  Main:232 - Checking message
+2019-01-15 16:27:37 ERROR Weather:64 - From Weather
+java.lang.NullPointerException
+	at ru.nop.Weather.parseWeather(Weather.java:49)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Weather.getWeather(Weather.java:28)
+	at ru.nop.Main.checkMessage(Main.java:292)
+	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-15 16:27:37 ERROR Main:151 - Main error
+java.lang.NullPointerException
+	at ru.nop.Weather.getWeather(Weather.java:29)
+	at ru.nop.Main.checkMessage(Main.java:292)
+	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-15 16:35:13 INFO  Main:125 - 195267161: Погода
+2019-01-15 16:35:13 INFO  Main:232 - Checking message
+2019-01-15 16:35:13 ERROR Weather:64 - From Weather
+java.lang.NullPointerException
+	at ru.nop.Weather.parseWeather(Weather.java:49)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Weather.getWeather(Weather.java:28)
+	at ru.nop.Main.checkMessage(Main.java:292)
+	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-15 16:35:13 ERROR Main:151 - Main error
+java.lang.NullPointerException
+	at ru.nop.Weather.getWeather(Weather.java:29)
+	at ru.nop.Main.checkMessage(Main.java:292)
+	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-15 16:35:39 INFO  Main:114 - Starting...
+2019-01-15 16:35:39 INFO  Main:75 - Reading config file
+2019-01-15 16:35:39 INFO  Main:58 - Getting data
+2019-01-15 16:35:39 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 16:35:40 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 16:35:40 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 16:35:40 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 16:35:40 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 16:35:41 ERROR Weather:63 - From Weather
+java.lang.NullPointerException
+	at ru.nop.Weather.parseWeather(Weather.java:48)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Main.Start(Main.java:66)
+	at ru.nop.Main.main(Main.java:115)
+2019-01-15 16:35:42 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"feddfdef5ecfa6072f8c70739964967fc97af151","pts":10005946,"ts":1816984322}}
+
+2019-01-15 16:35:42 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 16:35:42 INFO  Main:116 - Successfully Started
+2019-01-15 16:35:42 INFO  Main:118 - Waiting messages...
+2019-01-15 16:35:46 INFO  Main:125 - 195267161: Погода
+2019-01-15 16:35:46 INFO  Main:232 - Checking message
+2019-01-15 16:35:47 ERROR Weather:63 - From Weather
+java.lang.NullPointerException
+	at ru.nop.Weather.parseWeather(Weather.java:48)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Weather.getWeather(Weather.java:28)
+	at ru.nop.Main.checkMessage(Main.java:292)
+	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-15 16:35:47 ERROR Main:151 - Main error
+java.lang.NullPointerException
+	at ru.nop.Weather.getWeather(Weather.java:29)
+	at ru.nop.Main.checkMessage(Main.java:292)
+	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-15 16:38:13 INFO  Main:114 - Starting...
+2019-01-15 16:38:13 INFO  Main:75 - Reading config file
+2019-01-15 16:38:13 INFO  Main:58 - Getting data
+2019-01-15 16:38:13 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 16:38:14 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 16:38:14 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 16:38:14 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 16:38:14 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 16:38:15 ERROR Weather:63 - From Weather
+org.jsoup.select.Selector$SelectorParseException: Could not parse query '<span class=temp__value>': unexpected token at '<span class=temp__value>'
+	at org.jsoup.select.QueryParser.findElements(QueryParser.java:195)
+	at org.jsoup.select.QueryParser.parse(QueryParser.java:52)
+	at org.jsoup.select.QueryParser.parse(QueryParser.java:38)
+	at org.jsoup.select.Selector.<init>(Selector.java:80)
+	at org.jsoup.select.Selector.select(Selector.java:93)
+	at org.jsoup.select.Selector.select(Selector.java:109)
+	at org.jsoup.select.Elements.select(Elements.java:408)
+	at ru.nop.Weather.parseWeather(Weather.java:49)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Main.Start(Main.java:66)
+	at ru.nop.Main.main(Main.java:115)
+2019-01-15 16:38:15 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"eab3b86332f878c6838e0985304f70be889fe517","pts":10005947,"ts":1816984323}}
+
+2019-01-15 16:38:15 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 16:38:15 INFO  Main:116 - Successfully Started
+2019-01-15 16:38:15 INFO  Main:118 - Waiting messages...
+2019-01-15 16:38:17 INFO  Main:125 - 195267161: Погода
+2019-01-15 16:38:17 INFO  Main:232 - Checking message
+2019-01-15 16:38:18 ERROR Weather:63 - From Weather
+org.jsoup.select.Selector$SelectorParseException: Could not parse query '<span class=temp__value>': unexpected token at '<span class=temp__value>'
+	at org.jsoup.select.QueryParser.findElements(QueryParser.java:195)
+	at org.jsoup.select.QueryParser.parse(QueryParser.java:52)
+	at org.jsoup.select.QueryParser.parse(QueryParser.java:38)
+	at org.jsoup.select.Selector.<init>(Selector.java:80)
+	at org.jsoup.select.Selector.select(Selector.java:93)
+	at org.jsoup.select.Selector.select(Selector.java:109)
+	at org.jsoup.select.Elements.select(Elements.java:408)
+	at ru.nop.Weather.parseWeather(Weather.java:49)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Weather.getWeather(Weather.java:28)
+	at ru.nop.Main.checkMessage(Main.java:292)
+	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-15 16:38:18 ERROR Main:151 - Main error
+java.lang.NullPointerException
+	at ru.nop.Weather.getWeather(Weather.java:29)
+	at ru.nop.Main.checkMessage(Main.java:292)
+	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-15 16:38:32 INFO  Main:114 - Starting...
+2019-01-15 16:38:32 INFO  Main:75 - Reading config file
+2019-01-15 16:38:32 INFO  Main:58 - Getting data
+2019-01-15 16:38:32 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 16:38:33 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 16:38:33 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 16:38:33 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 16:38:33 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 16:43:09 ERROR Weather:63 - From Weather
+org.jsoup.select.Selector$SelectorParseException: Could not parse query '<span class=temp__value>': unexpected token at '<span class=temp__value>'
+	at org.jsoup.select.QueryParser.findElements(QueryParser.java:195)
+	at org.jsoup.select.QueryParser.parse(QueryParser.java:52)
+	at org.jsoup.select.QueryParser.parse(QueryParser.java:38)
+	at org.jsoup.select.Selector.<init>(Selector.java:80)
+	at org.jsoup.select.Selector.select(Selector.java:93)
+	at org.jsoup.select.Selector.select(Selector.java:109)
+	at org.jsoup.select.Elements.select(Elements.java:408)
+	at ru.nop.Weather.parseWeather(Weather.java:49)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Main.Start(Main.java:66)
+	at ru.nop.Main.main(Main.java:115)
+2019-01-15 16:43:09 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"611f4cac1137ba63bca414c36772a1ddd507a957","pts":10005948,"ts":1816984324}}
+
+2019-01-15 16:43:09 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 16:43:09 INFO  Main:116 - Successfully Started
+2019-01-15 16:43:09 INFO  Main:118 - Waiting messages...
+2019-01-15 16:43:33 INFO  Main:125 - 195267161: Погода
+2019-01-15 16:43:33 INFO  Main:232 - Checking message
+2019-01-15 16:44:33 ERROR Weather:63 - From Weather
+org.jsoup.select.Selector$SelectorParseException: Could not parse query '<span class=temp__value>': unexpected token at '<span class=temp__value>'
+	at org.jsoup.select.QueryParser.findElements(QueryParser.java:195)
+	at org.jsoup.select.QueryParser.parse(QueryParser.java:52)
+	at org.jsoup.select.QueryParser.parse(QueryParser.java:38)
+	at org.jsoup.select.Selector.<init>(Selector.java:80)
+	at org.jsoup.select.Selector.select(Selector.java:93)
+	at org.jsoup.select.Selector.select(Selector.java:109)
+	at org.jsoup.select.Elements.select(Elements.java:408)
+	at ru.nop.Weather.parseWeather(Weather.java:49)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Weather.getWeather(Weather.java:28)
+	at ru.nop.Main.checkMessage(Main.java:292)
+	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-15 16:44:33 ERROR Main:151 - Main error
+java.lang.NullPointerException
+	at ru.nop.Weather.getWeather(Weather.java:29)
+	at ru.nop.Main.checkMessage(Main.java:292)
+	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-15 16:44:54 INFO  Main:114 - Starting...
+2019-01-15 16:44:54 INFO  Main:75 - Reading config file
+2019-01-15 16:44:54 INFO  Main:58 - Getting data
+2019-01-15 16:44:54 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 16:44:55 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 16:44:55 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 16:44:55 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 16:44:56 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 16:44:57 ERROR Weather:63 - From Weather
+java.lang.NullPointerException
+	at ru.nop.Weather.parseWeather(Weather.java:51)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Main.Start(Main.java:66)
+	at ru.nop.Main.main(Main.java:115)
+2019-01-15 16:44:57 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"ac1f600e0dfde49be94425704836b637af6a23fb","pts":10005949,"ts":1816984325}}
+
+2019-01-15 16:44:57 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 16:44:57 INFO  Main:116 - Successfully Started
+2019-01-15 16:44:57 INFO  Main:118 - Waiting messages...
+2019-01-15 16:49:21 INFO  Main:114 - Starting...
+2019-01-15 16:49:21 INFO  Main:75 - Reading config file
+2019-01-15 16:49:21 INFO  Main:58 - Getting data
+2019-01-15 16:49:21 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 16:49:22 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 16:49:22 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 16:49:22 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 16:49:22 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 16:49:23 ERROR Weather:63 - From Weather
+java.lang.NullPointerException
+	at ru.nop.Weather.parseWeather(Weather.java:51)
+	at ru.nop.Weather.Update(Weather.java:20)
+	at ru.nop.Main.Start(Main.java:66)
+	at ru.nop.Main.main(Main.java:115)
+2019-01-15 16:49:23 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"f69583bd1807a77433c2c36eeb33481af278412f","pts":10005949,"ts":1816984325}}
+
+2019-01-15 16:49:23 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 16:49:23 INFO  Main:116 - Successfully Started
+2019-01-15 16:49:23 INFO  Main:118 - Waiting messages...
+2019-01-15 16:59:36 INFO  Main:114 - Starting...
+2019-01-15 16:59:36 INFO  Main:75 - Reading config file
+2019-01-15 16:59:36 INFO  Main:58 - Getting data
+2019-01-15 16:59:36 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 16:59:37 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 16:59:37 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 16:59:37 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 16:59:37 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 16:59:39 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"629bb4dd169b71d91ea3a0185d92d80cd64f8c89","pts":10005949,"ts":1816984325}}
+
+2019-01-15 16:59:39 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 16:59:39 INFO  Main:116 - Successfully Started
+2019-01-15 16:59:39 INFO  Main:118 - Waiting messages...
+2019-01-15 16:59:49 INFO  Main:125 - 195267161: Погода
+2019-01-15 16:59:49 INFO  Main:232 - Checking message
+2019-01-15 17:01:20 INFO  Main:114 - Starting...
+2019-01-15 17:01:20 INFO  Main:75 - Reading config file
+2019-01-15 17:01:20 INFO  Main:58 - Getting data
+2019-01-15 17:01:20 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 17:01:20 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 17:01:20 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 17:01:21 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 17:01:21 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 17:01:22 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"b1e6290ec765d4454c5d69cfeae5eda4c0e94016","pts":10005955,"ts":1816984332}}
+
+2019-01-15 17:01:22 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 17:01:22 INFO  Main:116 - Successfully Started
+2019-01-15 17:01:22 INFO  Main:118 - Waiting messages...
+2019-01-15 17:01:35 INFO  Main:125 - 195267161: Погода
+2019-01-15 17:01:35 INFO  Main:232 - Checking message
+2019-01-15 17:02:45 INFO  Main:114 - Starting...
+2019-01-15 17:02:45 INFO  Main:75 - Reading config file
+2019-01-15 17:02:45 INFO  Main:58 - Getting data
+2019-01-15 17:02:45 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 17:02:46 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 17:02:46 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 17:02:46 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 17:02:46 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 17:02:48 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"db4179acfd0f99c4c0b448fd806369a7466f409a","pts":10005962,"ts":1816984341}}
+
+2019-01-15 17:02:48 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 17:02:48 INFO  Main:116 - Successfully Started
+2019-01-15 17:02:48 INFO  Main:118 - Waiting messages...
+2019-01-15 17:02:57 INFO  Main:125 - 195267161: Погода
+2019-01-15 17:02:57 INFO  Main:232 - Checking message
+2019-01-15 17:03:57 INFO  Main:114 - Starting...
+2019-01-15 17:03:57 INFO  Main:75 - Reading config file
+2019-01-15 17:03:57 INFO  Main:58 - Getting data
+2019-01-15 17:03:57 INFO  DataBase:151 - Getting data from table: groups
+2019-01-15 17:03:58 INFO  DataBase:151 - Getting data from table: lessons
+2019-01-15 17:03:58 INFO  DataBase:151 - Getting data from table: rooms
+2019-01-15 17:03:58 INFO  DataBase:151 - Getting data from table: teachers
+2019-01-15 17:03:58 INFO  DataBase:151 - Getting data from table: users
+2019-01-15 17:04:00 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"48bc307084b67dd7d78bb678010bc7a3ffc54e74","pts":10005969,"ts":1816984350}}
+
+2019-01-15 17:04:00 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-15 17:04:00 INFO  Main:116 - Successfully Started
+2019-01-15 17:04:00 INFO  Main:118 - Waiting messages...
+2019-01-15 17:04:02 INFO  Main:125 - 195267161: Погода
+2019-01-15 17:04:02 INFO  Main:232 - Checking message
+2019-01-15 17:04:13 INFO  Main:125 - 195267161: Изменения
+2019-01-15 17:04:13 INFO  Main:232 - Checking message
+2019-01-15 17:04:13 INFO  DataBase:59 - Getting Changes
+2019-01-15 17:04:13 INFO  DataBase:60 - SELECT date, groupname, action, number, lesson, teacher, room FROM `changes` WHERE groupname = 'ССА 18-11-2' AND date = '2019-01-16'
