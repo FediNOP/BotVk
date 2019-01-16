@@ -21,6 +21,12 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 
+//TODO Linux Commands
+//TODO Notifying users about changes
+//TODO MAFIA Game
+//TODO Getting changes from DB
+
+
 public class Main {
 
     private static String token = "73fc947d4e4019e6664180184f2f7c3361413b05c66dd817b15dee4a576fd6d7cb67124c302e4ae3126e9";
@@ -198,14 +204,32 @@ public class Main {
                 sendMessage(message.getText().replaceAll("!sendall", ""), id);
 
             }
+
+
         }else if(text.contains("update")) {
 
             DataBase.update();
             message.text("Updating");
 
-        }else if(text.contains("restart")){
+        }else if(text.contains("restart")) {
 
 
+        }else if(text.contains("help")) {
+
+            String info = "!status\n"
+                    + "!notify\n"
+                    + "!sendall\n"
+                    + "!update\n"
+                    + "!run\n";
+
+            message.text(info);
+
+            return message;
+
+        }else if(text.contains("run")){
+
+            message.text(CommandRunner.run(message.getText().replaceAll("!run", "")));
+            return message;
 
         } else
             return message.text("Invalid command");
