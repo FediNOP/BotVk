@@ -48,13 +48,10 @@ public class Main {
     private static Map<Integer, String> prepodMap = new HashMap<>();
     private static DataBase dataBase = new DataBase();
 
-    static int newUsers = 0;
-
-    static boolean isSendZaprosCount;
-
 
     private static List<Integer> admin;
 
+    private static boolean errmode = true;
 
     private static void Start() {
 
@@ -131,6 +128,14 @@ public class Main {
                 logger.info(message.authorId() + ": " + message.getText());
 
 
+                if(errmode){
+
+                    message.text("Бот временно недоступен\uD83D\uDE14\n" +
+                            "Приносим свои извинения\uD83D\uDE22");
+                    message.send();
+                    return;
+
+                }
 
                 try {
 
@@ -181,18 +186,9 @@ public class Main {
         if (text.contains("status")) {
 
             message.text("UsersId: " + usersID.size() + "\n"
-                    + "New Users: " + (newUsers) + "\n"
                     + "TotalMemory: " + Runtime.getRuntime().totalMemory() + "\n"
                     + "FreeMemory: " + Runtime.getRuntime().freeMemory() + "\n"
                     + "Used Memory: " + (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()));
-            message.keyboard(Keyboards.keyboardMap.get("menu"));
-
-            return message;
-
-        } else if (text.contains("notify")) {
-
-            isSendZaprosCount = !isSendZaprosCount;
-            message.text("Уведомление: " + isSendZaprosCount);
             message.keyboard(Keyboards.keyboardMap.get("menu"));
 
             return message;
@@ -217,18 +213,23 @@ public class Main {
         }else if(text.contains("help")) {
 
             String info = "!status\n"
-                    + "!notify\n"
                     + "!sendall\n"
                     + "!update\n"
-                    + "!run\n";
+                    + "!run\n"
+                    + "!errmode";
 
             message.text(info);
 
             return message;
 
-        }else if(text.contains("run")){
+        }else if(text.contains("run")) {
 
             message.text(CommandRunner.run(message.getText().replaceAll("!run", "")));
+            return message;
+
+        }else if(text.contains("errmode")){
+
+            message.text("Бот отключен");
             return message;
 
         } else
@@ -470,7 +471,7 @@ public class Main {
                 DataBase.addUser(message.authorId(), newUserGroup + " " + message.getText());
                 newUserStage.remove(message.authorId());
                 message.keyboard(Keyboards.keyboardMap.get("menu")).text("Вы подписаны на бота");
-                newUsers++;
+
 
             } else
                 message.text("Выберите группу").keyboard(getGroupsNumsKeyb(newUserYear, newUserGroup));
@@ -484,7 +485,7 @@ public class Main {
                     DataBase.addUser(message.authorId(), prepodMap.get(Integer.parseInt(message.getText())));
                     newUserStage.remove(message.authorId());
                     message.keyboard(Keyboards.keyboardMap.get("menu"));
-                    newUsers++;
+
                 } else
                     message.text("Такого преподавтеля нет");
             else

@@ -6,9 +6,47 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="612b2ffa-8663-4474-bfe8-481ae9118e12" name="Default Changelist" comment="Че то не так">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nop/CommandRunner.java" afterDir="false" />
+    <list default="true" id="612b2ffa-8663-4474-bfe8-481ae9118e12" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/callbacks/AbstractCallback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/callbacks/Callback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/callbacks/CallbackDouble.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/callbacks/CallbackFourth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/callbacks/CallbackTriple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/clients/Client$Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/clients/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/clients/Group.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/clients/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/longpoll/LongPoll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/longpoll/Queue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/longpoll/UpdatesHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/longpoll/responses/GetLongPollServerResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/objects/Button.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/objects/Chat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/objects/Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/objects/Keyboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/objects/Message$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/objects/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/API.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/CallbackApiHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/CallbackApiSettings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/Executor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/calls/Call.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/calls/CallAsync.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/calls/CallSync.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/vkapi/docs/DocTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/web/Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/petersamokhin/bots/sdk/utils/web/MultipartUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/nop/DataBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/nop/Keyboards.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/nop/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/nop/Time.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ru/nop/Weather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nop/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -133,7 +171,7 @@
     <session id="2147165239">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="26" />
+          <entry key="project.closed" value="27" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -141,7 +179,7 @@
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.open.time.32" value="2" />
+          <entry key="project.open.time.32" value="3" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.42" value="1" />
@@ -150,14 +188,14 @@
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="27" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cfg" value="4" />
           <entry key="gradle" value="5" />
-          <entry key="java" value="39" />
+          <entry key="java" value="40" />
           <entry key="log" value="11" />
           <entry key="properties" value="1" />
         </counts>
@@ -165,7 +203,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="5" />
-          <entry key="JAVA" value="39" />
+          <entry key="JAVA" value="40" />
           <entry key="Log" value="11" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="1" />
@@ -175,18 +213,18 @@
         <counts>
           <entry key="cfg" value="132" />
           <entry key="gradle" value="5" />
-          <entry key="java" value="6899" />
+          <entry key="java" value="7067" />
           <entry key="log" value="3" />
           <entry key="properties" value="16" />
-          <entry key="txt" value="16" />
+          <entry key="txt" value="170" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="5" />
-          <entry key="JAVA" value="6899" />
+          <entry key="JAVA" value="7067" />
           <entry key="Log" value="3" />
-          <entry key="PLAIN_TEXT" value="148" />
+          <entry key="PLAIN_TEXT" value="302" />
           <entry key="Properties" value="16" />
         </counts>
       </usages-collector>
@@ -200,15 +238,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="330">
+              <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#main#0;class#Main#0" />
+                <element signature="method#checkCommand#0;class#Main#0" />
                 <element signature="method#getAdminList#0;class#Main#0" />
                 <element signature="method#getTimeTableByTime#0;class#Main#0" />
                 <element signature="method#getTimeToPeremena#0;class#Main#0" />
-                <element signature="method#newUser#0;class#Main#0" />
                 <element signature="method#sendMessage#0;class#Main#0" />
                 <element signature="method#MapToString#0;class#Main#0" />
                 <element signature="method#getGroupsNumsKeyb#0;class#Main#0" />
@@ -219,13 +256,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/CommandRunner.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/DataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-738">
+              <caret line="310" column="57" lean-forward="true" selection-start-line="310" selection-start-column="57" selection-end-line="310" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -659,8 +693,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="318" />
-    <option name="y" value="-20" />
-    <option name="width" value="992" />
+    <option name="y" value="-21" />
+    <option name="width" value="993" />
     <option name="height" value="1060" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -685,7 +719,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -702,17 +736,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
@@ -762,11 +792,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547637707363" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547728910081" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Ditch/Bot" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15625" />
@@ -923,7 +952,21 @@
       <option name="project" value="LOCAL" />
       <updated>1547555192784</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added commands runner module and repaired weather module">
+      <created>1547637694310</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547637694310</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added commands runner module and repaired weather module">
+      <created>1547637738968</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1547637738968</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -937,8 +980,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.15752213" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.15929204" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -952,7 +996,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3296837" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3296837" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3296837" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014749" side_tool="true" weight="0.39902675" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49970502" weight="0.3296837" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3296837" />
@@ -964,7 +1008,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Gradle" order="7" visible="true" weight="0.20058997" />
+      <window_info anchor="right" id="Gradle" order="7" weight="0.20058997" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3297935" />
     </layout>
@@ -1007,7 +1051,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Че то не так" />
-    <option name="LAST_COMMIT_MESSAGE" value="Че то не так" />
+    <MESSAGE value="Added commands runner module and repaired weather module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added commands runner module and repaired weather module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1206,13 +1251,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bot_log_file.log" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/DataBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="310" column="57" lean-forward="true" selection-start-line="310" selection-start-column="57" selection-end-line="310" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Weather.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4">
@@ -1232,7 +1270,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/CommandRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="128">
           <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1240,17 +1278,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/DataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-738">
+          <caret line="310" column="57" lean-forward="true" selection-start-line="310" selection-start-column="57" selection-end-line="310" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="330">
+          <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Main#0" />
+            <element signature="method#checkCommand#0;class#Main#0" />
             <element signature="method#getAdminList#0;class#Main#0" />
             <element signature="method#getTimeTableByTime#0;class#Main#0" />
             <element signature="method#getTimeToPeremena#0;class#Main#0" />
-            <element signature="method#newUser#0;class#Main#0" />
             <element signature="method#sendMessage#0;class#Main#0" />
             <element signature="method#MapToString#0;class#Main#0" />
             <element signature="method#getGroupsNumsKeyb#0;class#Main#0" />
