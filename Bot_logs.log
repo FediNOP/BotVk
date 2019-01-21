@@ -8,10 +8,10 @@
 2019-01-15 16:24:56 INFO  DataBase:151 - Getting data from table: users
 2019-01-15 16:24:57 ERROR Weather:63 - From Weather
 java.lang.NullPointerException
-	at ru.nop.Weather.parseWeather(Weather.java:49)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Main.Start(Main.java:66)
-	at ru.nop.Main.main(Main.java:115)
+	at Weather.parseWeather(Weather.java:49)
+	at Weather.Update(Weather.java:20)
+	at Main.Start(Main.java:66)
+	at Main.main(Main.java:115)
 2019-01-15 16:24:57 INFO  LongPoll:195 - GetLongPollServerResponse: 
 {"response":{"server":"imv4.vk.com/im0069","key":"72506fe48e2214cbb2e5a4a1800e4fbfbd6d0a4d","pts":10005944,"ts":1816984320}}
 
@@ -28,10 +28,10 @@ java.lang.NullPointerException
 2019-01-15 16:26:34 INFO  DataBase:151 - Getting data from table: users
 2019-01-15 16:26:35 ERROR Weather:63 - From Weather
 java.lang.NullPointerException
-	at ru.nop.Weather.parseWeather(Weather.java:49)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Main.Start(Main.java:66)
-	at ru.nop.Main.main(Main.java:115)
+	at Weather.parseWeather(Weather.java:49)
+	at Weather.Update(Weather.java:20)
+	at Main.Start(Main.java:66)
+	at Main.main(Main.java:115)
 2019-01-15 16:26:36 INFO  LongPoll:195 - GetLongPollServerResponse: 
 {"response":{"server":"imv4.vk.com/im0069","key":"c326a3cc0324f1ed23e3c7ab94cfee0506dae152","pts":10005944,"ts":1816984320}}
 
@@ -48,10 +48,10 @@ java.lang.NullPointerException
 2019-01-15 16:26:53 INFO  DataBase:151 - Getting data from table: users
 2019-01-15 16:26:54 ERROR Weather:64 - From Weather
 java.lang.NullPointerException
-	at ru.nop.Weather.parseWeather(Weather.java:49)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Main.Start(Main.java:66)
-	at ru.nop.Main.main(Main.java:115)
+	at Weather.parseWeather(Weather.java:49)
+	at Weather.Update(Weather.java:20)
+	at Main.Start(Main.java:66)
+	at Main.main(Main.java:115)
 2019-01-15 16:26:54 INFO  LongPoll:195 - GetLongPollServerResponse: 
 {"response":{"server":"imv4.vk.com/im0069","key":"57c3667df713484b441463563164829a8b97cb75","pts":10005944,"ts":1816984320}}
 
@@ -62,11 +62,11 @@ java.lang.NullPointerException
 2019-01-15 16:27:37 INFO  Main:232 - Checking message
 2019-01-15 16:27:37 ERROR Weather:64 - From Weather
 java.lang.NullPointerException
-	at ru.nop.Weather.parseWeather(Weather.java:49)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Weather.getWeather(Weather.java:28)
-	at ru.nop.Main.checkMessage(Main.java:292)
-	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at Weather.parseWeather(Weather.java:49)
+	at Weather.Update(Weather.java:20)
+	at Weather.getWeather(Weather.java:28)
+	at Main.checkMessage(Main.java:292)
+	at Main.lambda$main$1(Main.java:141)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
@@ -76,9 +76,9 @@ java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:844)
 2019-01-15 16:27:37 ERROR Main:151 - Main error
 java.lang.NullPointerException
-	at ru.nop.Weather.getWeather(Weather.java:29)
-	at ru.nop.Main.checkMessage(Main.java:292)
-	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at Weather.getWeather(Weather.java:29)
+	at Main.checkMessage(Main.java:292)
+	at Main.lambda$main$1(Main.java:141)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
@@ -90,11 +90,11 @@ java.lang.NullPointerException
 2019-01-15 16:35:13 INFO  Main:232 - Checking message
 2019-01-15 16:35:13 ERROR Weather:64 - From Weather
 java.lang.NullPointerException
-	at ru.nop.Weather.parseWeather(Weather.java:49)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Weather.getWeather(Weather.java:28)
-	at ru.nop.Main.checkMessage(Main.java:292)
-	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at Weather.parseWeather(Weather.java:49)
+	at Weather.Update(Weather.java:20)
+	at Weather.getWeather(Weather.java:28)
+	at Main.checkMessage(Main.java:292)
+	at Main.lambda$main$1(Main.java:141)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
@@ -104,9 +104,9 @@ java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:844)
 2019-01-15 16:35:13 ERROR Main:151 - Main error
 java.lang.NullPointerException
-	at ru.nop.Weather.getWeather(Weather.java:29)
-	at ru.nop.Main.checkMessage(Main.java:292)
-	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at Weather.getWeather(Weather.java:29)
+	at Main.checkMessage(Main.java:292)
+	at Main.lambda$main$1(Main.java:141)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
@@ -124,10 +124,10 @@ java.lang.NullPointerException
 2019-01-15 16:35:40 INFO  DataBase:151 - Getting data from table: users
 2019-01-15 16:35:41 ERROR Weather:63 - From Weather
 java.lang.NullPointerException
-	at ru.nop.Weather.parseWeather(Weather.java:48)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Main.Start(Main.java:66)
-	at ru.nop.Main.main(Main.java:115)
+	at Weather.parseWeather(Weather.java:48)
+	at Weather.Update(Weather.java:20)
+	at Main.Start(Main.java:66)
+	at Main.main(Main.java:115)
 2019-01-15 16:35:42 INFO  LongPoll:195 - GetLongPollServerResponse: 
 {"response":{"server":"imv4.vk.com/im0069","key":"feddfdef5ecfa6072f8c70739964967fc97af151","pts":10005946,"ts":1816984322}}
 
@@ -138,11 +138,11 @@ java.lang.NullPointerException
 2019-01-15 16:35:46 INFO  Main:232 - Checking message
 2019-01-15 16:35:47 ERROR Weather:63 - From Weather
 java.lang.NullPointerException
-	at ru.nop.Weather.parseWeather(Weather.java:48)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Weather.getWeather(Weather.java:28)
-	at ru.nop.Main.checkMessage(Main.java:292)
-	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at Weather.parseWeather(Weather.java:48)
+	at Weather.Update(Weather.java:20)
+	at Weather.getWeather(Weather.java:28)
+	at Main.checkMessage(Main.java:292)
+	at Main.lambda$main$1(Main.java:141)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
@@ -153,9 +153,9 @@ java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:844)
 2019-01-15 16:35:47 ERROR Main:151 - Main error
 java.lang.NullPointerException
-	at ru.nop.Weather.getWeather(Weather.java:29)
-	at ru.nop.Main.checkMessage(Main.java:292)
-	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at Weather.getWeather(Weather.java:29)
+	at Main.checkMessage(Main.java:292)
+	at Main.lambda$main$1(Main.java:141)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
@@ -181,10 +181,10 @@ org.jsoup.select.Selector$SelectorParseException: Could not parse query '<span c
 	at org.jsoup.select.Selector.select(Selector.java:93)
 	at org.jsoup.select.Selector.select(Selector.java:109)
 	at org.jsoup.select.Elements.select(Elements.java:408)
-	at ru.nop.Weather.parseWeather(Weather.java:49)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Main.Start(Main.java:66)
-	at ru.nop.Main.main(Main.java:115)
+	at Weather.parseWeather(Weather.java:49)
+	at Weather.Update(Weather.java:20)
+	at Main.Start(Main.java:66)
+	at Main.main(Main.java:115)
 2019-01-15 16:38:15 INFO  LongPoll:195 - GetLongPollServerResponse: 
 {"response":{"server":"imv4.vk.com/im0069","key":"eab3b86332f878c6838e0985304f70be889fe517","pts":10005947,"ts":1816984323}}
 
@@ -202,11 +202,11 @@ org.jsoup.select.Selector$SelectorParseException: Could not parse query '<span c
 	at org.jsoup.select.Selector.select(Selector.java:93)
 	at org.jsoup.select.Selector.select(Selector.java:109)
 	at org.jsoup.select.Elements.select(Elements.java:408)
-	at ru.nop.Weather.parseWeather(Weather.java:49)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Weather.getWeather(Weather.java:28)
-	at ru.nop.Main.checkMessage(Main.java:292)
-	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at Weather.parseWeather(Weather.java:49)
+	at Weather.Update(Weather.java:20)
+	at Weather.getWeather(Weather.java:28)
+	at Main.checkMessage(Main.java:292)
+	at Main.lambda$main$1(Main.java:141)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
@@ -216,9 +216,9 @@ org.jsoup.select.Selector$SelectorParseException: Could not parse query '<span c
 	at java.base/java.lang.Thread.run(Thread.java:844)
 2019-01-15 16:38:18 ERROR Main:151 - Main error
 java.lang.NullPointerException
-	at ru.nop.Weather.getWeather(Weather.java:29)
-	at ru.nop.Main.checkMessage(Main.java:292)
-	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at Weather.getWeather(Weather.java:29)
+	at Main.checkMessage(Main.java:292)
+	at Main.lambda$main$1(Main.java:141)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
@@ -243,10 +243,10 @@ org.jsoup.select.Selector$SelectorParseException: Could not parse query '<span c
 	at org.jsoup.select.Selector.select(Selector.java:93)
 	at org.jsoup.select.Selector.select(Selector.java:109)
 	at org.jsoup.select.Elements.select(Elements.java:408)
-	at ru.nop.Weather.parseWeather(Weather.java:49)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Main.Start(Main.java:66)
-	at ru.nop.Main.main(Main.java:115)
+	at Weather.parseWeather(Weather.java:49)
+	at Weather.Update(Weather.java:20)
+	at Main.Start(Main.java:66)
+	at Main.main(Main.java:115)
 2019-01-15 16:43:09 INFO  LongPoll:195 - GetLongPollServerResponse: 
 {"response":{"server":"imv4.vk.com/im0069","key":"611f4cac1137ba63bca414c36772a1ddd507a957","pts":10005948,"ts":1816984324}}
 
@@ -264,11 +264,11 @@ org.jsoup.select.Selector$SelectorParseException: Could not parse query '<span c
 	at org.jsoup.select.Selector.select(Selector.java:93)
 	at org.jsoup.select.Selector.select(Selector.java:109)
 	at org.jsoup.select.Elements.select(Elements.java:408)
-	at ru.nop.Weather.parseWeather(Weather.java:49)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Weather.getWeather(Weather.java:28)
-	at ru.nop.Main.checkMessage(Main.java:292)
-	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at Weather.parseWeather(Weather.java:49)
+	at Weather.Update(Weather.java:20)
+	at Weather.getWeather(Weather.java:28)
+	at Main.checkMessage(Main.java:292)
+	at Main.lambda$main$1(Main.java:141)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
@@ -279,9 +279,9 @@ org.jsoup.select.Selector$SelectorParseException: Could not parse query '<span c
 	at java.base/java.lang.Thread.run(Thread.java:844)
 2019-01-15 16:44:33 ERROR Main:151 - Main error
 java.lang.NullPointerException
-	at ru.nop.Weather.getWeather(Weather.java:29)
-	at ru.nop.Main.checkMessage(Main.java:292)
-	at ru.nop.Main.lambda$main$1(Main.java:141)
+	at Weather.getWeather(Weather.java:29)
+	at Main.checkMessage(Main.java:292)
+	at Main.lambda$main$1(Main.java:141)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
 	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
@@ -300,10 +300,10 @@ java.lang.NullPointerException
 2019-01-15 16:44:56 INFO  DataBase:151 - Getting data from table: users
 2019-01-15 16:44:57 ERROR Weather:63 - From Weather
 java.lang.NullPointerException
-	at ru.nop.Weather.parseWeather(Weather.java:51)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Main.Start(Main.java:66)
-	at ru.nop.Main.main(Main.java:115)
+	at Weather.parseWeather(Weather.java:51)
+	at Weather.Update(Weather.java:20)
+	at Main.Start(Main.java:66)
+	at Main.main(Main.java:115)
 2019-01-15 16:44:57 INFO  LongPoll:195 - GetLongPollServerResponse: 
 {"response":{"server":"imv4.vk.com/im0069","key":"ac1f600e0dfde49be94425704836b637af6a23fb","pts":10005949,"ts":1816984325}}
 
@@ -320,10 +320,10 @@ java.lang.NullPointerException
 2019-01-15 16:49:22 INFO  DataBase:151 - Getting data from table: users
 2019-01-15 16:49:23 ERROR Weather:63 - From Weather
 java.lang.NullPointerException
-	at ru.nop.Weather.parseWeather(Weather.java:51)
-	at ru.nop.Weather.Update(Weather.java:20)
-	at ru.nop.Main.Start(Main.java:66)
-	at ru.nop.Main.main(Main.java:115)
+	at Weather.parseWeather(Weather.java:51)
+	at Weather.Update(Weather.java:20)
+	at Main.Start(Main.java:66)
+	at Main.main(Main.java:115)
 2019-01-15 16:49:23 INFO  LongPoll:195 - GetLongPollServerResponse: 
 {"response":{"server":"imv4.vk.com/im0069","key":"f69583bd1807a77433c2c36eeb33481af278412f","pts":10005949,"ts":1816984325}}
 
@@ -412,3 +412,1233 @@ java.lang.NullPointerException
 2019-01-15 17:25:34 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
 2019-01-15 17:25:34 INFO  Main:116 - Successfully Started
 2019-01-15 17:25:34 INFO  Main:118 - Waiting messages...
+2019-01-17 18:17:12 INFO  Main:117 - Starting...
+2019-01-17 18:17:15 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"55ede4a22bde37eba4ff871a43f5aa9e6034fe33","pts":10005982,"ts":1849264991}}
+
+2019-01-17 18:17:15 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-17 18:17:15 INFO  Main:120 - Successfully Started
+2019-01-17 18:17:15 INFO  Main:122 - Waiting messages...
+2019-01-17 18:17:21 INFO  Main:129 - 195267161: Расписание
+2019-01-17 18:17:23 INFO  Main:129 - 195267161: Расписание
+2019-01-18 12:54:02 INFO  Main:44 - Starting...
+2019-01-18 12:54:02 INFO  Main:70 - Reading config file
+2019-01-18 12:54:06 ERROR Main:77 - 
+java.sql.SQLException: Unable to load authentication plugin 'caching_sha2_password'.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:489)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:78)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:35)
+	at ru.nop.Main.start(Main.java:34)
+	at ru.nop.Main.main(Main.java:45)
+Caused by: com.mysql.cj.core.exceptions.WrongArgumentException: Unable to load authentication plugin 'caching_sha2_password'.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(MysqlaAuthenticationProvider.java:564)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.connect(MysqlaAuthenticationProvider.java:204)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1414)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:132)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	... 8 more
+2019-01-18 12:54:08 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"9689a5a4d61adcc0d03cca248c0f7d404fd10f45","pts":10005997,"ts":1641207807}}
+
+2019-01-18 12:54:08 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-18 12:54:08 INFO  Main:46 - OK
+2019-01-18 12:54:08 INFO  Main:47 - Waiting messages...
+2019-01-18 12:55:12 INFO  Main:44 - Starting...
+2019-01-18 12:55:12 INFO  Main:70 - Reading config file
+2019-01-18 12:55:12 ERROR Main:77 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:35)
+	at ru.nop.Main.start(Main.java:34)
+	at ru.nop.Main.main(Main.java:45)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 73
+	at com.mysql.cj.mysqla.io.Buffer.readInteger(Buffer.java:271)
+	at com.mysql.cj.mysqla.io.MysqlaCapabilities.setInitialHandshakePacket(MysqlaCapabilities.java:62)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readServerCapabilities(MysqlaProtocol.java:482)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.beforeHandshake(MysqlaProtocol.java:367)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1412)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:132)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+	... 9 more
+2019-01-18 12:55:14 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"96b24d6492e25c406ae8e094e581b166d1362538","pts":10005997,"ts":1641207807}}
+
+2019-01-18 12:55:14 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-18 12:55:14 INFO  Main:46 - OK
+2019-01-18 12:55:14 INFO  Main:47 - Waiting messages...
+2019-01-18 12:58:14 INFO  Main:44 - Starting...
+2019-01-18 12:58:14 INFO  Main:70 - Reading config file
+2019-01-18 12:58:15 ERROR Main:77 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:35)
+	at ru.nop.Main.start(Main.java:34)
+	at ru.nop.Main.main(Main.java:45)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 73
+	at com.mysql.cj.mysqla.io.Buffer.readInteger(Buffer.java:271)
+	at com.mysql.cj.mysqla.io.MysqlaCapabilities.setInitialHandshakePacket(MysqlaCapabilities.java:62)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readServerCapabilities(MysqlaProtocol.java:482)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.beforeHandshake(MysqlaProtocol.java:367)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1412)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:132)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+	... 9 more
+2019-01-18 12:58:16 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"eb2cc7b3dd6f21253676378c923f9f0e5d714aa7","pts":10005997,"ts":1641207807}}
+
+2019-01-18 12:58:16 INFO  Main:46 - OK
+2019-01-18 12:58:16 INFO  Main:47 - Waiting messages...
+2019-01-18 12:58:16 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 15:46:50 INFO  Main:44 - Starting...
+2019-01-21 15:46:50 INFO  Main:70 - Reading config file
+2019-01-21 15:46:50 WARN  Main:81 - Config file not found
+2019-01-21 15:46:52 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"6572977243a4cc3b8982da2082ee93ad97032c8e","pts":10005997,"ts":1766585456}}
+
+2019-01-21 15:46:52 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 15:46:52 INFO  Main:46 - OK
+2019-01-21 15:46:52 INFO  Main:47 - Waiting messages...
+2019-01-21 15:47:34 INFO  Main:52 - 195267161: Расписание
+2019-01-21 15:47:34 ERROR Main:97 - 
+java.sql.SQLException: Can not issue data manipulation statements with executeQuery().
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.StatementImpl.checkForDml(StatementImpl.java:521)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1891)
+	at ru.nop.DataBase.adduser(DataBase.java:80)
+	at ru.nop.Main.lambda$main$0(Main.java:56)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 15:48:02 INFO  Main:44 - Starting...
+2019-01-21 15:48:02 INFO  Main:70 - Reading config file
+2019-01-21 15:48:02 ERROR Main:97 - 
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:35)
+	at ru.nop.Main.start(Main.java:34)
+	at ru.nop.Main.main(Main.java:45)
+2019-01-21 15:48:03 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0474","key":"e420b49b58c22af23ddbd76d42652129527b7fec","pts":10129445,"ts":1679296799}}
+
+2019-01-21 15:48:03 INFO  Main:46 - OK
+2019-01-21 15:48:03 INFO  Main:47 - Waiting messages...
+2019-01-21 15:48:03 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 15:49:00 INFO  Main:44 - Starting...
+2019-01-21 15:49:00 INFO  Main:70 - Reading config file
+2019-01-21 15:49:01 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"5168bf8e3ffbcf89e96c744c3f249c72f860bf88","pts":10006000,"ts":1766585459}}
+
+2019-01-21 15:49:01 INFO  Main:46 - OK
+2019-01-21 15:49:01 INFO  Main:47 - Waiting messages...
+2019-01-21 15:49:01 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 15:49:19 INFO  Main:52 - 195267161: Расписание
+2019-01-21 15:49:19 ERROR Main:97 - 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `users`(`id`, `groupName`) VALUES (195267161,1)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at ru.nop.DataBase.adduser(DataBase.java:80)
+	at ru.nop.Main.lambda$main$0(Main.java:56)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 15:49:56 INFO  Main:44 - Starting...
+2019-01-21 15:49:56 INFO  Main:70 - Reading config file
+2019-01-21 15:49:57 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"fa01797aa62e68577fbbeb1ab12871cca6227df0","pts":10006001,"ts":1766585460}}
+
+2019-01-21 15:49:57 INFO  Main:46 - OK
+2019-01-21 15:49:57 INFO  Main:47 - Waiting messages...
+2019-01-21 15:49:57 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 15:50:16 INFO  Main:52 - 195267161: Расписание
+2019-01-21 15:50:16 ERROR Main:97 - 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `users`(`id`, `groupName`) VALUES ('195267161','1')' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at ru.nop.DataBase.adduser(DataBase.java:80)
+	at ru.nop.Main.lambda$main$0(Main.java:56)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 15:56:32 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=fa01797aa62e68577fbbeb1ab12871cca6227df0&ts=1766585461&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.SocketTimeoutException: Read timed out
+2019-01-21 15:56:32 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-01-21 15:56:45 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=fa01797aa62e68577fbbeb1ab12871cca6227df0&ts=1766585461&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-01-21 15:56:45 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-01-21 15:56:46 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=fa01797aa62e68577fbbeb1ab12871cca6227df0&ts=1766585461&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-01-21 15:56:46 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-01-21 15:56:47 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=fa01797aa62e68577fbbeb1ab12871cca6227df0&ts=1766585461&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-01-21 15:56:47 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-01-21 15:56:48 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=fa01797aa62e68577fbbeb1ab12871cca6227df0&ts=1766585461&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-01-21 15:56:48 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-01-21 15:56:49 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=fa01797aa62e68577fbbeb1ab12871cca6227df0&ts=1766585461&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-01-21 15:56:49 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-01-21 15:56:50 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=fa01797aa62e68577fbbeb1ab12871cca6227df0&ts=1766585461&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-01-21 15:56:50 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-01-21 15:56:51 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=fa01797aa62e68577fbbeb1ab12871cca6227df0&ts=1766585461&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-01-21 15:56:51 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-01-21 15:56:52 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=fa01797aa62e68577fbbeb1ab12871cca6227df0&ts=1766585461&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-01-21 15:56:52 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-01-21 15:56:53 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=fa01797aa62e68577fbbeb1ab12871cca6227df0&ts=1766585461&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-01-21 15:56:53 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-01-21 15:56:54 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=fa01797aa62e68577fbbeb1ab12871cca6227df0&ts=1766585461&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-01-21 15:56:54 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-01-21 15:57:50 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=fa01797aa62e68577fbbeb1ab12871cca6227df0&ts=1766585461&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.SocketTimeoutException: Read timed out
+2019-01-21 15:57:50 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-01-21 15:58:34 INFO  Main:44 - Starting...
+2019-01-21 15:58:34 INFO  Main:71 - Reading config file
+2019-01-21 15:58:35 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"95aff70ec6ca1368abd3653bd967042a0966d551","pts":10006002,"ts":1766585461}}
+
+2019-01-21 15:58:35 INFO  Main:47 - OK
+2019-01-21 15:58:35 INFO  Main:48 - Waiting messages...
+2019-01-21 15:58:35 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 15:58:41 INFO  Main:53 - 195267161: Расписание
+2019-01-21 16:00:35 INFO  Main:44 - Starting...
+2019-01-21 16:00:35 INFO  Main:71 - Reading config file
+2019-01-21 16:00:37 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"812d7fed1ed4ff3ea1afb0c887cea0c5363e947d","pts":10006003,"ts":1766585462}}
+
+2019-01-21 16:00:37 INFO  Main:47 - OK
+2019-01-21 16:00:37 INFO  Main:48 - Waiting messages...
+2019-01-21 16:00:37 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 16:00:39 INFO  Main:53 - 195267161: Расписание
+2019-01-21 16:00:39 ERROR Main:99 - 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `users`(`id`, `groupName`) VALUES (195267161,1)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2034)
+	at com.mysql.cj.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:1970)
+	at com.mysql.cj.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5001)
+	at com.mysql.cj.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1955)
+	at ru.nop.DataBase.adduser(DataBase.java:82)
+	at ru.nop.Main.lambda$main$0(Main.java:57)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 16:06:34 INFO  Main:44 - Starting...
+2019-01-21 16:06:34 INFO  Main:71 - Reading config file
+2019-01-21 16:06:35 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"fa9c26c5f263b619241607a00980f69b5040ae1e","pts":10006004,"ts":1766585463}}
+
+2019-01-21 16:06:35 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 16:06:35 INFO  Main:47 - OK
+2019-01-21 16:06:35 INFO  Main:48 - Waiting messages...
+2019-01-21 16:07:05 INFO  Main:53 - 195267161: Расписание
+2019-01-21 16:07:05 ERROR Main:99 - 
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3246)
+	at com.mysql.cj.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3230)
+	at com.mysql.cj.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3263)
+	at com.mysql.cj.jdbc.PreparedStatement.setInt(PreparedStatement.java:3220)
+	at ru.nop.DataBase.adduser(DataBase.java:80)
+	at ru.nop.Main.lambda$main$0(Main.java:57)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 16:07:58 INFO  Main:44 - Starting...
+2019-01-21 16:07:58 INFO  Main:71 - Reading config file
+2019-01-21 16:07:59 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"0c65aa19ab82ffc3a8bec2af6310e2adb4d1a46d","pts":10006005,"ts":1766585464}}
+
+2019-01-21 16:07:59 INFO  Main:47 - OK
+2019-01-21 16:07:59 INFO  Main:48 - Waiting messages...
+2019-01-21 16:07:59 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 16:08:18 INFO  Main:53 - 195267161: Расписание
+2019-01-21 16:08:18 ERROR Main:99 - 
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3246)
+	at com.mysql.cj.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3230)
+	at com.mysql.cj.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3263)
+	at com.mysql.cj.jdbc.PreparedStatement.setInt(PreparedStatement.java:3220)
+	at ru.nop.DataBase.adduser(DataBase.java:80)
+	at ru.nop.Main.lambda$main$0(Main.java:57)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 16:08:29 INFO  Main:44 - Starting...
+2019-01-21 16:08:29 INFO  Main:71 - Reading config file
+2019-01-21 16:08:30 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"f01ee158d009eae53b47f2b49a9ee8cb01dd0cc3","pts":10006006,"ts":1766585465}}
+
+2019-01-21 16:08:30 INFO  Main:47 - OK
+2019-01-21 16:08:30 INFO  Main:48 - Waiting messages...
+2019-01-21 16:08:30 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 16:08:35 INFO  Main:53 - 195267161: Расписание
+2019-01-21 16:08:35 ERROR Main:99 - 
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3246)
+	at com.mysql.cj.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3230)
+	at com.mysql.cj.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3263)
+	at com.mysql.cj.jdbc.PreparedStatement.setInt(PreparedStatement.java:3220)
+	at ru.nop.DataBase.adduser(DataBase.java:80)
+	at ru.nop.Main.lambda$main$0(Main.java:57)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 16:09:01 INFO  Main:44 - Starting...
+2019-01-21 16:09:01 INFO  Main:71 - Reading config file
+2019-01-21 16:09:02 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"5399e40b6fcbaef3d0f0c71a0fd7a20ea1f1d3cc","pts":10006007,"ts":1766585466}}
+
+2019-01-21 16:09:02 INFO  Main:47 - OK
+2019-01-21 16:09:02 INFO  Main:48 - Waiting messages...
+2019-01-21 16:09:02 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 16:09:09 INFO  Main:53 - 195267161: Расписание
+2019-01-21 16:09:09 ERROR Main:99 - 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO `users`(`id`, `groupName`) VALUES (195267161, 1)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2034)
+	at com.mysql.cj.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:1970)
+	at com.mysql.cj.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5001)
+	at com.mysql.cj.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1955)
+	at ru.nop.DataBase.adduser(DataBase.java:82)
+	at ru.nop.Main.lambda$main$0(Main.java:57)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 16:10:02 INFO  Main:44 - Starting...
+2019-01-21 16:10:02 INFO  Main:71 - Reading config file
+2019-01-21 16:10:03 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"7db609711cd215fd0df6a645b49dec07a118591f","pts":10006008,"ts":1766585467}}
+
+2019-01-21 16:10:03 INFO  Main:47 - OK
+2019-01-21 16:10:03 INFO  Main:48 - Waiting messages...
+2019-01-21 16:10:03 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 16:10:06 INFO  Main:53 - 195267161: Расписание
+2019-01-21 16:10:06 ERROR Main:99 - 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO users (`id`, `groupName`) VALUES (195267161, 1)' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2034)
+	at com.mysql.cj.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:1970)
+	at com.mysql.cj.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5001)
+	at com.mysql.cj.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1955)
+	at ru.nop.DataBase.adduser(DataBase.java:82)
+	at ru.nop.Main.lambda$main$0(Main.java:57)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 16:11:38 INFO  Main:44 - Starting...
+2019-01-21 16:11:38 INFO  Main:71 - Reading config file
+2019-01-21 16:11:39 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"8fa4bdb5e0fded5c8e28df57e3441bcfae5d6d97","pts":10006009,"ts":1766585468}}
+
+2019-01-21 16:11:39 INFO  Main:47 - OK
+2019-01-21 16:11:39 INFO  Main:48 - Waiting messages...
+2019-01-21 16:11:39 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 16:11:42 INFO  Main:53 - 195267161: Расписание
+2019-01-21 16:11:42 ERROR Main:100 - 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2034)
+	at com.mysql.cj.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:1970)
+	at com.mysql.cj.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5001)
+	at com.mysql.cj.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1955)
+	at ru.nop.DataBase.adduser(DataBase.java:83)
+	at ru.nop.Main.lambda$main$0(Main.java:57)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 16:11:55 INFO  Main:44 - Starting...
+2019-01-21 16:11:55 INFO  Main:71 - Reading config file
+2019-01-21 16:11:57 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"6ce03f98a475b0dbd30021c53c22afb17df5497e","pts":10006011,"ts":1766585470}}
+
+2019-01-21 16:11:57 INFO  Main:47 - OK
+2019-01-21 16:11:57 INFO  Main:48 - Waiting messages...
+2019-01-21 16:11:57 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 16:12:05 INFO  Main:53 - 195267161: Расписание
+2019-01-21 16:12:19 INFO  Main:53 - 195267161: Расписание
+2019-01-21 16:44:58 INFO  Main:43 - Starting...
+2019-01-21 16:44:58 INFO  Main:83 - Reading config file
+2019-01-21 16:44:59 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"7bba5b3dc3351c58ca1ff7af421f4c6a48efdd97","pts":10006013,"ts":1766585472}}
+
+2019-01-21 16:44:59 INFO  Main:53 - OK
+2019-01-21 16:44:59 INFO  Main:54 - Waiting messages...
+2019-01-21 16:44:59 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 16:45:06 INFO  Main:67 - 195267161: Расписание
+2019-01-21 16:46:25 INFO  Main:43 - Starting...
+2019-01-21 16:46:25 INFO  Main:84 - Reading config file
+2019-01-21 16:46:26 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"161aec437f0e69d673b9fe3bf9c9d3ee02f6308e","pts":10006014,"ts":1766585473}}
+
+2019-01-21 16:46:26 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 16:46:26 INFO  Main:53 - OK
+2019-01-21 16:46:26 INFO  Main:54 - Waiting messages...
+2019-01-21 16:46:27 INFO  Main:67 - 195267161: Расписание
+2019-01-21 16:46:47 INFO  Main:67 - 195267161: Расписание
+2019-01-21 16:46:55 INFO  Main:67 - 195267161: Студент
+2019-01-21 16:47:19 INFO  Main:67 - 195267161: fhg
+2019-01-21 16:48:54 INFO  Main:43 - Starting...
+2019-01-21 16:48:54 INFO  Main:84 - Reading config file
+2019-01-21 16:48:54 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"91d12fbb0c6f01347632ade3a711b43b2638e08a","pts":10006034,"ts":1766585500}}
+
+2019-01-21 16:48:54 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 16:48:54 INFO  Main:53 - OK
+2019-01-21 16:48:54 INFO  Main:54 - Waiting messages...
+2019-01-21 16:49:05 INFO  Main:67 - 195267161: 'l
+2019-01-21 16:49:07 INFO  Main:67 - 195267161: Студент
+2019-01-21 16:49:11 INFO  Main:67 - 195267161: 1 Курс
+2019-01-21 16:49:16 INFO  Main:67 - 195267161: sdf
+2019-01-21 16:49:18 INFO  Main:67 - 195267161: sdfsd
+2019-01-21 17:08:46 INFO  Main:43 - Starting...
+2019-01-21 17:08:46 INFO  Main:84 - Reading config file
+2019-01-21 17:08:47 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"e079cdf2cc49fc935c985762511aa85f35a8e028","pts":10006054,"ts":1766585529}}
+
+2019-01-21 17:08:47 INFO  Main:53 - OK
+2019-01-21 17:08:47 INFO  Main:54 - Waiting messages...
+2019-01-21 17:08:47 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:08:53 INFO  Main:67 - 195267161: 1
+2019-01-21 17:08:53 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Студент\",\"type\":\"text\"}},{\"color\":\"default\",\"action\":{\"label\":\"Преподаватель\",\"type\":\"text\"}}]],\"one_time\":true}","message":"","title":" ... ","peer_id":195267161})]
+2019-01-21 17:08:53 ERROR Message:782 - Message not sent: false
+2019-01-21 17:08:58 INFO  Main:67 - 195267161: dsf
+2019-01-21 17:09:00 INFO  Main:67 - 195267161: Студент
+2019-01-21 17:09:00 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Студент\",\"type\":\"text\"}},{\"color\":\"default\",\"action\":{\"label\":\"Преподаватель\",\"type\":\"text\"}}]],\"one_time\":true}","message":"","title":" ... ","peer_id":195267161})]
+2019-01-21 17:09:00 ERROR Message:782 - Message not sent: false
+2019-01-21 17:09:09 INFO  Main:67 - 195267161: `
+2019-01-21 17:09:10 INFO  Main:67 - 195267161: 1
+2019-01-21 17:09:10 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Студент\",\"type\":\"text\"}},{\"color\":\"default\",\"action\":{\"label\":\"Преподаватель\",\"type\":\"text\"}}]],\"one_time\":true}","message":"","title":" ... ","peer_id":195267161})]
+2019-01-21 17:09:10 ERROR Message:782 - Message not sent: false
+2019-01-21 17:09:12 INFO  Main:67 - 195267161: 1
+2019-01-21 17:09:13 INFO  Main:67 - 195267161: Студент
+2019-01-21 17:09:14 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Студент\",\"type\":\"text\"}},{\"color\":\"default\",\"action\":{\"label\":\"Преподаватель\",\"type\":\"text\"}}]],\"one_time\":true}","message":"","title":" ... ","peer_id":195267161})]
+2019-01-21 17:09:14 ERROR Message:782 - Message not sent: false
+2019-01-21 17:10:52 INFO  Main:43 - Starting...
+2019-01-21 17:10:52 INFO  Main:84 - Reading config file
+2019-01-21 17:10:53 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"599a44b0df22668826324f68a011a95792cf764a","pts":10006082,"ts":1766585569}}
+
+2019-01-21 17:10:53 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:10:53 INFO  Main:53 - OK
+2019-01-21 17:10:53 INFO  Main:54 - Waiting messages...
+2019-01-21 17:10:58 INFO  Main:67 - 195267161: j
+2019-01-21 17:11:29 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Студент\",\"type\":\"text\"}},{\"color\":\"default\",\"action\":{\"label\":\"Преподаватель\",\"type\":\"text\"}}]],\"one_time\":true}","message":"","title":" ... ","peer_id":195267161})]
+2019-01-21 17:11:29 ERROR Message:782 - Message not sent: false
+2019-01-21 17:12:03 INFO  Main:43 - Starting...
+2019-01-21 17:12:03 INFO  Main:84 - Reading config file
+2019-01-21 17:12:04 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"571de9574401e66561fee20c27eccd20f08ca845","pts":10006083,"ts":1766585572}}
+
+2019-01-21 17:12:04 INFO  Main:53 - OK
+2019-01-21 17:12:04 INFO  Main:54 - Waiting messages...
+2019-01-21 17:12:04 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:12:07 INFO  Main:67 - 195267161: h
+2019-01-21 17:12:09 INFO  Main:67 - 195267161: Студент
+2019-01-21 17:12:12 INFO  Main:67 - 195267161: 1 Курс
+2019-01-21 17:12:28 INFO  Main:67 - 195267161: КС
+2019-01-21 17:27:17 INFO  Main:44 - Starting...
+2019-01-21 17:27:17 INFO  Main:85 - Reading config file
+2019-01-21 17:27:18 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"7e3e306193a89919e4e85cd6f518d940fb610aef","pts":10006108,"ts":1766585605}}
+
+2019-01-21 17:27:18 INFO  Main:54 - OK
+2019-01-21 17:27:18 INFO  Main:55 - Waiting messages...
+2019-01-21 17:27:18 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:27:26 INFO  Main:68 - 195267161: 1
+2019-01-21 17:27:27 INFO  Main:68 - 195267161: Студент
+2019-01-21 17:27:29 INFO  Main:68 - 195267161: 1 Курс
+2019-01-21 17:27:33 INFO  Main:68 - 195267161: КС
+2019-01-21 17:27:33 ERROR Executor:123 - Errors when executing: [{"error_msg":"Keyboard format is invalid","method":"messages.send","error_code":911},{"error_msg":"Keyboard format is invalid","method":"execute","error_code":911}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"\",\"type\":\"text\"}}]],\"one_time\":true}","message":"Выберите группу","title":" ... ","peer_id":195267161})]
+2019-01-21 17:27:33 ERROR Message:782 - Message not sent: false
+2019-01-21 17:28:12 INFO  Main:44 - Starting...
+2019-01-21 17:28:12 INFO  Main:85 - Reading config file
+2019-01-21 17:28:14 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"0eb90d9486e24d58f1da74f6f2cb6ca01c09e5a2","pts":10006133,"ts":1766585638}}
+
+2019-01-21 17:28:14 INFO  Main:54 - OK
+2019-01-21 17:28:14 INFO  Main:55 - Waiting messages...
+2019-01-21 17:28:14 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:28:20 INFO  Main:68 - 195267161: 1
+2019-01-21 17:28:30 INFO  Main:68 - 195267161: 2
+2019-01-21 17:28:39 INFO  Main:68 - 195267161: Студент
+2019-01-21 17:28:47 INFO  Main:68 - 195267161: Студент
+2019-01-21 17:28:54 INFO  Main:68 - 195267161: 1 Курс
+2019-01-21 17:29:15 INFO  Main:68 - 195267161: 1
+2019-01-21 17:30:10 INFO  Main:44 - Starting...
+2019-01-21 17:30:10 INFO  Main:85 - Reading config file
+2019-01-21 17:30:11 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"74f06b6886f489ede7640231fb5be50d82bc1f49","pts":10006167,"ts":1766585683}}
+
+2019-01-21 17:30:11 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:30:11 INFO  Main:54 - OK
+2019-01-21 17:30:11 INFO  Main:55 - Waiting messages...
+2019-01-21 17:30:18 INFO  Main:68 - 195267161: КС
+2019-01-21 17:30:20 INFO  Main:68 - 195267161: Студент
+2019-01-21 17:30:22 INFO  Main:68 - 195267161: 1 Курс
+2019-01-21 17:30:26 INFO  Main:68 - 195267161: КС
+2019-01-21 17:31:05 INFO  Main:44 - Starting...
+2019-01-21 17:31:05 INFO  Main:85 - Reading config file
+2019-01-21 17:31:06 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"284ec3519523ace7e66f69bccaced827c58e93ef","pts":10006194,"ts":1766585717}}
+
+2019-01-21 17:31:06 INFO  Main:54 - OK
+2019-01-21 17:31:06 INFO  Main:55 - Waiting messages...
+2019-01-21 17:31:06 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:31:09 INFO  Main:44 - Starting...
+2019-01-21 17:31:09 INFO  Main:85 - Reading config file
+2019-01-21 17:31:11 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"065a2aab126b4769f717e571bdc4cf402248bd09","pts":10006194,"ts":1766585717}}
+
+2019-01-21 17:31:11 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:31:11 INFO  Main:54 - OK
+2019-01-21 17:31:11 INFO  Main:55 - Waiting messages...
+2019-01-21 17:31:16 INFO  Main:68 - 195267161: 12
+2019-01-21 17:31:17 INFO  Main:68 - 195267161: Студент
+2019-01-21 17:31:19 INFO  Main:68 - 195267161: 1 Курс
+2019-01-21 17:31:21 INFO  Main:68 - 195267161: КС
+2019-01-21 17:36:33 INFO  Main:44 - Starting...
+2019-01-21 17:36:33 INFO  Main:85 - Reading config file
+2019-01-21 17:36:34 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"5acc05110f02fe4c12f0cfc8500c574f0aa21c87","pts":10006219,"ts":1766585750}}
+
+2019-01-21 17:36:34 INFO  Main:54 - OK
+2019-01-21 17:36:34 INFO  Main:55 - Waiting messages...
+2019-01-21 17:36:34 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:36:36 INFO  Main:68 - 195267161: 1
+2019-01-21 17:36:38 INFO  Main:68 - 195267161: Студент
+2019-01-21 17:36:39 INFO  Main:68 - 195267161: 1 Курс
+2019-01-21 17:36:41 INFO  Main:68 - 195267161: ССА
+2019-01-21 17:36:41 ERROR Executor:123 - Errors when executing: [{"error_msg":"Keyboard format is invalid","method":"messages.send","error_code":911},{"error_msg":"Keyboard format is invalid","method":"execute","error_code":911}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"18-11-1\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"18-11-2\",\"type\":\"text\"}}]],\"one_time\":true}","message":"Выберите группу","title":" ... ","peer_id":195267161})]
+2019-01-21 17:36:41 ERROR Message:782 - Message not sent: false
+2019-01-21 17:37:10 INFO  Main:44 - Starting...
+2019-01-21 17:37:10 INFO  Main:85 - Reading config file
+2019-01-21 17:37:11 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"aa62b097be2bebc984caa094135e68594a99b999","pts":10006244,"ts":1766585783}}
+
+2019-01-21 17:37:11 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:37:11 INFO  Main:54 - OK
+2019-01-21 17:37:11 INFO  Main:55 - Waiting messages...
+2019-01-21 17:37:15 INFO  Main:68 - 195267161: 1
+2019-01-21 17:37:16 INFO  Main:68 - 195267161: Студент
+2019-01-21 17:37:17 INFO  Main:68 - 195267161: 1 Курс
+2019-01-21 17:37:18 INFO  Main:68 - 195267161: ССА
+2019-01-21 17:37:41 INFO  Main:44 - Starting...
+2019-01-21 17:37:41 INFO  Main:85 - Reading config file
+2019-01-21 17:37:42 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"04a861c638e0c1e54df1f42a47c88f083defa2ab","pts":10006269,"ts":1766585816}}
+
+2019-01-21 17:37:42 INFO  Main:54 - OK
+2019-01-21 17:37:42 INFO  Main:55 - Waiting messages...
+2019-01-21 17:37:42 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:37:52 INFO  Main:68 - 195267161: 1
+2019-01-21 17:37:53 INFO  Main:68 - 195267161: Студент
+2019-01-21 17:37:54 INFO  Main:68 - 195267161: 1 Курс
+2019-01-21 17:37:56 INFO  Main:68 - 195267161: ССА
+2019-01-21 17:46:30 INFO  Main:44 - Starting...
+2019-01-21 17:46:30 INFO  Main:85 - Reading config file
+2019-01-21 17:46:32 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"0b9d3bb20a6f0aa1bcf7db93f4ecca9db419e741","pts":10006299,"ts":1766585855}}
+
+2019-01-21 17:46:32 INFO  Main:54 - OK
+2019-01-21 17:46:32 INFO  Main:55 - Waiting messages...
+2019-01-21 17:46:32 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:46:33 INFO  Main:44 - Starting...
+2019-01-21 17:46:33 INFO  Main:85 - Reading config file
+2019-01-21 17:46:34 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"0713224252ac397652808867791adddae8dc03ae","pts":10006299,"ts":1766585855}}
+
+2019-01-21 17:46:34 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:46:34 INFO  Main:54 - OK
+2019-01-21 17:46:34 INFO  Main:55 - Waiting messages...
+2019-01-21 17:46:53 INFO  Main:44 - Starting...
+2019-01-21 17:46:53 INFO  Main:85 - Reading config file
+2019-01-21 17:46:54 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"1a1e2d3ad3054d2c2cff156fa2356d740b2eda3a","pts":10006299,"ts":1766585855}}
+
+2019-01-21 17:46:54 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:46:54 INFO  Main:54 - OK
+2019-01-21 17:46:54 INFO  Main:55 - Waiting messages...
+2019-01-21 17:47:12 INFO  Main:44 - Starting...
+2019-01-21 17:47:12 INFO  Main:85 - Reading config file
+2019-01-21 17:47:13 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"67a00da6de4069e48dbf94c93ad2e5bcdd6b3595","pts":10006299,"ts":1766585855}}
+
+2019-01-21 17:47:13 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:47:13 INFO  Main:54 - OK
+2019-01-21 17:47:13 INFO  Main:55 - Waiting messages...
+2019-01-21 17:47:19 INFO  Main:68 - 195267161: 18-11-1
+2019-01-21 17:47:21 INFO  Main:68 - 195267161: Студент
+2019-01-21 17:47:24 INFO  Main:68 - 195267161: 1 Курс
+2019-01-21 17:47:25 INFO  Main:68 - 195267161: ССА
+2019-01-21 17:47:31 INFO  Main:68 - 195267161: 18-11-2
+2019-01-21 17:55:27 INFO  Main:44 - Starting...
+2019-01-21 17:55:27 INFO  Main:85 - Reading config file
+2019-01-21 17:55:28 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"b310ea862f979e5a462c6eabb4dea3265ef1012a","pts":10006339,"ts":1766585905}}
+
+2019-01-21 17:55:28 INFO  Main:54 - OK
+2019-01-21 17:55:28 INFO  Main:55 - Waiting messages...
+2019-01-21 17:55:28 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:55:41 INFO  Main:68 - 195267161: Расписание
+2019-01-21 17:55:42 INFO  Main:68 - 195267161: Преподаватель
+2019-01-21 17:55:42 ERROR Main:217 - 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*) FROM `teachers`' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.getTeachers(DataBase.java:171)
+	at ru.nop.Main.newUser(Main.java:140)
+	at ru.nop.Main.lambda$main$0(Main.java:72)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 17:56:56 INFO  Main:44 - Starting...
+2019-01-21 17:56:56 INFO  Main:85 - Reading config file
+2019-01-21 17:56:57 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"62542a4c0c8e3d9affd965c04507ee16a64d13ff","pts":10006349,"ts":1766585918}}
+
+2019-01-21 17:56:57 INFO  Main:54 - OK
+2019-01-21 17:56:57 INFO  Main:55 - Waiting messages...
+2019-01-21 17:56:57 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 17:57:00 INFO  Main:68 - 195267161: 1
+2019-01-21 17:57:02 INFO  Main:68 - 195267161: Преподаватель
+2019-01-21 18:02:12 INFO  Main:43 - Starting...
+2019-01-21 18:02:12 INFO  Main:84 - Reading config file
+2019-01-21 18:02:13 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"95289d173784bf73ac773cd6099f7c1ce786b245","pts":10006362,"ts":1766585936}}
+
+2019-01-21 18:02:13 INFO  Main:53 - OK
+2019-01-21 18:02:13 INFO  Main:54 - Waiting messages...
+2019-01-21 18:02:13 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 18:02:17 INFO  Main:67 - 195267161: 1
+2019-01-21 18:02:19 INFO  Main:67 - 195267161: Преподаватель
+2019-01-21 18:02:41 INFO  Main:43 - Starting...
+2019-01-21 18:02:41 INFO  Main:84 - Reading config file
+2019-01-21 18:02:42 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"3c124f7ef5c718d21b08f785a615463fdbdafe1f","pts":10006376,"ts":1766585956}}
+
+2019-01-21 18:02:42 INFO  Main:53 - OK
+2019-01-21 18:02:42 INFO  Main:54 - Waiting messages...
+2019-01-21 18:02:42 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 18:02:46 INFO  Main:67 - 195267161: 1
+2019-01-21 18:02:48 INFO  Main:67 - 195267161: Преподаватель
+2019-01-21 18:07:02 INFO  Main:43 - Starting...
+2019-01-21 18:07:02 INFO  Main:84 - Reading config file
+2019-01-21 18:07:02 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"0ec703d6fedaee4a1807bf307f735f1c20a8c999","pts":10006392,"ts":1766585981}}
+
+2019-01-21 18:07:02 INFO  Main:53 - OK
+2019-01-21 18:07:02 INFO  Main:54 - Waiting messages...
+2019-01-21 18:07:02 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 18:07:05 INFO  Main:67 - 195267161: 1
+2019-01-21 18:07:06 INFO  Main:67 - 195267161: Преподаватель
+2019-01-21 18:09:13 INFO  Main:43 - Starting...
+2019-01-21 18:09:13 INFO  Main:84 - Reading config file
+2019-01-21 18:09:14 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"8eeda1329895581d8f24b1e53040a3bfcf467627","pts":10006405,"ts":1766585997}}
+
+2019-01-21 18:09:14 INFO  Main:53 - OK
+2019-01-21 18:09:14 INFO  Main:54 - Waiting messages...
+2019-01-21 18:09:14 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 18:09:17 INFO  Main:67 - 195267161: 1
+2019-01-21 18:09:18 INFO  Main:67 - 195267161: Преподаватель
+2019-01-21 18:10:45 INFO  Main:43 - Starting...
+2019-01-21 18:10:45 INFO  Main:84 - Reading config file
+2019-01-21 18:10:46 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"2105bf17f44c28c07f094f88c304c65e8f58337d","pts":10006419,"ts":1766586017}}
+
+2019-01-21 18:10:46 INFO  Main:53 - OK
+2019-01-21 18:10:46 INFO  Main:54 - Waiting messages...
+2019-01-21 18:10:46 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 18:10:49 INFO  Main:67 - 195267161: 1
+2019-01-21 18:10:50 INFO  Main:67 - 195267161: Преподаватель
+2019-01-21 18:10:54 INFO  Main:67 - 195267161: 23
+2019-01-21 18:28:21 INFO  Main:49 - Starting...
+2019-01-21 18:28:21 INFO  Main:104 - Reading config file
+2019-01-21 18:28:22 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"843e3315b6a05205518e93d7d6bc2046b2472b53","pts":10006440,"ts":1766586048}}
+
+2019-01-21 18:28:22 INFO  Main:59 - OK
+2019-01-21 18:28:22 INFO  Main:60 - Waiting messages...
+2019-01-21 18:28:22 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 18:28:27 INFO  Main:76 - 195267161: Звонки
+2019-01-21 18:28:27 INFO  Main:293 - Checking message
+2019-01-21 18:28:31 INFO  Main:76 - 195267161: Погода
+2019-01-21 18:28:31 INFO  Main:293 - Checking message
+2019-01-21 18:28:38 INFO  Main:76 - 195267161: Отписаться от бота
+2019-01-21 18:28:38 INFO  Main:293 - Checking message
+2019-01-21 18:28:40 INFO  Main:76 - 195267161: Студент
+2019-01-21 18:28:41 INFO  Main:76 - 195267161: 1 Курс
+2019-01-21 18:28:43 INFO  Main:76 - 195267161: ССА
+2019-01-21 18:30:40 INFO  Main:76 - 195267161: 18-11-2
+2019-01-21 18:30:40 ERROR Main:237 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 117 328 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:57)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 117 328 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readPacket(MysqlaProtocol.java:527)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.checkErrorPacket(MysqlaProtocol.java:723)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:662)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 11 more
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.cj.core.io.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.cj.core.io.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.cj.core.io.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.core.io.FullReadInputStream.readFully(FullReadInputStream.java:58)
+	at com.mysql.cj.mysqla.io.SimplePacketReader.readHeader(SimplePacketReader.java:60)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:48)
+	at com.mysql.cj.mysqla.io.MultiPacketReader.readHeader(MultiPacketReader.java:51)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readPacket(MysqlaProtocol.java:521)
+	... 16 more
+2019-01-21 18:30:40 ERROR Main:237 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 117 328 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:57)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 117 328 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readPacket(MysqlaProtocol.java:527)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.checkErrorPacket(MysqlaProtocol.java:723)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:662)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 11 more
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.cj.core.io.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.cj.core.io.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.cj.core.io.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.core.io.FullReadInputStream.readFully(FullReadInputStream.java:58)
+	at com.mysql.cj.mysqla.io.SimplePacketReader.readHeader(SimplePacketReader.java:60)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:48)
+	at com.mysql.cj.mysqla.io.MultiPacketReader.readHeader(MultiPacketReader.java:51)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readPacket(MysqlaProtocol.java:521)
+	... 16 more
+2019-01-21 18:30:40 ERROR Main:237 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 117 328 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:57)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 117 328 milliseconds ago.  The last packet sent successfully to the server was 1 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readPacket(MysqlaProtocol.java:527)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.checkErrorPacket(MysqlaProtocol.java:723)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:662)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 11 more
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.cj.core.io.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.cj.core.io.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.cj.core.io.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.core.io.FullReadInputStream.readFully(FullReadInputStream.java:58)
+	at com.mysql.cj.mysqla.io.SimplePacketReader.readHeader(SimplePacketReader.java:60)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:48)
+	at com.mysql.cj.mysqla.io.MultiPacketReader.readHeader(MultiPacketReader.java:51)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readPacket(MysqlaProtocol.java:521)
+	... 16 more
+2019-01-21 18:31:02 INFO  Main:49 - Starting...
+2019-01-21 18:31:02 INFO  Main:104 - Reading config file
+2019-01-21 18:31:03 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"a1ce7239fee37f7b8f7b603d72e9dddba13e4df3","pts":10006488,"ts":1766586109}}
+
+2019-01-21 18:31:03 INFO  Main:59 - OK
+2019-01-21 18:31:03 INFO  Main:60 - Waiting messages...
+2019-01-21 18:31:03 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 18:31:07 INFO  Main:76 - 195267161: 1
+2019-01-21 18:31:09 INFO  Main:76 - 195267161: Студент
+2019-01-21 18:31:11 INFO  Main:76 - 195267161: 1 Курс
+2019-01-21 18:31:12 INFO  Main:76 - 195267161: ССА
+2019-01-21 18:31:13 INFO  Main:76 - 195267161: 18-11-2
+2019-01-21 18:31:15 INFO  Main:76 - 195267161: Отписаться от бота
+2019-01-21 18:31:15 INFO  Main:293 - Checking message
+2019-01-21 18:31:16 INFO  Main:76 - 195267161: Студент
+2019-01-21 18:31:17 INFO  Main:76 - 195267161: 1 Курс
+2019-01-21 18:31:19 INFO  Main:76 - 195267161: ССА
+2019-01-21 18:31:20 INFO  Main:76 - 195267161: 18-11-1
+2019-01-21 18:31:24 INFO  Main:76 - 195267161: Отписаться от бота
+2019-01-21 18:31:24 INFO  Main:293 - Checking message
+2019-01-21 18:31:25 INFO  Main:76 - 195267161: Студент
+2019-01-21 18:31:26 INFO  Main:76 - 195267161: 1 Курс
+2019-01-21 18:31:28 INFO  Main:76 - 195267161: ССА
+2019-01-21 18:31:30 INFO  Main:76 - 195267161: 18-11-2
+2019-01-21 19:20:50 INFO  Main:49 - Starting...
+2019-01-21 19:20:50 INFO  Main:104 - Reading config file
+2019-01-21 19:20:51 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"da51ef14155d79817fd140b2c2522f75c518b10a","pts":10006604,"ts":1766586256}}
+
+2019-01-21 19:20:51 INFO  Main:59 - OK
+2019-01-21 19:20:51 INFO  Main:60 - Waiting messages...
+2019-01-21 19:20:51 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 19:24:38 INFO  Main:49 - Starting...
+2019-01-21 19:24:38 INFO  Main:104 - Reading config file
+2019-01-21 19:24:39 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"058b758297a06642f36b1497db49a8b753e2b689","pts":10006604,"ts":1766586256}}
+
+2019-01-21 19:24:39 INFO  Main:59 - OK
+2019-01-21 19:24:39 INFO  Main:60 - Waiting messages...
+2019-01-21 19:24:39 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 19:24:42 INFO  Main:76 - 195267161: Расписание
+2019-01-21 19:24:42 INFO  Main:293 - Checking message
+2019-01-21 19:24:42 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:24:43 INFO  Main:377 - Ok
+2019-01-21 19:24:43 INFO  Main:378 - Result:1
+2019-01-21 19:24:51 INFO  Main:76 - 195267161: На завтра
+2019-01-21 19:24:51 INFO  Main:293 - Checking message
+2019-01-21 19:24:51 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:24:51 INFO  Main:377 - Ok
+2019-01-21 19:24:51 INFO  Main:378 - Result:1
+2019-01-21 19:33:06 INFO  Main:49 - Starting...
+2019-01-21 19:33:06 INFO  Main:104 - Reading config file
+2019-01-21 19:33:07 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"14fd02e8a2dc54790a84df58dec5023218711368","pts":10006618,"ts":1766586274}}
+
+2019-01-21 19:33:07 INFO  Main:59 - OK
+2019-01-21 19:33:07 INFO  Main:60 - Waiting messages...
+2019-01-21 19:33:07 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 19:33:14 INFO  Main:76 - 195267161: Отписаться от бота
+2019-01-21 19:33:14 INFO  Main:293 - Checking message
+2019-01-21 19:33:16 INFO  Main:76 - 195267161: Студент
+2019-01-21 19:33:17 INFO  Main:76 - 195267161: 1 Курс
+2019-01-21 19:33:18 INFO  Main:76 - 195267161: ССА
+2019-01-21 19:33:19 INFO  Main:76 - 195267161: 18-11-1
+2019-01-21 19:33:21 INFO  Main:76 - 195267161: Отписаться от бота
+2019-01-21 19:33:21 INFO  Main:293 - Checking message
+2019-01-21 19:33:23 INFO  Main:76 - 195267161: Преподаватель
+2019-01-21 19:33:28 INFO  Main:76 - 195267161: 23
+2019-01-21 19:33:31 INFO  Main:76 - 195267161: Расписание
+2019-01-21 19:33:31 INFO  Main:293 - Checking message
+2019-01-21 19:33:31 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:33:31 INFO  Main:380 - Ok
+2019-01-21 19:33:31 INFO  Main:381 - Result:1
+2019-01-21 19:34:48 INFO  Main:49 - Starting...
+2019-01-21 19:34:48 INFO  Main:104 - Reading config file
+2019-01-21 19:34:49 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"fea799434dc380c3dd5227fa6114f2220f132512","pts":10006685,"ts":1766586361}}
+
+2019-01-21 19:34:49 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 19:34:49 INFO  Main:59 - OK
+2019-01-21 19:34:49 INFO  Main:60 - Waiting messages...
+2019-01-21 19:34:50 INFO  Main:76 - 195267161: Расписание
+2019-01-21 19:34:50 INFO  Main:293 - Checking message
+2019-01-21 19:34:50 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:34:50 ERROR Main:267 - 
+java.sql.SQLException: Column '_teacher' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:574)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:892)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:344)
+	at ru.nop.Main.getTimeTableByTime(Main.java:430)
+	at ru.nop.Main.checkMessage(Main.java:307)
+	at ru.nop.Main.lambda$main$0(Main.java:80)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 19:34:50 INFO  Main:433 - No classes
+2019-01-21 19:36:04 INFO  Main:49 - Starting...
+2019-01-21 19:36:04 INFO  Main:104 - Reading config file
+2019-01-21 19:36:23 INFO  Main:49 - Starting...
+2019-01-21 19:36:23 INFO  Main:104 - Reading config file
+2019-01-21 19:36:24 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"b682ee0c308b3d386e7aa69005337d4b88a1656d","pts":10006692,"ts":1766586370}}
+
+2019-01-21 19:36:24 INFO  Main:59 - OK
+2019-01-21 19:36:24 INFO  Main:60 - Waiting messages...
+2019-01-21 19:36:24 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 19:36:28 INFO  Main:76 - 195267161: Расписание
+2019-01-21 19:36:28 INFO  Main:293 - Checking message
+2019-01-21 19:36:28 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:36:28 ERROR Main:267 - 
+java.sql.SQLException: Column '_teacher' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:574)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:892)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:344)
+	at ru.nop.Main.getTimeTableByTime(Main.java:430)
+	at ru.nop.Main.checkMessage(Main.java:307)
+	at ru.nop.Main.lambda$main$0(Main.java:80)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 19:36:28 INFO  Main:433 - No classes
+2019-01-21 19:36:31 INFO  Main:76 - 195267161: Расписание
+2019-01-21 19:36:31 INFO  Main:293 - Checking message
+2019-01-21 19:36:31 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:36:31 ERROR Main:267 - 
+java.sql.SQLException: Column '_teacher' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:574)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:892)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:344)
+	at ru.nop.Main.getTimeTableByTime(Main.java:430)
+	at ru.nop.Main.checkMessage(Main.java:307)
+	at ru.nop.Main.lambda$main$0(Main.java:80)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 19:36:31 INFO  Main:433 - No classes
+2019-01-21 19:37:16 INFO  Main:49 - Starting...
+2019-01-21 19:37:16 INFO  Main:104 - Reading config file
+2019-01-21 19:37:17 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"f7019a9f1f47b9ad84c83e5513db8bbfc8494d18","pts":10006706,"ts":1766586388}}
+
+2019-01-21 19:37:17 INFO  Main:59 - OK
+2019-01-21 19:37:17 INFO  Main:60 - Waiting messages...
+2019-01-21 19:37:17 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 19:37:19 INFO  Main:76 - 195267161: Расписание
+2019-01-21 19:37:19 INFO  Main:293 - Checking message
+2019-01-21 19:37:19 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:37:19 ERROR Main:267 - 
+java.sql.SQLException: Column '_lesson' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:574)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:892)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:357)
+	at ru.nop.Main.getTimeTableByTime(Main.java:430)
+	at ru.nop.Main.checkMessage(Main.java:307)
+	at ru.nop.Main.lambda$main$0(Main.java:80)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-01-21 19:37:19 INFO  Main:433 - No classes
+2019-01-21 19:37:38 INFO  Main:49 - Starting...
+2019-01-21 19:37:38 INFO  Main:104 - Reading config file
+2019-01-21 19:37:39 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"d4f41c8015a2c0ebc792276654a61a9037ae167b","pts":10006715,"ts":1766586400}}
+
+2019-01-21 19:37:39 INFO  Main:59 - OK
+2019-01-21 19:37:39 INFO  Main:60 - Waiting messages...
+2019-01-21 19:37:39 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 19:37:42 INFO  Main:76 - 195267161: Расписание
+2019-01-21 19:37:42 INFO  Main:293 - Checking message
+2019-01-21 19:37:42 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:37:42 INFO  Main:384 - Ok
+2019-01-21 19:37:42 INFO  Main:385 - Result:1
+2019-01-21 19:42:00 INFO  Main:49 - Starting...
+2019-01-21 19:42:00 INFO  Main:104 - Reading config file
+2019-01-21 19:42:01 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"ab15e7ca136183b1b28d95a38e95eff6b8423006","pts":10006721,"ts":1766586407}}
+
+2019-01-21 19:42:01 INFO  Main:59 - OK
+2019-01-21 19:42:01 INFO  Main:60 - Waiting messages...
+2019-01-21 19:42:01 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 19:42:04 INFO  Main:76 - 195267161: На всю неделю
+2019-01-21 19:42:04 INFO  Main:293 - Checking message
+2019-01-21 19:42:04 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:42:04 INFO  Main:400 - Ok
+2019-01-21 19:42:04 INFO  Main:401 - Result:2
+2019-01-21 19:42:04 INFO  Main:436 - Sending message...
+2019-01-21 19:42:04 INFO  Main:440 - Ok
+2019-01-21 19:42:05 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"Пятница Гуляев И. П.\n1. Основы робототехники с практикумом. \nКабинет: 414 \n1. Основы алгоритмизации и программирования. \nКабинет: 414 \n\nВторник\n1. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n\nСуббота\n2. Основы робототехники с практикумом. \nКабинет: 414 \n\nПятница\n2. Основы алгоритмизации и программирования. \nКабинет: 414 \n\nВторник\n2. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n\nСуббота\n2. Операционные системы и среды. \nКабинет: 414 \n\nСреда\n3. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: 414 \n\nПонедельник\n3. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n\nПятница\n3. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n\nВторник\n3. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n\nСуббота\n3. Операционные системы и среды. \nКабинет: 414 \n\nЧетверг\n3. Операционные системы и среды. \nКабинет: 414 \n\nСреда\n4. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: 414 \n\nПонедельник\n4. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n\nПятница\n4. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n\nВторник\n4. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n\nСреда\n4. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n\nСуббота\n4. Операционные системы и среды. \nКабинет: 414 \n\nЧетверг\n5. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: 414 \n\nПонедельник\n5. Основы робототехники с практикумом. \nКабинет: 414 \n\nЧетверг\n5. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n\nВторник\n5. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n\nСреда\n5. Основы алгоритмизации и программирования. \nКабинет: 414 \n\nСуббота\n5. Архитектура аппаратных средств. \nКабинет: 414 \n\nПятница\n6. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: 414 \n\nПонедельник\n6. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n\nСреда\n6. Основы робототехники с практикумом. \nКабинет: 414 \n\nЧетверг\n6. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n\nВторник\n6. Основы алгоритмизации и программирования. \nКабинет: 414 \n\nСуббота\n6. Архитектура аппаратных средств. \nКабинет: 414 \n\nПятница\n7. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n\nСреда\n7. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n\nЧетверг\n7. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n\nПятница\n7. Основы алгоритмизации и программирования. \nКабинет: 414 \n\nСуббота\n7. Архитектура аппаратных средств. \nКабинет: 414 \n\nВторник\n7. Операционные системы и среды. \nКабинет: 414 \n\nПонедельник\n8. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: - \n\nСреда\n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"8. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n\nЧетверг\n8. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n\nПятница\n8. Основы алгоритмизации и программирования. \nКабинет: 414 \n\nСуббота\n8. Операционные системы и среды. \nКабинет: 414 \n\nПонедельник\n8. Архитектура аппаратных средств. \nКабинет: 414 \n\nВторник\n9. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: - \n\nСреда\n9. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n\nПонедельник\n9. Основы робототехники с практикумом. \nКабинет: 414 \n\nВторник\n10. Подгруппа №2\nWEB-программирование. \nКабинет: 412 \n\nПонедельник\n10. Основы робототехники с практикумом. \nКабинет: 414 \n\nВторник\n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"","title":" ... ","peer_id":195267161})]
+2019-01-21 19:42:05 ERROR Message:782 - Message not sent: false
+2019-01-21 19:42:31 INFO  Main:49 - Starting...
+2019-01-21 19:42:31 INFO  Main:104 - Reading config file
+2019-01-21 19:42:32 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"8fb8e335224b26717693186f143416325ae3d5d5","pts":10006730,"ts":1766586418}}
+
+2019-01-21 19:42:32 INFO  Main:59 - OK
+2019-01-21 19:42:32 INFO  Main:60 - Waiting messages...
+2019-01-21 19:42:32 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 19:42:35 INFO  Main:76 - 195267161: На всю неделю
+2019-01-21 19:42:35 INFO  Main:293 - Checking message
+2019-01-21 19:42:35 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:42:35 INFO  Main:400 - Ok
+2019-01-21 19:42:35 INFO  Main:401 - Result:2
+2019-01-21 19:42:35 INFO  Main:436 - Sending message...
+2019-01-21 19:42:35 INFO  Main:440 - Ok
+2019-01-21 19:42:35 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"Вторник Гуляев И. П.\n9. Основы робототехники с практикумом. \nКабинет: 414 \n10. Основы робототехники с практикумом. \nКабинет: 414 \n1. Основы алгоритмизации и программирования. \nКабинет: 414 \n2. Основы алгоритмизации и программирования. \nКабинет: 414 \n3. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n4. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n5. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n6. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n7. Архитектура аппаратных средств. \nКабинет: 414 \n8. Архитектура аппаратных средств. \nКабинет: 414 \n3. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: 414 \n\nПонедельник\n4. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: 414 \n5. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: 414 \n6. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: 414 \n9. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n10. Подгруппа №2\nWEB-программирование. \nКабинет: 412 \n8. Операционные системы и среды. \nКабинет: 414 \n7. Операционные системы и среды. \nКабинет: 414 \n1. Основы робототехники с практикумом. \nКабинет: 414 \n\nПятница\n2. Основы робототехники с практикумом. \nКабинет: 414 \n3. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n4. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n7. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n8. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n5. Архитектура аппаратных средств. \nКабинет: 414 \n6. Архитектура аппаратных средств. \nКабинет: 414 \n8. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: - \n\nСреда\n9. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: - \n6. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n7. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n4. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n5. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n2. Операционные системы и среды. \nКабинет: 414 \n3. Операционные системы и среды. \nКабинет: 414 \n1. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n\nСуббота\n2. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n3. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n4. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n5. Основы алгоритмизации и программирования. \nКабинет: 414 \n6. Основы алгоритмизации и программирования. \nКабинет: 414 \n7. Основы алгоритмизации и программирования. \nКабинет: 414 \n8. Основы алгоритмизации и программирования. \nКабинет: 414 \n5. Основы робототехники с практикумом. \nКабинет: 414 \n\nЧетверг\n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"6. Основы робототехники с практикумом. \nКабинет: 414 \n7. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n8. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n3. Операционные системы и среды. \nКабинет: 414 \n4. Операционные системы и среды. \nКабинет: 414 \n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"","title":" ... ","peer_id":195267161})]
+2019-01-21 19:42:35 ERROR Message:782 - Message not sent: false
+2019-01-21 19:43:39 INFO  Main:49 - Starting...
+2019-01-21 19:43:39 INFO  Main:104 - Reading config file
+2019-01-21 19:43:40 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"c063b86a8c04d4f8555a190e842e0e5b74f8f513","pts":10006739,"ts":1766586429}}
+
+2019-01-21 19:43:40 INFO  Main:59 - OK
+2019-01-21 19:43:40 INFO  Main:60 - Waiting messages...
+2019-01-21 19:43:40 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 19:43:44 INFO  Main:76 - 195267161: На всю неделю
+2019-01-21 19:43:44 INFO  Main:293 - Checking message
+2019-01-21 19:43:44 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:43:44 INFO  Main:400 - Ok
+2019-01-21 19:43:44 INFO  Main:401 - Result:2
+2019-01-21 19:43:44 INFO  Main:436 - Sending message...
+2019-01-21 19:43:44 INFO  Main:440 - Ok
+2019-01-21 19:43:44 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"Понедельник Гуляев И. П.\n3. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: 414 \n4. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: 414 \n5. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: 414 \n6. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: 414 \n9. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n10. Подгруппа №2\nWEB-программирование. \nКабинет: 412 \n8. Операционные системы и среды. \nКабинет: 414 \n7. Операционные системы и среды. \nКабинет: 414 \n9. Основы робототехники с практикумом. \nКабинет: 414 \n\nВторник\n10. Основы робототехники с практикумом. \nКабинет: 414 \n1. Основы алгоритмизации и программирования. \nКабинет: 414 \n2. Основы алгоритмизации и программирования. \nКабинет: 414 \n3. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n4. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n5. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n6. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n7. Архитектура аппаратных средств. \nКабинет: 414 \n8. Архитектура аппаратных средств. \nКабинет: 414 \n8. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: - \n\nСреда\n9. МДК.03.01 Теоретические основы технического обслуживания и эксплуатации автоматических и мехатронных систем. \nКабинет: - \n6. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n7. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n4. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n5. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n2. Операционные системы и среды. \nКабинет: 414 \n3. Операционные системы и среды. \nКабинет: 414 \n5. Основы робототехники с практикумом. \nКабинет: 414 \n\nЧетверг\n6. Основы робототехники с практикумом. \nКабинет: 414 \n7. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n8. МДК 02.01 Администрирование сетевых операционных систем. \nКабинет: 414 \n3. Операционные системы и среды. \nКабинет: 414 \n4. Операционные системы и среды. \nКабинет: 414 \n1. Основы робототехники с практикумом. \nКабинет: 414 \n\nПятница\n2. Основы робототехники с практикумом. \nКабинет: 414 \n3. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n4. Подгруппа №2\nWEB-программирование. \nКабинет: 414 \n7. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n8. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n5. Архитектура аппаратных средств. \nКабинет: 414 \n6. Архитектура аппаратных средств. \nКабинет: 414 \n1. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n\nСуббота\n2. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n3. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"4. Подгруппа №2\nОсновы алгоритмизации и программирования. \nКабинет: 414 \n5. Основы алгоритмизации и программирования. \nКабинет: 414 \n6. Основы алгоритмизации и программирования. \nКабинет: 414 \n7. Основы алгоритмизации и программирования. \nКабинет: 414 \n8. Основы алгоритмизации и программирования. \nКабинет: 414 \n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"","title":" ... ","peer_id":195267161})]
+2019-01-21 19:43:44 ERROR Message:782 - Message not sent: false
+2019-01-21 19:44:28 INFO  Main:49 - Starting...
+2019-01-21 19:44:28 INFO  Main:104 - Reading config file
+2019-01-21 19:44:29 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"6023ce112f24e1ef8f44b811b33d410546009979","pts":10006748,"ts":1766586440}}
+
+2019-01-21 19:44:29 INFO  Main:59 - OK
+2019-01-21 19:44:29 INFO  Main:60 - Waiting messages...
+2019-01-21 19:44:29 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-21 19:44:50 INFO  Main:76 - 195267161: Расписание
+2019-01-21 19:44:50 INFO  Main:293 - Checking message
+2019-01-21 19:44:50 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:44:50 INFO  Main:400 - Ok
+2019-01-21 19:44:50 INFO  Main:401 - Result:1
+2019-01-21 19:44:53 INFO  Main:76 - 195267161: Тех. поддержка
+2019-01-21 19:44:53 INFO  Main:293 - Checking message
+2019-01-21 19:44:53 ERROR Executor:123 - Errors when executing: [{"error_msg":"Can't send messages for users without permission","method":"messages.send","error_code":901},{"error_msg":"Can't send messages for users without permission","method":"messages.send","error_code":901}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"vk.com/id195267161 : Тех. поддержка","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"vk.com/id195267161 : Тех. поддержка","peer_id":504890822}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"vk.com/id195267161 : Тех. поддержка","peer_id":284041369}),API.messages.send({"message":"Тех. поддержка","title":" ... ","peer_id":195267161})]
+2019-01-21 19:44:53 ERROR Message:782 - Message not sent: false
+2019-01-21 19:44:53 ERROR Message:782 - Message not sent: false
+2019-01-21 19:44:59 INFO  Main:76 - 195267161: Расписание
+2019-01-21 19:44:59 INFO  Main:293 - Checking message
+2019-01-21 19:44:59 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-21 19:44:59 INFO  Main:400 - Ok
+2019-01-21 19:44:59 INFO  Main:401 - Result:1
+2019-01-21 19:45:01 INFO  Main:76 - 195267161: dgfdg
+2019-01-21 19:45:01 INFO  Main:293 - Checking message
+2019-01-21 19:45:01 INFO  Main:358 - Default
+2019-01-21 19:45:03 INFO  Main:76 - 195267161: dfg
+2019-01-21 19:45:03 INFO  Main:293 - Checking message
+2019-01-21 19:45:03 INFO  Main:358 - Default
+2019-01-21 19:45:04 INFO  Main:76 - 195267161: dgf
+2019-01-21 19:45:04 INFO  Main:293 - Checking message
+2019-01-21 19:45:04 INFO  Main:358 - Default
+2019-01-21 19:45:04 INFO  Main:76 - 195267161: dfg
+2019-01-21 19:45:04 INFO  Main:293 - Checking message
+2019-01-21 19:45:04 INFO  Main:358 - Default
+2019-01-21 19:45:06 INFO  Main:76 - 195267161: e
+2019-01-21 19:45:06 INFO  Main:293 - Checking message
+2019-01-21 19:45:06 INFO  Main:358 - Default
+2019-01-21 19:45:07 INFO  Main:76 - 195267161: r
+2019-01-21 19:45:07 INFO  Main:293 - Checking message
+2019-01-21 19:45:07 INFO  Main:358 - Default
