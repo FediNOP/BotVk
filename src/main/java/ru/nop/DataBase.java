@@ -11,7 +11,7 @@ import java.util.List;
 
 public class DataBase {
 
-    private static String url = "jdbc:mysql://127.0.0.1:3306/timetable?" + "&useLegacyDatetimeCode=false" + "&amp" + "&serverTimezone=UTC";
+    private static String url = "jdbc:mysql://127.0.0.1:3306/timetable?autoReconnect=true";
     private static String user = "root";
     private static String pass = "";
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
@@ -300,7 +300,7 @@ public class DataBase {
 
     public static String[] getTimeTable(int id, int addDay){
 
-        int day = DateTime.now().dayOfWeek().get() + addDay;
+        int day = DateTime.now().plusDays(addDay).dayOfWeek().get();
         final String sql;
         String name = getUser(id);
         List<String> listOfResult = new ArrayList<>();

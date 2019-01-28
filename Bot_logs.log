@@ -1642,3 +1642,798 @@ java.sql.SQLException: Column '_lesson' not found.
 2019-01-21 19:45:07 INFO  Main:76 - 195267161: r
 2019-01-21 19:45:07 INFO  Main:293 - Checking message
 2019-01-21 19:45:07 INFO  Main:358 - Default
+2019-01-27 13:00:33 INFO  Main:49 - Starting...
+2019-01-27 13:00:34 INFO  Main:104 - Reading config file
+2019-01-27 13:00:37 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"4472b5b3e57afc2000b0acf10cd4833d747bc7c2","pts":10006777,"ts":1654662150}}
+
+2019-01-27 13:00:37 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-27 13:00:37 INFO  Main:59 - OK
+2019-01-27 13:00:37 INFO  Main:60 - Waiting messages...
+2019-01-27 13:10:03 INFO  Main:76 - 195267161: Расписание
+2019-01-27 13:10:04 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 569 154 milliseconds ago.  The last packet sent successfully to the server was 569 258 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:58)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 569 154 milliseconds ago.  The last packet sent successfully to the server was 569 258 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 11 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 15 more
+2019-01-27 13:10:06 INFO  Main:76 - 195267161: Студент
+2019-01-27 13:10:06 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 569 154 milliseconds ago.  The last packet sent successfully to the server was 569 258 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:58)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 569 154 milliseconds ago.  The last packet sent successfully to the server was 569 258 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 11 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 15 more
+2019-01-27 13:10:08 INFO  Main:76 - 195267161: 1 Курс
+2019-01-27 13:10:08 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 569 154 milliseconds ago.  The last packet sent successfully to the server was 569 258 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:58)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 569 154 milliseconds ago.  The last packet sent successfully to the server was 569 258 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 11 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 15 more
+2019-01-27 13:10:10 INFO  Main:76 - 195267161: ССА
+2019-01-27 13:10:10 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 569 154 milliseconds ago.  The last packet sent successfully to the server was 569 258 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:58)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 569 154 milliseconds ago.  The last packet sent successfully to the server was 569 258 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 11 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 15 more
+2019-01-27 13:10:10 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 569 154 milliseconds ago.  The last packet sent successfully to the server was 569 258 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:58)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 569 154 milliseconds ago.  The last packet sent successfully to the server was 569 258 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 11 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 15 more
+2019-01-27 13:13:27 INFO  Main:49 - Starting...
+2019-01-27 13:13:27 INFO  Main:104 - Reading config file
+2019-01-27 13:13:28 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"8b0bf6f02d27902902fbf2169e4c7beb6cdb14c6","pts":10006802,"ts":1654662181}}
+
+2019-01-27 13:13:28 INFO  Main:59 - OK
+2019-01-27 13:13:28 INFO  Main:60 - Waiting messages...
+2019-01-27 13:13:28 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-27 13:13:40 INFO  Main:76 - 195267161: 1
+2019-01-27 13:13:40 INFO  Main:293 - Checking message
+2019-01-27 13:13:40 INFO  Main:358 - Default
+2019-01-27 13:13:43 INFO  Main:76 - 195267161: 1
+2019-01-27 13:13:43 INFO  Main:293 - Checking message
+2019-01-27 13:13:43 INFO  Main:358 - Default
+2019-01-27 13:13:47 INFO  Main:76 - 195267161: 1
+2019-01-27 13:13:47 INFO  Main:293 - Checking message
+2019-01-27 13:13:47 INFO  Main:358 - Default
+2019-01-27 13:13:48 INFO  Main:76 - 195267161: 2
+2019-01-27 13:13:48 INFO  Main:293 - Checking message
+2019-01-27 13:13:48 INFO  Main:358 - Default
+2019-01-27 13:13:48 INFO  Main:76 - 195267161: 3
+2019-01-27 13:13:48 INFO  Main:293 - Checking message
+2019-01-27 13:13:48 INFO  Main:358 - Default
+2019-01-27 13:14:07 INFO  Main:76 - 195267161: 2
+2019-01-27 13:14:07 INFO  Main:293 - Checking message
+2019-01-27 13:14:07 INFO  Main:358 - Default
+2019-01-27 13:14:49 INFO  Main:76 - 195267161: Студнт
+2019-01-27 13:14:49 INFO  Main:293 - Checking message
+2019-01-27 13:14:49 INFO  Main:358 - Default
+2019-01-27 13:14:54 INFO  Main:76 - 195267161: Расписание
+2019-01-27 13:14:54 INFO  Main:293 - Checking message
+2019-01-27 13:14:54 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:14:54 WARN  Main:349 - No data
+2019-01-27 13:14:54 INFO  Main:433 - No classes
+2019-01-27 13:15:40 INFO  Main:76 - 195267161: На завтра
+2019-01-27 13:15:40 INFO  Main:293 - Checking message
+2019-01-27 13:15:40 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:15:41 WARN  Main:349 - No data
+2019-01-27 13:15:41 INFO  Main:433 - No classes
+2019-01-27 13:15:52 INFO  Main:49 - Starting...
+2019-01-27 13:15:53 INFO  Main:104 - Reading config file
+2019-01-27 13:15:54 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"776ca38795bd54b7d59714f5ced50c4bb21f9a62","pts":10006822,"ts":1654662214}}
+
+2019-01-27 13:15:54 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-27 13:15:54 INFO  Main:59 - OK
+2019-01-27 13:15:54 INFO  Main:60 - Waiting messages...
+2019-01-27 13:15:57 INFO  Main:76 - 195267161: Расписание
+2019-01-27 13:15:57 INFO  Main:293 - Checking message
+2019-01-27 13:15:57 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:16:58 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 61 039 milliseconds ago.  The last packet sent successfully to the server was 4 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:346)
+	at ru.nop.Main.getTimeTableByTime(Main.java:430)
+	at ru.nop.Main.checkMessage(Main.java:307)
+	at ru.nop.Main.lambda$main$0(Main.java:80)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 61 039 milliseconds ago.  The last packet sent successfully to the server was 4 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readPacket(MysqlaProtocol.java:527)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.checkErrorPacket(MysqlaProtocol.java:723)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:662)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 14 more
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.cj.core.io.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.cj.core.io.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.cj.core.io.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.core.io.FullReadInputStream.readFully(FullReadInputStream.java:58)
+	at com.mysql.cj.mysqla.io.SimplePacketReader.readHeader(SimplePacketReader.java:60)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:48)
+	at com.mysql.cj.mysqla.io.MultiPacketReader.readHeader(MultiPacketReader.java:51)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readPacket(MysqlaProtocol.java:521)
+	... 19 more
+2019-01-27 13:16:58 INFO  Main:433 - No classes
+2019-01-27 13:17:40 INFO  Main:49 - Starting...
+2019-01-27 13:17:40 INFO  Main:104 - Reading config file
+2019-01-27 13:17:41 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"30efe08cb1ca1b78b727ec6ec7a9e2c498dfb754","pts":10006829,"ts":1654662223}}
+
+2019-01-27 13:17:41 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-27 13:17:41 INFO  Main:59 - OK
+2019-01-27 13:17:41 INFO  Main:60 - Waiting messages...
+2019-01-27 13:17:51 INFO  Main:76 - 195267161: На завтра
+2019-01-27 13:17:51 INFO  Main:293 - Checking message
+2019-01-27 13:17:51 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:19:02 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 65 129 milliseconds ago.  The last packet sent successfully to the server was 6 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:346)
+	at ru.nop.Main.getTimeTableByTime(Main.java:430)
+	at ru.nop.Main.checkMessage(Main.java:324)
+	at ru.nop.Main.lambda$main$0(Main.java:80)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 65 129 milliseconds ago.  The last packet sent successfully to the server was 6 milliseconds ago.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readPacket(MysqlaProtocol.java:527)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.checkErrorPacket(MysqlaProtocol.java:723)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:662)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 14 more
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.cj.core.io.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.cj.core.io.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.cj.core.io.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.core.io.FullReadInputStream.readFully(FullReadInputStream.java:58)
+	at com.mysql.cj.mysqla.io.SimplePacketReader.readHeader(SimplePacketReader.java:60)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:48)
+	at com.mysql.cj.mysqla.io.MultiPacketReader.readHeader(MultiPacketReader.java:51)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readPacket(MysqlaProtocol.java:521)
+	... 19 more
+2019-01-27 13:20:05 INFO  Main:49 - Starting...
+2019-01-27 13:20:05 INFO  Main:104 - Reading config file
+2019-01-27 13:20:07 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"c852158c3bd03f34591204173f28b1395a1d3139","pts":10006831,"ts":1654662226}}
+
+2019-01-27 13:20:07 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-27 13:20:07 INFO  Main:59 - OK
+2019-01-27 13:20:07 INFO  Main:60 - Waiting messages...
+2019-01-27 13:20:14 INFO  Main:76 - 195267161: Расписание
+2019-01-27 13:20:14 INFO  Main:293 - Checking message
+2019-01-27 13:20:14 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:20:22 INFO  Main:76 - 195267161: На завтра
+2019-01-27 13:20:22 WARN  Main:349 - No data
+2019-01-27 13:20:22 INFO  Main:433 - No classes
+2019-01-27 13:20:22 INFO  Main:293 - Checking message
+2019-01-27 13:20:22 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:20:28 INFO  Main:400 - Ok
+2019-01-27 13:20:28 INFO  Main:401 - Result:1
+2019-01-27 13:20:46 INFO  Main:76 - 195267161: Отписаться от бота
+2019-01-27 13:20:46 INFO  Main:293 - Checking message
+2019-01-27 13:20:48 INFO  Main:76 - 195267161: Студент
+2019-01-27 13:20:50 INFO  Main:76 - 195267161: 1 Курс
+2019-01-27 13:20:51 INFO  Main:76 - 195267161: ССА
+2019-01-27 13:20:53 INFO  Main:76 - 195267161: 18-11-2
+2019-01-27 13:20:55 INFO  Main:76 - 195267161: На завтра
+2019-01-27 13:20:55 INFO  Main:293 - Checking message
+2019-01-27 13:20:55 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:21:01 INFO  Main:400 - Ok
+2019-01-27 13:21:01 INFO  Main:401 - Result:1
+2019-01-27 13:21:40 INFO  Main:76 - 195267161: На всю неделю
+2019-01-27 13:21:40 INFO  Main:293 - Checking message
+2019-01-27 13:21:40 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:21:47 INFO  Main:400 - Ok
+2019-01-27 13:21:47 INFO  Main:401 - Result:1
+2019-01-27 13:28:58 INFO  Main:76 - 195267161: Погода
+2019-01-27 13:28:58 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 431 419 milliseconds ago.  The last packet sent successfully to the server was 431 623 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:58)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 431 419 milliseconds ago.  The last packet sent successfully to the server was 431 623 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 12 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 16 more
+2019-01-27 13:29:00 INFO  Main:76 - 195267161: Студент
+2019-01-27 13:29:00 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 431 419 milliseconds ago.  The last packet sent successfully to the server was 431 623 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:58)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 431 419 milliseconds ago.  The last packet sent successfully to the server was 431 623 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 12 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 16 more
+2019-01-27 13:29:02 INFO  Main:76 - 195267161: 1 Курс
+2019-01-27 13:29:02 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 431 419 milliseconds ago.  The last packet sent successfully to the server was 431 623 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:58)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 431 419 milliseconds ago.  The last packet sent successfully to the server was 431 623 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 12 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 16 more
+2019-01-27 13:29:03 INFO  Main:76 - 195267161: ССА
+2019-01-27 13:29:03 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 431 419 milliseconds ago.  The last packet sent successfully to the server was 431 623 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:58)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 431 419 milliseconds ago.  The last packet sent successfully to the server was 431 623 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 12 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 16 more
+2019-01-27 13:29:03 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 431 419 milliseconds ago.  The last packet sent successfully to the server was 431 623 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:58)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 431 419 milliseconds ago.  The last packet sent successfully to the server was 431 623 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 12 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 16 more
+2019-01-27 13:30:17 INFO  Main:49 - Starting...
+2019-01-27 13:30:17 INFO  Main:104 - Reading config file
+2019-01-27 13:30:18 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"b320ed4511fc394fdb1e1f4b794b19b6c40daaff","pts":10006919,"ts":1654662336}}
+
+2019-01-27 13:30:18 INFO  Main:59 - OK
+2019-01-27 13:30:18 INFO  Main:60 - Waiting messages...
+2019-01-27 13:30:18 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-27 13:30:23 INFO  Main:76 - 195267161: 1
+2019-01-27 13:30:23 INFO  Main:293 - Checking message
+2019-01-27 13:30:23 INFO  Main:358 - Default
+2019-01-27 13:30:29 INFO  Main:76 - 195267161: Hfcgvcfybt
+2019-01-27 13:30:29 INFO  Main:293 - Checking message
+2019-01-27 13:30:29 INFO  Main:358 - Default
+2019-01-27 13:30:33 INFO  Main:76 - 195267161: Расписание
+2019-01-27 13:30:33 INFO  Main:293 - Checking message
+2019-01-27 13:30:33 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:30:34 WARN  Main:349 - No data
+2019-01-27 13:30:34 INFO  Main:433 - No classes
+2019-01-27 13:30:45 INFO  Main:76 - 195267161: Расписание
+2019-01-27 13:30:45 INFO  Main:293 - Checking message
+2019-01-27 13:30:45 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:30:45 WARN  Main:349 - No data
+2019-01-27 13:30:45 INFO  Main:433 - No classes
+2019-01-27 13:30:48 INFO  Main:76 - 195267161: На завтра
+2019-01-27 13:30:48 INFO  Main:293 - Checking message
+2019-01-27 13:30:48 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:30:48 INFO  Main:400 - Ok
+2019-01-27 13:30:48 INFO  Main:401 - Result:1
+2019-01-27 13:37:36 INFO  Main:76 - 195267161: Звонки
+2019-01-27 13:37:36 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 407 516 milliseconds ago.  The last packet sent successfully to the server was 407 717 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:58)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 407 516 milliseconds ago.  The last packet sent successfully to the server was 407 717 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 11 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 15 more
+2019-01-27 13:41:58 INFO  Main:49 - Starting...
+2019-01-27 13:41:58 INFO  Main:104 - Reading config file
+2019-01-27 13:41:59 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"fe9426e5052ca98c3ed07ffabeaf6ba87836a70f","pts":10006948,"ts":1654662376}}
+
+2019-01-27 13:41:59 INFO  Main:59 - OK
+2019-01-27 13:41:59 INFO  Main:60 - Waiting messages...
+2019-01-27 13:41:59 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-27 13:42:04 INFO  Main:76 - 195267161: Студент
+2019-01-27 13:42:04 INFO  Main:293 - Checking message
+2019-01-27 13:42:04 INFO  Main:358 - Default
+2019-01-27 13:42:15 INFO  Main:76 - 195267161: расписание
+2019-01-27 13:42:15 INFO  Main:293 - Checking message
+2019-01-27 13:42:15 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:42:15 WARN  Main:348 - No data
+2019-01-27 13:42:15 INFO  Main:433 - No classes
+2019-01-27 13:42:30 INFO  Main:76 - 195267161: Расписание
+2019-01-27 13:42:30 INFO  Main:293 - Checking message
+2019-01-27 13:42:30 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:42:30 WARN  Main:348 - No data
+2019-01-27 13:42:30 INFO  Main:433 - No classes
+2019-01-27 13:42:32 INFO  Main:76 - 195267161: На завтра
+2019-01-27 13:42:32 INFO  Main:293 - Checking message
+2019-01-27 13:42:32 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:42:32 INFO  Main:399 - Ok
+2019-01-27 13:42:32 INFO  Main:400 - Result:1
+2019-01-27 13:47:10 INFO  Main:76 - 195267161: Расписание
+2019-01-27 13:47:10 ERROR Main:266 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 278 178 milliseconds ago.  The last packet sent successfully to the server was 278 386 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:57)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 278 178 milliseconds ago.  The last packet sent successfully to the server was 278 386 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 11 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 15 more
+2019-01-27 13:52:07 INFO  Main:49 - Starting...
+2019-01-27 13:52:07 INFO  Main:104 - Reading config file
+2019-01-27 13:52:08 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"10a76993e2e53dae2fd70a652c879bad66662126","pts":10006978,"ts":1654662416}}
+
+2019-01-27 13:52:08 INFO  Main:59 - OK
+2019-01-27 13:52:08 INFO  Main:60 - Waiting messages...
+2019-01-27 13:52:08 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-27 13:52:11 INFO  Main:76 - 195267161: Студент
+2019-01-27 13:52:11 INFO  Main:293 - Checking message
+2019-01-27 13:52:11 INFO  Main:358 - Default
+2019-01-27 13:52:17 INFO  Main:76 - 195267161: расписание
+2019-01-27 13:52:17 INFO  Main:293 - Checking message
+2019-01-27 13:52:17 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:52:18 WARN  Main:349 - No data
+2019-01-27 13:52:18 INFO  Main:433 - No classes
+2019-01-27 13:52:31 INFO  Main:76 - 195267161: На завтра
+2019-01-27 13:52:31 INFO  Main:293 - Checking message
+2019-01-27 13:52:31 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-27 13:52:31 INFO  Main:400 - Ok
+2019-01-27 13:52:31 INFO  Main:401 - Result:1

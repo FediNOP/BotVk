@@ -1,30 +1,6 @@
 
 package nop;
 
-import com.Demo;
-import com.petersamokhin.bots.sdk.clients.Group;
-import com.petersamokhin.bots.sdk.objects.Button;
-import com.petersamokhin.bots.sdk.objects.Color;
-import com.petersamokhin.bots.sdk.objects.Keyboard;
-import com.petersamokhin.bots.sdk.objects.Message;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import ru.nop.CommandRunner;
-import ru.nop.Keyboards;
-import ru.nop.Time;
-import ru.nop.Weather;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.text.SimpleDateFormat;
-import java.util.*;
-import java.util.stream.Collectors;
-
-
 //TODO Linux Commands
 //TODO Notifying users about changes
 //TODO MAFIA Game
@@ -32,7 +8,7 @@ import java.util.stream.Collectors;
 
 
 public class Main {
-
+/*
     private static String token = "73fc947d4e4019e6664180184f2f7c3361413b05c66dd817b15dee4a576fd6d7cb67124c302e4ae3126e9";
     private static int id = 139604069;
 
@@ -580,6 +556,6 @@ public class Main {
         }
 
     }
-
+*/
 
 }
