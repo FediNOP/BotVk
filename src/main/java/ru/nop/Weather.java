@@ -23,7 +23,6 @@ public class Weather {
 
     public static String getWeather() {
 
-        System.out.println(result);
 
         Update();
         if (!result.isEmpty())

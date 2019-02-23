@@ -2437,3 +2437,1124 @@ Caused by: java.net.SocketException: Software caused connection abort: socket wr
 2019-01-27 13:52:31 INFO  Main:428 - Getting timetable today for id: 195267161
 2019-01-27 13:52:31 INFO  Main:400 - Ok
 2019-01-27 13:52:31 INFO  Main:401 - Result:1
+2019-01-30 08:35:59 INFO  Main:49 - Starting...
+2019-01-30 08:36:00 INFO  Main:104 - Reading config file
+2019-01-30 08:36:07 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"8edccf0a2578ec8423ec4bdcf525de7d7936d6ab","pts":10006996,"ts":1773753073}}
+
+2019-01-30 08:36:07 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-30 08:36:07 INFO  Main:59 - OK
+2019-01-30 08:36:07 INFO  Main:60 - Waiting messages...
+2019-01-30 08:36:57 INFO  Main:76 - 195267161: Расписание
+2019-01-30 08:36:57 INFO  Main:293 - Checking message
+2019-01-30 08:36:57 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-30 08:36:58 INFO  Main:400 - Ok
+2019-01-30 08:36:58 INFO  Main:401 - Result:1
+2019-01-30 08:40:10 INFO  Main:76 - 195267161: Расписание
+2019-01-30 08:40:10 ERROR Main:267 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 192 310 milliseconds ago.  The last packet sent successfully to the server was 192 976 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1923)
+	at ru.nop.DataBase.checkUser(DataBase.java:58)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: The last packet successfully received from the server was 192 310 milliseconds ago.  The last packet sent successfully to the server was 192 976 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:561)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sendCommand(MysqlaProtocol.java:644)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.sqlQueryDirect(MysqlaProtocol.java:950)
+	at com.mysql.cj.mysqla.MysqlaSession.sqlQueryDirect(MysqlaSession.java:431)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1978)
+	... 11 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.mysqla.io.SimplePacketSender.send(SimplePacketSender.java:50)
+	at com.mysql.cj.mysqla.io.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:43)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.send(MysqlaProtocol.java:552)
+	... 15 more
+2019-01-30 08:43:28 INFO  Main:49 - Starting...
+2019-01-30 08:43:28 INFO  Main:104 - Reading config file
+2019-01-30 08:43:29 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"eaacd249540f4a7fb620da4fe5d5acffa4635fa2","pts":10007009,"ts":1773753089}}
+
+2019-01-30 08:43:29 INFO  Main:59 - OK
+2019-01-30 08:43:29 INFO  Main:60 - Waiting messages...
+2019-01-30 08:43:29 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-30 08:44:43 INFO  Main:76 - 195267161: Студент
+2019-01-30 08:44:43 INFO  Main:293 - Checking message
+2019-01-30 08:44:43 INFO  Main:358 - Default
+2019-01-30 08:44:48 INFO  Main:76 - 195267161: Расписание
+2019-01-30 08:44:48 INFO  Main:293 - Checking message
+2019-01-30 08:44:48 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-30 08:44:49 INFO  Main:419 - Ok
+2019-01-30 08:44:49 INFO  Main:420 - Result:1
+2019-01-30 08:44:53 INFO  Main:76 - 195267161: Отписаться от бота
+2019-01-30 08:44:53 INFO  Main:293 - Checking message
+2019-01-30 08:44:55 INFO  Main:76 - 195267161: Студент
+2019-01-30 08:44:58 INFO  Main:76 - 195267161: 1 Курс
+2019-01-30 08:44:59 INFO  Main:76 - 195267161: ССА
+2019-01-30 08:45:01 INFO  Main:76 - 195267161: 18-11-1
+2019-01-30 08:45:03 INFO  Main:76 - 195267161: Расписание
+2019-01-30 08:45:03 INFO  Main:293 - Checking message
+2019-01-30 08:45:03 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-30 08:45:03 INFO  Main:419 - Ok
+2019-01-30 08:45:03 INFO  Main:420 - Result:1
+2019-01-30 08:45:06 INFO  Main:76 - 195267161: Погода
+2019-01-30 08:45:06 INFO  Main:293 - Checking message
+2019-01-30 08:45:14 INFO  Main:76 - 195267161: Погода
+2019-01-30 08:45:14 INFO  Main:293 - Checking message
+2019-01-30 08:47:16 INFO  Main:76 - 195267161: Расписание
+2019-01-30 08:47:16 INFO  Main:293 - Checking message
+2019-01-30 08:47:16 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-30 08:47:16 INFO  Main:419 - Ok
+2019-01-30 08:47:16 INFO  Main:420 - Result:1
+2019-01-30 08:48:08 INFO  Main:76 - 195267161: Расписание
+2019-01-30 08:48:08 INFO  Main:293 - Checking message
+2019-01-30 08:48:08 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-30 08:48:08 INFO  Main:419 - Ok
+2019-01-30 08:48:08 INFO  Main:420 - Result:1
+2019-01-30 08:49:55 INFO  Main:76 - 195267161: Расписание
+2019-01-30 08:49:55 INFO  Main:293 - Checking message
+2019-01-30 08:49:55 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-30 08:49:55 INFO  Main:419 - Ok
+2019-01-30 08:49:55 INFO  Main:420 - Result:1
+2019-01-30 08:50:25 INFO  Main:76 - 195267161: Отписаться от бота
+2019-01-30 08:50:25 INFO  Main:293 - Checking message
+2019-01-30 08:50:27 INFO  Main:76 - 195267161: Студент
+2019-01-30 08:50:29 INFO  Main:76 - 195267161: 1 Курс
+2019-01-30 08:50:31 INFO  Main:76 - 195267161: ССА
+2019-01-30 08:50:35 INFO  Main:76 - 195267161: 18-11-2
+2019-01-30 08:50:42 INFO  Main:76 - 195267161: Расписание
+2019-01-30 08:50:42 INFO  Main:293 - Checking message
+2019-01-30 08:50:42 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-30 08:50:42 INFO  Main:419 - Ok
+2019-01-30 08:50:42 INFO  Main:420 - Result:1
+2019-01-30 08:51:37 INFO  Main:49 - Starting...
+2019-01-30 08:51:37 INFO  Main:104 - Reading config file
+2019-01-30 08:51:38 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"f1a819fbb95795d1f065794d89da678a2f24d18d","pts":10007145,"ts":1773753263}}
+
+2019-01-30 08:51:38 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-30 08:51:38 INFO  Main:59 - OK
+2019-01-30 08:51:38 INFO  Main:60 - Waiting messages...
+2019-01-30 08:52:19 INFO  Main:49 - Starting...
+2019-01-30 08:52:19 INFO  Main:104 - Reading config file
+2019-01-30 08:52:20 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"905223136863f94c2245db50e95bf80e4f081f4d","pts":10007145,"ts":1773753263}}
+
+2019-01-30 08:52:20 INFO  Main:59 - OK
+2019-01-30 08:52:20 INFO  Main:60 - Waiting messages...
+2019-01-30 08:52:20 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-01-30 08:52:31 INFO  Main:76 - 195267161: Расписание
+2019-01-30 08:52:31 INFO  Main:293 - Checking message
+2019-01-30 08:52:31 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-30 08:52:31 INFO  Main:419 - Ok
+2019-01-30 08:52:31 INFO  Main:420 - Result:1
+2019-01-30 08:53:29 INFO  Main:76 - 195267161: На всю неделю
+2019-01-30 08:53:29 INFO  Main:293 - Checking message
+2019-01-30 08:53:29 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-01-30 08:53:29 INFO  Main:419 - Ok
+2019-01-30 08:53:29 INFO  Main:420 - Result:2
+2019-01-30 08:53:29 INFO  Main:436 - Sending message...
+2019-01-30 08:53:29 INFO  Main:440 - Ok
+2019-01-30 08:53:30 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"Понедельник ССА 18-11-2\n\n1. Инженерная компьютерная графика. \nПопов А.Н.\nКабинет: 110 \n1. Подгруппа №2\nИнженерная компьютерная графика. \nЛитус А. А.\nКабинет: 412 \n2. Инженерная компьютерная графика. \nПопов А.Н.\nКабинет: 110 \n2. Подгруппа №2\nИнженерная компьютерная графика. \nЛитус А. А.\nКабинет: 412 \n3. Инженерная компьютерная графика. \nПопов А.Н.\nКабинет: 110 \n3. Подгруппа №2\nИнженерная компьютерная графика. \nЛитус А. А.\nКабинет: 412 \n4. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109 \n5. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109 \n6. Операционные системы и среды. \nГуляев И. П.\nКабинет: 414 \n7. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n8. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n1. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308 \n\nВторник\n2. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308 \n3. Физическая культура. \nСандакова Д. Н.\nКабинет: спорт зал \n4. Физическая культура. \nСандакова Д. Н.\nКабинет: спорт зал \n5. Технологии физического уровня передачи данных. \nБородина С. В.\nКабинет: 105 \n6. Технологии физического уровня передачи данных. \nБородина С. В.\nКабинет: 105 \n1. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n\nСреда\n2. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n3. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109 \n4. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109 \n5. Иностранный язык. \nКалугина С.В.\nКабинет: 419 \n5. Подгруппа №2\nИностранный язык. \nВакансия\nКабинет: 419 \n6. Иностранный язык. \nКалугина С.В.\nКабинет: 419 \n6. Подгруппа №2\nИностранный язык. \nВакансия\nКабинет: 419 \n7. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n8. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n3. Основы теории информации. \nПолищук А. А.\nКабинет: 415 \n\nЧетверг\n4. Основы теории информации. \nПолищук А. А.\nКабинет: 415 \n5. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n6. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n7. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n8. МДК 02.01 Администрирование сетевых операционных систем. \nПолищук А. А.\nКабинет: 415 \n9. МДК 02.01 Администрирование сетевых операционных систем. \nПолищук А. А.\nКабинет: 415 \n10. Операционные системы и среды. \nГуляев И. П.\nКабинет: 414 \n1. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n\nПятница\n2. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n3. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308 \n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"4. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308 \n5. Информационные технологии. \nФисенко Е.М.\nКабинет: 211 \n5. Подгруппа №2\nИнформационные технологии. \nАрефьев Е.А.\nКабинет: 109 \n6. Информационные технологии. \nФисенко Е.М.\nКабинет: 211 \n6. Подгруппа №2\nИнформационные технологии. \nАрефьев Е.А.\nКабинет: 109 \n7. Технические средства информатизации. \nПолищук А. А.\nКабинет: 415 \n8. Технические средства информатизации. \nПолищук А. А.\nКабинет: 415 \n9. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n10. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"","title":" ... ","peer_id":195267161})]
+2019-01-30 08:53:30 ERROR Message:782 - Message not sent: false
+2019-02-21 10:27:26 INFO  Main:49 - Starting...
+2019-02-21 10:27:26 INFO  Main:104 - Reading config file
+2019-02-21 10:27:26 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.Main.start(Main.java:53)
+	at ru.nop.Main.main(Main.java:71)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 72
+	at com.mysql.cj.mysqla.io.Buffer.readInteger(Buffer.java:271)
+	at com.mysql.cj.mysqla.io.MysqlaCapabilities.setInitialHandshakePacket(MysqlaCapabilities.java:62)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readServerCapabilities(MysqlaProtocol.java:482)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.beforeHandshake(MysqlaProtocol.java:367)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1412)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:132)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+	... 9 more
+2019-02-21 10:27:26 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.getGroupsNames(DataBase.java:140)
+	at ru.nop.Keyboards.loadKeyboards(Keyboards.java:22)
+	at ru.nop.Main.start(Main.java:54)
+	at ru.nop.Main.main(Main.java:71)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 72
+	at com.mysql.cj.mysqla.io.Buffer.readInteger(Buffer.java:271)
+	at com.mysql.cj.mysqla.io.MysqlaCapabilities.setInitialHandshakePacket(MysqlaCapabilities.java:62)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readServerCapabilities(MysqlaProtocol.java:482)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.beforeHandshake(MysqlaProtocol.java:367)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1412)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:132)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+	... 11 more
+2019-02-21 10:27:26 ERROR Main:93 - 
+java.lang.NullPointerException
+	at ru.nop.DataBase.getGroupsNames(DataBase.java:148)
+	at ru.nop.Keyboards.loadKeyboards(Keyboards.java:22)
+	at ru.nop.Main.start(Main.java:54)
+	at ru.nop.Main.main(Main.java:71)
+2019-02-21 10:27:26 ERROR Main:52 - 
+java.io.IOException: Cannot run program "/bin/sh": CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at ru.nop.CommandRunner.run(CommandRunner.java:23)
+	at ru.nop.Main.main(Main.java:94)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:420)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:151)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+	... 3 more
+2019-02-21 10:27:50 INFO  Main:49 - Starting...
+2019-02-21 10:27:50 INFO  Main:104 - Reading config file
+2019-02-21 10:27:54 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"064dbb5ae754d696f2f03d67ce211892b7f2179e","pts":10007167,"ts":1703664745}}
+
+2019-02-21 10:27:54 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-21 10:27:54 INFO  Main:59 - OK
+2019-02-21 10:27:54 INFO  Main:60 - Waiting messages...
+2019-02-21 10:29:36 INFO  Main:49 - Starting...
+2019-02-21 10:29:37 INFO  Main:104 - Reading config file
+2019-02-21 10:30:36 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"c2363667f5f4a2713bf5c87caee96657ec8f7700","pts":10007167,"ts":1703664745}}
+
+2019-02-21 10:30:36 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-21 10:30:36 INFO  Main:59 - OK
+2019-02-21 10:30:36 INFO  Main:60 - Waiting messages...
+2019-02-21 10:31:06 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=c2363667f5f4a2713bf5c87caee96657ec8f7700&ts=1703664745&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.SocketTimeoutException: Read timed out
+2019-02-21 10:31:06 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-02-21 10:31:08 INFO  Main:76 - 195267161: Расписание
+2019-02-21 10:31:08 INFO  Main:76 - 195267161: Расписание
+2019-02-21 10:31:17 INFO  Main:76 - 195267161: Звонки
+2019-02-21 10:31:30 INFO  Main:293 - Checking message
+2019-02-21 10:31:30 ERROR Main:282 - 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:590)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:57)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1606)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.checkUser(DataBase.java:54)
+	at ru.nop.Main.lambda$main$0(Main.java:78)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:149)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readPacket(MysqlaProtocol.java:527)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.checkErrorPacket(MysqlaProtocol.java:723)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.checkErrorPacket(MysqlaProtocol.java:701)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(MysqlaAuthenticationProvider.java:536)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.connect(MysqlaAuthenticationProvider.java:204)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1414)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:132)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	... 16 more
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.cj.core.io.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.cj.core.io.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.cj.core.io.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.core.io.FullReadInputStream.readFully(FullReadInputStream.java:58)
+	at com.mysql.cj.mysqla.io.SimplePacketReader.readHeader(SimplePacketReader.java:60)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readPacket(MysqlaProtocol.java:521)
+	... 24 more
+2019-02-21 10:32:19 INFO  Main:293 - Checking message
+2019-02-21 10:32:19 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-02-21 10:32:19 INFO  Main:428 - Getting timetable today for id: 195267161
+2019-02-21 10:32:26 INFO  Main:293 - Checking message
+2019-02-21 10:32:27 INFO  Main:419 - Ok
+2019-02-21 10:32:27 INFO  Main:420 - Result:1
+2019-02-21 10:32:27 INFO  Main:419 - Ok
+2019-02-21 10:32:27 INFO  Main:420 - Result:1
+2019-02-21 12:05:28 INFO  Main:50 - Starting...
+2019-02-21 12:05:28 INFO  Main:105 - Reading config file
+2019-02-21 12:05:29 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"9c14415c8ff2df4454e808d70119f4a11de43947","pts":10007184,"ts":1703664764}}
+
+2019-02-21 12:05:29 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-21 12:05:29 INFO  Main:60 - OK
+2019-02-21 12:05:29 INFO  Main:61 - Waiting messages...
+2019-02-21 12:05:34 INFO  Main:77 - 195267161: Расписание
+2019-02-21 12:05:34 INFO  Main:294 - Checking message
+2019-02-21 12:05:34 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-21 12:05:35 INFO  Main:419 - Ok
+2019-02-21 12:05:35 INFO  Main:420 - Result:1
+2019-02-21 12:05:40 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-21 12:05:40 INFO  Main:294 - Checking message
+2019-02-21 12:05:44 INFO  Main:77 - 195267161: Преподаватель
+2019-02-21 12:05:45 INFO  Main:77 - 195267161: 11
+2019-02-21 12:05:48 INFO  Main:77 - 195267161: Расписание
+2019-02-21 12:05:48 INFO  Main:294 - Checking message
+2019-02-21 12:05:48 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-21 12:05:49 WARN  Main:368 - No data
+2019-02-21 12:05:49 INFO  Main:434 - No classes
+2019-02-21 12:05:56 INFO  Main:77 - 195267161: Расписание
+2019-02-21 12:05:56 INFO  Main:294 - Checking message
+2019-02-21 12:05:56 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-21 12:05:56 WARN  Main:368 - No data
+2019-02-21 12:05:56 INFO  Main:434 - No classes
+2019-02-21 12:08:27 INFO  Main:50 - Starting...
+2019-02-21 12:08:28 INFO  Main:105 - Reading config file
+2019-02-21 12:08:39 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"fef285e8f01a6e04b9ac8cab72fffce665fbec86","pts":10007225,"ts":1703664818}}
+
+2019-02-21 12:08:39 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-21 12:08:39 INFO  Main:60 - OK
+2019-02-21 12:08:39 INFO  Main:61 - Waiting messages...
+2019-02-21 12:08:56 INFO  Main:77 - 195267161: Расписание
+2019-02-21 12:09:10 INFO  Main:294 - Checking message
+2019-02-21 12:09:10 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-21 12:09:10 WARN  Main:368 - No data
+2019-02-21 12:09:10 INFO  Main:434 - No classes
+2019-02-21 12:10:05 INFO  Main:50 - Starting...
+2019-02-21 12:10:06 INFO  Main:105 - Reading config file
+2019-02-21 12:10:14 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"16eb0194bac6d99c31b90fa2b48e2e1a558c91cc","pts":10007232,"ts":1703664827}}
+
+2019-02-21 12:10:14 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-21 12:10:14 INFO  Main:60 - OK
+2019-02-21 12:10:14 INFO  Main:61 - Waiting messages...
+2019-02-21 12:10:17 INFO  Main:77 - 195267161: Расписание
+2019-02-21 12:10:24 INFO  Main:294 - Checking message
+2019-02-21 12:10:24 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-21 12:11:00 WARN  Main:368 - No data
+2019-02-21 12:13:18 INFO  Main:434 - No classes
+2019-02-21 12:13:21 INFO  Main:50 - Starting...
+2019-02-21 12:13:21 INFO  Main:105 - Reading config file
+2019-02-21 12:13:22 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"eb8e750b5edc03c69dd7d612d0cad085576f6174","pts":10007236,"ts":1703664832}}
+
+2019-02-21 12:13:22 INFO  Main:60 - OK
+2019-02-21 12:13:22 INFO  Main:61 - Waiting messages...
+2019-02-21 12:13:22 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-21 12:13:27 INFO  Main:77 - 195267161: Расписание
+2019-02-21 12:13:27 INFO  Main:294 - Checking message
+2019-02-21 12:13:27 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-21 12:13:27 WARN  Main:368 - No data
+2019-02-21 12:13:27 INFO  Main:434 - No classes
+2019-02-21 12:13:30 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-21 12:13:30 INFO  Main:294 - Checking message
+2019-02-21 12:13:33 INFO  Main:77 - 195267161: Преподаватель
+2019-02-21 12:13:39 INFO  Main:77 - 195267161: 52
+2019-02-21 12:13:41 INFO  Main:77 - 195267161: Расписание
+2019-02-21 12:13:41 INFO  Main:294 - Checking message
+2019-02-21 12:13:41 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-21 12:13:42 INFO  Main:77 - 195267161: Расписание
+2019-02-21 12:13:42 INFO  Main:294 - Checking message
+2019-02-21 12:13:42 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-21 12:13:42 INFO  Main:419 - Ok
+2019-02-21 12:13:42 INFO  Main:420 - Result:1
+2019-02-21 12:13:42 INFO  Main:419 - Ok
+2019-02-21 12:13:42 INFO  Main:420 - Result:1
+2019-02-21 12:13:47 INFO  Main:77 - 195267161: На завтра
+2019-02-21 12:13:47 INFO  Main:294 - Checking message
+2019-02-21 12:13:47 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-21 12:13:47 INFO  Main:419 - Ok
+2019-02-21 12:13:47 INFO  Main:420 - Result:1
+2019-02-21 12:13:50 INFO  Main:77 - 195267161: На всю неделю
+2019-02-21 12:13:50 INFO  Main:294 - Checking message
+2019-02-21 12:13:50 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-21 12:13:51 INFO  Main:419 - Ok
+2019-02-21 12:13:51 INFO  Main:420 - Result:2
+2019-02-21 12:13:51 INFO  Main:437 - Sending message...
+2019-02-21 12:13:51 INFO  Main:441 - Ok
+2019-02-21 12:13:51 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"Вторник Звонарева И. М.\n\ns3. Подгруппа №2\nМДК.02.02 Основы преподавания робототехники в начальной школе. \nКабинет: 312 \n4. Подгруппа №2\nМДК.02.02 Основы преподавания робототехники в начальной школе. \nКабинет: 312 \n5. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n6. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n7. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n8. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n9. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n10. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n1. Подгруппа №2\nМДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n2. Подгруппа №2\nМДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n1. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n\nСреда\n2. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n7. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n8. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n3. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n4. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n9. Информатика и ИКТ в профессиональной деятельности. \nКабинет: 312 \n10. Информатика и ИКТ в профессиональной деятельности. \nКабинет: 312 \n5. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n6. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n7. Подгруппа №2\nМДК.02.02 Основы преподавания робототехники в начальной школе. \nКабинет: 312 \n\nЧетверг\n8. Подгруппа №2\nМДК.02.02 Основы преподавания робототехники в начальной школе. \nКабинет: 312 \n9. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n10. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n3. Информатика и ИКТ в профессиональной деятельности. \nКабинет: 312 \n4. Информатика и ИКТ в профессиональной деятельности. \nКабинет: 312 \n5. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n6. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n9. Подгруппа №2\nМДК.02.02 Основы преподавания робототехники в начальной школе. \nКабинет: 312 \n\nПятница\n10. Подгруппа №2\nМДК.02.02 Основы преподавания робототехники в начальной школе. \nКабинет: 312 \n1. Информатика и ИКТ в профессиональной деятельности. \nКабинет: 312 \n2. Информатика и ИКТ в профессиональной деятельности. \nКабинет: 312 \n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"7. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n8. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n5. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n6. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n3. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n4. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n9. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n\nСуббота\n10. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n7. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n8. Теоретические и методические основы образовательной робототехники. \nКабинет: 312 \n1. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n2. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n3. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n4. МДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n5. Подгруппа №2\nМДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n6. Подгруппа №2\nМДК.01.02 Подготовка педагога дополнительного образования в избранной области деятельности. \nКабинет: 312 \n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"","title":" ... ","peer_id":195267161})]
+2019-02-21 12:13:51 ERROR Message:782 - Message not sent: false
+2019-02-21 12:13:53 INFO  Main:77 - 195267161: Погода
+2019-02-21 12:13:53 INFO  Main:294 - Checking message
+2019-02-21 12:14:07 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-21 12:14:07 INFO  Main:294 - Checking message
+2019-02-21 12:14:08 INFO  Main:77 - 195267161: Студент
+2019-02-21 12:14:11 INFO  Main:77 - 195267161: 2 Курс
+2019-02-21 12:14:12 INFO  Main:77 - 195267161: ССА
+2019-02-21 12:14:14 INFO  Main:77 - 195267161: 17-11-
+2019-02-21 12:17:45 INFO  Main:50 - Starting...
+2019-02-21 12:17:45 INFO  Main:105 - Reading config file
+2019-02-21 12:17:46 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"5cea695a62a45e194c037b6d25cf01dbc76dd223","pts":10007335,"ts":1703664958}}
+
+2019-02-21 12:17:46 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-21 12:17:46 INFO  Main:60 - OK
+2019-02-21 12:17:46 INFO  Main:61 - Waiting messages...
+2019-02-21 12:17:54 INFO  Main:77 - 195267161: 17-11-
+2019-02-21 12:17:56 INFO  Main:77 - 195267161: Студент
+2019-02-21 12:17:59 INFO  Main:77 - 195267161: 2 Курс
+2019-02-21 12:18:01 INFO  Main:77 - 195267161: ССА
+2019-02-21 12:18:03 INFO  Main:77 - 195267161: 17-11
+2019-02-21 12:18:05 INFO  Main:77 - 195267161: Расписание
+2019-02-21 12:18:05 INFO  Main:294 - Checking message
+2019-02-21 12:18:05 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-21 12:18:06 INFO  Main:419 - Ok
+2019-02-21 12:18:06 INFO  Main:420 - Result:1
+2019-02-22 13:01:22 INFO  Main:50 - Starting...
+2019-02-22 13:01:22 INFO  Main:105 - Reading config file
+2019-02-22 13:01:26 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"38ff3369ff47a699aa3bef259c178300578cd98f","pts":10007382,"ts":1631963962}}
+
+2019-02-22 13:01:26 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-22 13:01:26 INFO  Main:60 - OK
+2019-02-22 13:01:26 INFO  Main:61 - Waiting messages...
+2019-02-22 13:01:36 INFO  Main:77 - 195267161: Расписание
+2019-02-22 13:01:36 INFO  Main:294 - Checking message
+2019-02-22 13:01:36 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:01:37 INFO  Main:421 - Ok
+2019-02-22 13:01:37 INFO  Main:422 - Result:1
+2019-02-22 13:01:49 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-22 13:01:49 INFO  Main:294 - Checking message
+2019-02-22 13:01:51 INFO  Main:77 - 195267161: Преподаватель
+2019-02-22 13:01:55 INFO  Main:77 - 195267161: 19
+2019-02-22 13:01:58 INFO  Main:77 - 195267161: Расписание
+2019-02-22 13:01:58 INFO  Main:294 - Checking message
+2019-02-22 13:01:58 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:01:58 WARN  Main:368 - No data
+2019-02-22 13:01:58 INFO  Main:434 - No classes
+2019-02-22 13:02:01 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-22 13:02:01 INFO  Main:294 - Checking message
+2019-02-22 13:02:04 INFO  Main:77 - 195267161: Студент
+2019-02-22 13:02:06 INFO  Main:77 - 195267161: 1 Курс
+2019-02-22 13:02:08 INFO  Main:77 - 195267161: ССА
+2019-02-22 13:02:10 INFO  Main:77 - 195267161: 18-11-1
+2019-02-22 13:02:12 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-22 13:02:12 INFO  Main:294 - Checking message
+2019-02-22 13:02:14 INFO  Main:77 - 195267161: Преподаватель
+2019-02-22 13:02:15 INFO  Main:77 - 195267161: 42
+2019-02-22 13:02:18 INFO  Main:77 - 195267161: Расписание
+2019-02-22 13:02:18 INFO  Main:294 - Checking message
+2019-02-22 13:02:18 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:02:18 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.checkGroup(DataBase.java:82)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:329)
+	at ru.nop.Main.getTimeTableByTime(Main.java:431)
+	at ru.nop.Main.checkMessage(Main.java:308)
+	at ru.nop.Main.lambda$main$0(Main.java:81)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 24
+	at com.mysql.cj.mysqla.io.Buffer.readInteger(Buffer.java:271)
+	at com.mysql.cj.mysqla.io.MysqlaCapabilities.setInitialHandshakePacket(MysqlaCapabilities.java:62)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.readServerCapabilities(MysqlaProtocol.java:482)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.beforeHandshake(MysqlaProtocol.java:367)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1412)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:132)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1726)
+	... 19 more
+2019-02-22 13:02:19 WARN  Main:368 - No data
+2019-02-22 13:02:19 INFO  Main:434 - No classes
+2019-02-22 13:02:21 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-22 13:02:21 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.checkUser(DataBase.java:54)
+	at ru.nop.Main.lambda$main$0(Main.java:79)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2019-02-22 13:02:21 INFO  Main:294 - Checking message
+2019-02-22 13:02:21 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.removeUser(DataBase.java:263)
+	at ru.nop.Main.checkMessage(Main.java:338)
+	at ru.nop.Main.lambda$main$0(Main.java:81)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2019-02-22 13:02:23 INFO  Main:77 - 195267161: Преподаватель
+2019-02-22 13:02:23 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.getTeachers(DataBase.java:171)
+	at ru.nop.Main.newUser(Main.java:160)
+	at ru.nop.Main.lambda$main$0(Main.java:83)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2019-02-22 13:02:38 INFO  Main:77 - 195267161: 45
+2019-02-22 13:02:38 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.checkUser(DataBase.java:54)
+	at ru.nop.Main.lambda$main$0(Main.java:79)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2019-02-22 13:02:38 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.checkTeacher(DataBase.java:113)
+	at ru.nop.Main.newUser(Main.java:252)
+	at ru.nop.Main.lambda$main$0(Main.java:83)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2019-02-22 13:02:38 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.getTeachers(DataBase.java:171)
+	at ru.nop.Main.newUser(Main.java:253)
+	at ru.nop.Main.lambda$main$0(Main.java:83)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2019-02-22 13:02:38 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.addUser(DataBase.java:206)
+	at ru.nop.Main.newUser(Main.java:255)
+	at ru.nop.Main.lambda$main$0(Main.java:83)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2019-02-22 13:02:42 INFO  Main:77 - 195267161: Расписание
+2019-02-22 13:02:42 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.checkUser(DataBase.java:54)
+	at ru.nop.Main.lambda$main$0(Main.java:79)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2019-02-22 13:02:42 INFO  Main:294 - Checking message
+2019-02-22 13:02:42 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:02:42 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:320)
+	at ru.nop.Main.getTimeTableByTime(Main.java:431)
+	at ru.nop.Main.checkMessage(Main.java:308)
+	at ru.nop.Main.lambda$main$0(Main.java:81)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2019-02-22 13:02:42 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.getUser(DataBase.java:228)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:324)
+	at ru.nop.Main.getTimeTableByTime(Main.java:431)
+	at ru.nop.Main.checkMessage(Main.java:308)
+	at ru.nop.Main.lambda$main$0(Main.java:81)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2019-02-22 13:02:42 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.checkGroup(DataBase.java:82)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:329)
+	at ru.nop.Main.getTimeTableByTime(Main.java:431)
+	at ru.nop.Main.checkMessage(Main.java:308)
+	at ru.nop.Main.lambda$main$0(Main.java:81)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2019-02-22 13:02:43 INFO  Main:421 - Ok
+2019-02-22 13:02:43 INFO  Main:422 - Result:1
+2019-02-22 13:02:54 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-22 13:02:54 INFO  Main:294 - Checking message
+2019-02-22 13:02:54 ERROR Main:282 - 
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:526)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1779)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1596)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:633)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:347)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:219)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ru.nop.DataBase.connect(DataBase.java:38)
+	at ru.nop.DataBase.removeUser(DataBase.java:263)
+	at ru.nop.Main.checkMessage(Main.java:338)
+	at ru.nop.Main.lambda$main$0(Main.java:81)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+2019-02-22 13:02:56 INFO  Main:77 - 195267161: Преподаватель
+2019-02-22 13:03:08 INFO  Main:77 - 195267161: 23
+2019-02-22 13:03:09 INFO  Main:77 - 195267161: Расписание
+2019-02-22 13:03:09 INFO  Main:294 - Checking message
+2019-02-22 13:03:09 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:03:10 INFO  Main:421 - Ok
+2019-02-22 13:03:10 INFO  Main:422 - Result:1
+2019-02-22 13:03:38 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=38ff3369ff47a699aa3bef259c178300578cd98f&ts=1631964171&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-02-22 13:03:38 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-02-22 13:03:39 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=38ff3369ff47a699aa3bef259c178300578cd98f&ts=1631964171&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-02-22 13:03:39 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-02-22 13:03:40 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=38ff3369ff47a699aa3bef259c178300578cd98f&ts=1631964171&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-02-22 13:03:40 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-02-22 13:03:41 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=38ff3369ff47a699aa3bef259c178300578cd98f&ts=1631964171&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-02-22 13:03:41 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-02-22 13:03:42 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=38ff3369ff47a699aa3bef259c178300578cd98f&ts=1631964171&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-02-22 13:03:42 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-02-22 13:03:43 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=38ff3369ff47a699aa3bef259c178300578cd98f&ts=1631964171&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-02-22 13:03:43 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-02-22 13:03:44 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=38ff3369ff47a699aa3bef259c178300578cd98f&ts=1631964171&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-02-22 13:03:44 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-02-22 13:03:45 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=38ff3369ff47a699aa3bef259c178300578cd98f&ts=1631964171&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-02-22 13:03:45 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-02-22 13:03:46 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=38ff3369ff47a699aa3bef259c178300578cd98f&ts=1631964171&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-02-22 13:03:46 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-02-22 13:03:47 ERROR Connection:58 - IOException occured when processing request to https://imv4.vk.com/im0069?act=a_check&key=38ff3369ff47a699aa3bef259c178300578cd98f&ts=1631964171&wait=25&mode=162&version=2&msgs_limit=100000, error is java.net.UnknownHostException: imv4.vk.com
+2019-02-22 13:03:47 ERROR LongPoll:284 - Bad response from VK LongPoll server: no `ts` or `updates` array: {}
+2019-02-22 13:04:04 INFO  Main:50 - Starting...
+2019-02-22 13:04:04 INFO  Main:105 - Reading config file
+2019-02-22 13:04:05 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"b08a3f5e2f2ca90bc33e456475e00ae9fbac8564","pts":10007540,"ts":1631964171}}
+
+2019-02-22 13:04:05 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-22 13:04:05 INFO  Main:60 - OK
+2019-02-22 13:04:05 INFO  Main:61 - Waiting messages...
+2019-02-22 13:04:08 INFO  Main:77 - 195267161: Расписание
+2019-02-22 13:04:08 INFO  Main:294 - Checking message
+2019-02-22 13:04:08 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:04:09 INFO  Main:421 - Ok
+2019-02-22 13:04:09 INFO  Main:422 - Result:1
+2019-02-22 13:04:37 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-22 13:04:37 INFO  Main:294 - Checking message
+2019-02-22 13:04:39 INFO  Main:77 - 195267161: Студент
+2019-02-22 13:04:41 INFO  Main:77 - 195267161: 1 Курс
+2019-02-22 13:04:42 INFO  Main:77 - 195267161: ССА
+2019-02-22 13:04:44 INFO  Main:77 - 195267161: 18-11-2
+2019-02-22 13:04:46 INFO  Main:77 - 195267161: На всю неделю
+2019-02-22 13:04:46 INFO  Main:294 - Checking message
+2019-02-22 13:04:46 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:04:47 INFO  Main:421 - Ok
+2019-02-22 13:04:47 INFO  Main:422 - Result:2
+2019-02-22 13:04:47 INFO  Main:437 - Sending message...
+2019-02-22 13:04:47 INFO  Main:441 - Ok
+2019-02-22 13:04:47 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"Понедельник ССА 18-11-2\n\n1. Инженерная компьютерная графика. \nПопов А.Н.\nКабинет: 110 \n1. Подгруппа №2\nИнженерная компьютерная графика. \nЛитус А. А.\nКабинет: 412 \n2. Инженерная компьютерная графика. \nПопов А.Н.\nКабинет: 110 \n2. Подгруппа №2\nИнженерная компьютерная графика. \nЛитус А. А.\nКабинет: 412 \n3. Инженерная компьютерная графика. \nПопов А.Н.\nКабинет: 110 \n3. Подгруппа №2\nИнженерная компьютерная графика. \nЛитус А. А.\nКабинет: 412 \n4. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109 \n5. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109 \n6. Операционные системы и среды. \nГуляев И. П.\nКабинет: 414 \n7. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n8. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n1. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308 \n\nВторник\n2. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308 \n3. Физическая культура. \nСандакова Д. Н.\nКабинет: спорт зал \n4. Физическая культура. \nСандакова Д. Н.\nКабинет: спорт зал \n5. Технологии физического уровня передачи данных. \nБородина С. В.\nКабинет: 105 \n6. Технологии физического уровня передачи данных. \nБородина С. В.\nКабинет: 105 \n1. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n\nСреда\n2. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n3. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109 \n4. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109 \n5. Иностранный язык. \nКалугина С.В.\nКабинет: 419 \n5. Подгруппа №2\nИностранный язык. \nВакансия\nКабинет: 419 \n6. Иностранный язык. \nКалугина С.В.\nКабинет: 419 \n6. Подгруппа №2\nИностранный язык. \nВакансия\nКабинет: 419 \n7. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n8. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n3. Основы теории информации. \nПолищук А. А.\nКабинет: 415 \n\nЧетверг\n4. Основы теории информации. \nПолищук А. А.\nКабинет: 415 \n5. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n6. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n7. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n8. МДК 02.01 Администрирование сетевых операционных систем. \nПолищук А. А.\nКабинет: 415 \n9. МДК 02.01 Администрирование сетевых операционных систем. \nПолищук А. А.\nКабинет: 415 \n10. Операционные системы и среды. \nГуляев И. П.\nКабинет: 414 \n1. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n\nПятница\n2. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n3. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308 \n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"4. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308 \n5. Информационные технологии. \nФисенко Е.М.\nКабинет: 211 \n5. Подгруппа №2\nИнформационные технологии. \nАрефьев Е.А.\nКабинет: 109 \n6. Информационные технологии. \nФисенко Е.М.\nКабинет: 211 \n6. Подгруппа №2\nИнформационные технологии. \nАрефьев Е.А.\nКабинет: 109 \n7. Технические средства информатизации. \nПолищук А. А.\nКабинет: 415 \n8. Технические средства информатизации. \nПолищук А. А.\nКабинет: 415 \n9. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n10. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"","title":" ... ","peer_id":195267161})]
+2019-02-22 13:04:47 ERROR Message:782 - Message not sent: false
+2019-02-22 13:07:20 INFO  Main:50 - Starting...
+2019-02-22 13:07:20 INFO  Main:105 - Reading config file
+2019-02-22 13:07:22 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"aad7fda1e91772e5a58da7ab54621e70fe5e3a7d","pts":10007596,"ts":1631964241}}
+
+2019-02-22 13:07:22 INFO  Main:60 - OK
+2019-02-22 13:07:22 INFO  Main:61 - Waiting messages...
+2019-02-22 13:07:22 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-22 13:07:25 INFO  Main:77 - 195267161: На всю неделю
+2019-02-22 13:07:25 INFO  Main:294 - Checking message
+2019-02-22 13:07:25 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:07:25 ERROR Main:282 - 
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3246)
+	at com.mysql.cj.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3230)
+	at com.mysql.cj.jdbc.PreparedStatement.setString(PreparedStatement.java:4042)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:361)
+	at ru.nop.Main.getTimeTableByTime(Main.java:431)
+	at ru.nop.Main.checkMessage(Main.java:318)
+	at ru.nop.Main.lambda$main$0(Main.java:81)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-02-22 13:07:25 INFO  Main:434 - No classes
+2019-02-22 13:07:29 INFO  Main:77 - 195267161: На всю неделю
+2019-02-22 13:07:29 INFO  Main:294 - Checking message
+2019-02-22 13:07:29 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:07:29 ERROR Main:282 - 
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3246)
+	at com.mysql.cj.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3230)
+	at com.mysql.cj.jdbc.PreparedStatement.setString(PreparedStatement.java:4042)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:361)
+	at ru.nop.Main.getTimeTableByTime(Main.java:431)
+	at ru.nop.Main.checkMessage(Main.java:318)
+	at ru.nop.Main.lambda$main$0(Main.java:81)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-02-22 13:07:29 INFO  Main:434 - No classes
+2019-02-22 13:08:01 INFO  Main:50 - Starting...
+2019-02-22 13:08:02 INFO  Main:105 - Reading config file
+2019-02-22 13:08:03 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"45525ba409edae4b4187e1cc9fef06d1e16f1219","pts":10007610,"ts":1631964259}}
+
+2019-02-22 13:08:03 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-22 13:08:03 INFO  Main:60 - OK
+2019-02-22 13:08:03 INFO  Main:61 - Waiting messages...
+2019-02-22 13:08:05 INFO  Main:77 - 195267161: На всю неделю
+2019-02-22 13:08:05 INFO  Main:294 - Checking message
+2019-02-22 13:08:05 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:08:05 ERROR Main:282 - 
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:505)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:479)
+	at com.mysql.cj.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3246)
+	at com.mysql.cj.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3230)
+	at com.mysql.cj.jdbc.PreparedStatement.setString(PreparedStatement.java:4042)
+	at ru.nop.DataBase.getTimeTable(DataBase.java:361)
+	at ru.nop.Main.getTimeTableByTime(Main.java:431)
+	at ru.nop.Main.checkMessage(Main.java:318)
+	at ru.nop.Main.lambda$main$0(Main.java:81)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.handleMessageUpdate(UpdatesHandler.java:356)
+	at com.petersamokhin.bots.sdk.longpoll.UpdatesHandler.lambda$handleCurrentUpdate$0(UpdatesHandler.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+2019-02-22 13:08:05 INFO  Main:434 - No classes
+2019-02-22 13:08:52 INFO  Main:50 - Starting...
+2019-02-22 13:08:52 INFO  Main:105 - Reading config file
+2019-02-22 13:08:53 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"05d4a02749f8c544afadaa98ffb6ad992ce524bd","pts":10007617,"ts":1631964268}}
+
+2019-02-22 13:08:53 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-22 13:08:53 INFO  Main:60 - OK
+2019-02-22 13:08:53 INFO  Main:61 - Waiting messages...
+2019-02-22 13:08:56 INFO  Main:77 - 195267161: На всю неделю
+2019-02-22 13:08:56 INFO  Main:294 - Checking message
+2019-02-22 13:08:56 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:10:11 INFO  Main:50 - Starting...
+2019-02-22 13:10:11 INFO  Main:105 - Reading config file
+2019-02-22 13:10:13 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"c8d4d6a5cc914b0b51323ec0a23f8427e678aa50","pts":10007619,"ts":1631964271}}
+
+2019-02-22 13:10:13 INFO  Main:60 - OK
+2019-02-22 13:10:13 INFO  Main:61 - Waiting messages...
+2019-02-22 13:10:13 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-22 13:10:16 INFO  Main:77 - 195267161: Расписание
+2019-02-22 13:10:16 INFO  Main:294 - Checking message
+2019-02-22 13:10:16 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:10:16 INFO  Main:426 - Ok
+2019-02-22 13:10:16 INFO  Main:427 - Result:1
+2019-02-22 13:10:19 INFO  Main:77 - 195267161: На всю неделю
+2019-02-22 13:10:19 INFO  Main:294 - Checking message
+2019-02-22 13:10:19 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:10:20 INFO  Main:426 - Ok
+2019-02-22 13:10:20 INFO  Main:427 - Result:2
+2019-02-22 13:10:20 INFO  Main:437 - Sending message...
+2019-02-22 13:10:20 INFO  Main:441 - Ok
+2019-02-22 13:10:20 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"Понедельник ССА 18-11-2\n\n1. Инженерная компьютерная графика. \nПопов А.Н.\nКабинет: 110 \n1. Подгруппа №2\nИнженерная компьютерная графика. \nЛитус А. А.\nКабинет: 412 \n2. Инженерная компьютерная графика. \nПопов А.Н.\nКабинет: 110 \n2. Подгруппа №2\nИнженерная компьютерная графика. \nЛитус А. А.\nКабинет: 412 \n3. Инженерная компьютерная графика. \nПопов А.Н.\nКабинет: 110 \n3. Подгруппа №2\nИнженерная компьютерная графика. \nЛитус А. А.\nКабинет: 412 \n4. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109 \n5. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109 \n6. Операционные системы и среды. \nГуляев И. П.\nКабинет: 414 \n7. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n8. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n\nВторник\n1. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308 \n2. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308 \n3. Физическая культура. \nСандакова Д. Н.\nКабинет: спорт зал \n4. Физическая культура. \nСандакова Д. Н.\nКабинет: спорт зал \n5. Технологии физического уровня передачи данных. \nБородина С. В.\nКабинет: 105 \n6. Технологии физического уровня передачи данных. \nБородина С. В.\nКабинет: 105 \n\nСреда\n1. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n2. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n3. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109 \n4. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109 \n5. Иностранный язык. \nКалугина С.В.\nКабинет: 419 \n5. Подгруппа №2\nИностранный язык. \nВакансия\nКабинет: 419 \n6. Иностранный язык. \nКалугина С.В.\nКабинет: 419 \n6. Подгруппа №2\nИностранный язык. \nВакансия\nКабинет: 419 \n7. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n8. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n\nЧетверг\n3. Основы теории информации. \nПолищук А. А.\nКабинет: 415 \n4. Основы теории информации. \nПолищук А. А.\nКабинет: 415 \n5. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n6. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n7. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415 \n8. МДК 02.01 Администрирование сетевых операционных систем. \nПолищук А. А.\nКабинет: 415 \n9. МДК 02.01 Администрирование сетевых операционных систем. \nПолищук А. А.\nКабинет: 415 \n10. Операционные системы и среды. \nГуляев И. П.\nКабинет: 414 \n\nПятница\n1. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n2. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n3. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308 \n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"4. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308 \n5. Информационные технологии. \nФисенко Е.М.\nКабинет: 211 \n5. Подгруппа №2\nИнформационные технологии. \nАрефьев Е.А.\nКабинет: 109 \n6. Информационные технологии. \nФисенко Е.М.\nКабинет: 211 \n6. Подгруппа №2\nИнформационные технологии. \nАрефьев Е.А.\nКабинет: 109 \n7. Технические средства информатизации. \nПолищук А. А.\nКабинет: 415 \n8. Технические средства информатизации. \nПолищук А. А.\nКабинет: 415 \n9. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n10. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414 \n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"","title":" ... ","peer_id":195267161})]
+2019-02-22 13:10:20 ERROR Message:782 - Message not sent: false
+2019-02-22 13:12:29 INFO  Main:77 - 195267161: Расписание
+2019-02-22 13:12:29 INFO  Main:294 - Checking message
+2019-02-22 13:12:29 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:12:30 INFO  Main:426 - Ok
+2019-02-22 13:12:30 INFO  Main:427 - Result:1
+2019-02-22 13:21:40 INFO  Main:50 - Starting...
+2019-02-22 13:21:40 INFO  Main:105 - Reading config file
+2019-02-22 13:21:42 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"fe3bfd5d900926bfb35924c62068845351374dd7","pts":10007642,"ts":1631964299}}
+
+2019-02-22 13:21:42 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-22 13:21:42 INFO  Main:60 - OK
+2019-02-22 13:21:42 INFO  Main:61 - Waiting messages...
+2019-02-22 13:21:52 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-22 13:21:52 INFO  Main:294 - Checking message
+2019-02-22 13:21:53 INFO  Main:77 - 195267161: Студент
+2019-02-22 13:21:56 INFO  Main:77 - 195267161: 1 Курс
+2019-02-22 13:24:14 INFO  Main:50 - Starting...
+2019-02-22 13:24:14 INFO  Main:105 - Reading config file
+2019-02-22 13:24:16 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"8e10c31d432ff4f2d737463d73ff672f7a47375e","pts":10007665,"ts":1631964328}}
+
+2019-02-22 13:24:16 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-22 13:24:16 INFO  Main:60 - OK
+2019-02-22 13:24:16 INFO  Main:61 - Waiting messages...
+2019-02-22 13:24:21 INFO  Main:77 - 195267161: КП
+2019-02-22 13:24:23 INFO  Main:77 - 195267161: Студент
+2019-02-22 13:24:24 INFO  Main:77 - 195267161: 1 Курс
+2019-02-22 13:24:26 INFO  Main:77 - 195267161: КП
+2019-02-22 13:24:32 INFO  Main:77 - 195267161: 18-11-1
+2019-02-22 13:24:34 INFO  Main:77 - 195267161: Расписание
+2019-02-22 13:24:34 INFO  Main:294 - Checking message
+2019-02-22 13:24:34 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:24:34 INFO  Main:425 - Ok
+2019-02-22 13:24:34 INFO  Main:426 - Result:1
+2019-02-22 13:24:49 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-22 13:24:49 INFO  Main:294 - Checking message
+2019-02-22 13:24:51 INFO  Main:77 - 195267161: Студент
+2019-02-22 13:24:54 INFO  Main:77 - 195267161: 1 Курс
+2019-02-22 13:24:58 INFO  Main:77 - 195267161: ССА
+2019-02-22 13:25:00 INFO  Main:77 - 195267161: 18-11-1
+2019-02-22 13:25:02 INFO  Main:77 - 195267161: Расписание
+2019-02-22 13:25:02 INFO  Main:294 - Checking message
+2019-02-22 13:25:02 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:25:02 INFO  Main:425 - Ok
+2019-02-22 13:25:02 INFO  Main:426 - Result:1
+2019-02-22 13:25:57 INFO  Main:50 - Starting...
+2019-02-22 13:25:57 INFO  Main:105 - Reading config file
+2019-02-22 13:25:58 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"43f49f392d84d069a6b4f77a69de3672cad2195d","pts":10007760,"ts":1631964448}}
+
+2019-02-22 13:25:58 INFO  Main:60 - OK
+2019-02-22 13:25:58 INFO  Main:61 - Waiting messages...
+2019-02-22 13:25:58 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-22 13:26:01 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-22 13:26:01 INFO  Main:294 - Checking message
+2019-02-22 13:26:02 INFO  Main:77 - 195267161: Студент
+2019-02-22 13:26:04 INFO  Main:77 - 195267161: 1 Курс
+2019-02-22 13:26:06 INFO  Main:77 - 195267161: ССА
+2019-02-22 13:26:07 INFO  Main:77 - 195267161: 18-11-2
+2019-02-22 13:26:11 INFO  Main:77 - 195267161: Расписание
+2019-02-22 13:26:11 INFO  Main:294 - Checking message
+2019-02-22 13:26:11 INFO  Main:429 - Getting timetable today for id: 195267161
+2019-02-22 13:26:12 INFO  Main:425 - Ok
+2019-02-22 13:26:12 INFO  Main:426 - Result:1
+2019-02-23 20:51:01 INFO  Main:50 - Starting...
+2019-02-23 20:51:01 INFO  Main:105 - Reading config file
+2019-02-23 20:51:06 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"5531136892d13765811186064b8982cef2f527b2","pts":10007805,"ts":1825669862}}
+
+2019-02-23 20:51:06 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-23 20:51:06 INFO  Main:60 - OK
+2019-02-23 20:51:06 INFO  Main:61 - Waiting messages...
+2019-02-23 20:51:21 INFO  Main:77 - 195267161: Расписание
+2019-02-23 20:51:21 INFO  Main:294 - Checking message
+2019-02-23 20:51:21 INFO  Main:438 - Getting timetable today for id: 195267161
+2019-02-23 20:51:22 WARN  Main:368 - No data
+2019-02-23 20:51:22 INFO  Main:443 - No classes
+2019-02-23 20:51:28 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-23 20:51:28 INFO  Main:294 - Checking message
+2019-02-23 20:51:29 INFO  Main:77 - 195267161: Студент
+2019-02-23 20:51:31 INFO  Main:77 - 195267161: 1 Курс
+2019-02-23 20:51:33 INFO  Main:77 - 195267161: ССА
+2019-02-23 20:51:35 INFO  Main:77 - 195267161: 18-11-2
+2019-02-23 20:51:36 INFO  Main:77 - 195267161: Расписание
+2019-02-23 20:51:36 INFO  Main:294 - Checking message
+2019-02-23 20:51:36 INFO  Main:438 - Getting timetable today for id: 195267161
+2019-02-23 20:51:37 WARN  Main:368 - No data
+2019-02-23 20:51:37 INFO  Main:443 - No classes
+2019-02-23 20:52:08 INFO  Main:77 - 195267161: На завтра
+2019-02-23 20:52:08 INFO  Main:294 - Checking message
+2019-02-23 20:52:08 INFO  Main:438 - Getting timetable today for id: 195267161
+2019-02-23 20:52:08 WARN  Main:368 - No data
+2019-02-23 20:52:08 INFO  Main:443 - No classes
+2019-02-23 20:52:17 INFO  Main:77 - 195267161: На всю неделю
+2019-02-23 20:52:17 INFO  Main:294 - Checking message
+2019-02-23 20:52:17 INFO  Main:438 - Getting timetable today for id: 195267161
+2019-02-23 20:52:18 INFO  Main:425 - Ok
+2019-02-23 20:52:18 INFO  Main:426 - Result:2
+2019-02-23 20:52:18 INFO  Main:446 - Sending message...
+2019-02-23 20:52:18 INFO  Main:450 - Ok
+2019-02-23 20:52:18 ERROR Executor:123 - Errors when executing: [{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"messages.send","error_code":100},{"error_msg":"One of the parameters specified was missing or invalid: message is empty or invalid","method":"execute","error_code":100}], code: [API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"Понедельник ССА 18-11-2\n\n1. Инженерная компьютерная графика. \nПопов А.Н.\nКабинет: 110\n1. Подгруппа №2\nИнженерная компьютерная графика. \nЛитус А. А.\nКабинет: 412\n2. Инженерная компьютерная графика. \nПопов А.Н.\nКабинет: 110\n2. Подгруппа №2\nИнженерная компьютерная графика. \nЛитус А. А.\nКабинет: 412\n3. Инженерная компьютерная графика. \nПопов А.Н.\nКабинет: 110\n3. Подгруппа №2\nИнженерная компьютерная графика. \nЛитус А. А.\nКабинет: 412\n4. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109\n5. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109\n6. Операционные системы и среды. \nГуляев И. П.\nКабинет: 414\n7. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414\n8. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414\n\nВторник\n1. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308\n2. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308\n3. Физическая культура. \nСандакова Д. Н.\nКабинет: спорт зал\n4. Физическая культура. \nСандакова Д. Н.\nКабинет: спорт зал\n5. Технологии физического уровня передачи данных. \nБородина С. В.\nКабинет: 105\n6. Технологии физического уровня передачи данных. \nБородина С. В.\nКабинет: 105\n\nСреда\n1. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415\n2. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415\n3. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109\n4. МДК.01.02 Математический аппарат для построения компьютерных сетей. \nАрефьев Е.А.\nКабинет: 109\n5. Иностранный язык. \nКалугина С.В.\nКабинет: 419\n5. Подгруппа №2\nИностранный язык. \nВакансия\nКабинет: 419\n6. Иностранный язык. \nКалугина С.В.\nКабинет: 419\n6. Подгруппа №2\nИностранный язык. \nВакансия\nКабинет: 419\n7. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414\n8. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414\n\nЧетверг\n3. Основы теории информации. \nПолищук А. А.\nКабинет: 415\n4. Основы теории информации. \nПолищук А. А.\nКабинет: 415\n5. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415\n6. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415\n7. МДК.01.01 Организация, принципы построения и функционирования компьютерных сетей. \nПолищук А. А.\nКабинет: 415\n8. МДК 02.01 Администрирование сетевых операционных систем. \nПолищук А. А.\nКабинет: 415\n9. МДК 02.01 Администрирование сетевых операционных систем. \nПолищук А. А.\nКабинет: 415\n10. Операционные системы и среды. \nГуляев И. П.\nКабинет: 414\n\nПятница\n1. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414\n2. Основы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414\n3. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308\n4. Безопасность жизнедеятельности. \nРоманенко С. В.\nКабинет: 308\n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"5. Информационные технологии. \nФисенко Е.М.\nКабинет: 211\n5. Подгруппа №2\nИнформационные технологии. \nАрефьев Е.А.\nКабинет: 109\n6. Информационные технологии. \nФисенко Е.М.\nКабинет: 211\n6. Подгруппа №2\nИнформационные технологии. \nАрефьев Е.А.\nКабинет: 109\n7. Технические средства информатизации. \nПолищук А. А.\nКабинет: 415\n8. Технические средства информатизации. \nПолищук А. А.\nКабинет: 415\n9. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414\n10. Подгруппа №2\nОсновы алгоритмизации и программирования. \nГуляев И. П.\nКабинет: 414\n","peer_id":195267161}),API.messages.send({"keyboard":"{\"buttons\":[[{\"color\":\"primary\",\"action\":{\"label\":\"Расписание\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"Звонки\",\"type\":\"text\"}}],[{\"color\":\"primary\",\"action\":{\"label\":\"На завтра\",\"type\":\"text\"}},{\"color\":\"primary\",\"action\":{\"label\":\"На всю неделю\",\"type\":\"text\"}}],[{\"color\":\"positive\",\"action\":{\"label\":\"Погода\",\"type\":\"text\"}},{\"color\":\"positive\",\"action\":{\"label\":\"Тех. поддержка\",\"type\":\"text\"}}],[{\"color\":\"default\",\"action\":{\"label\":\"Отписаться от бота\",\"type\":\"text\"}}]],\"one_time\":false}","message":"","title":" ... ","peer_id":195267161})]
+2019-02-23 20:52:18 ERROR Message:782 - Message not sent: false
+2019-02-23 20:52:27 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-23 20:52:27 INFO  Main:294 - Checking message
+2019-02-23 20:52:28 INFO  Main:77 - 195267161: Студент
+2019-02-23 20:52:30 INFO  Main:77 - 195267161: 1 Курс
+2019-02-23 20:52:32 INFO  Main:77 - 195267161: ССА
+2019-02-23 20:52:35 INFO  Main:77 - 195267161: 18-11-2
+2019-02-23 20:52:44 INFO  Main:77 - 195267161: Отписаться от бота
+2019-02-23 20:52:44 INFO  Main:294 - Checking message
+2019-02-23 20:52:45 INFO  Main:77 - 195267161: Студент
+2019-02-23 20:52:47 INFO  Main:77 - 195267161: 3 Курс
+2019-02-23 20:52:49 INFO  Main:77 - 195267161: ШО
+2019-02-23 20:52:51 INFO  Main:77 - 195267161: Студент
+2019-02-23 20:52:54 INFO  Main:77 - 195267161: 2 Курс
+2019-02-23 20:52:56 INFO  Main:77 - 195267161: ОСАТПиП
+2019-02-23 20:52:58 INFO  Main:77 - 195267161: 17-11
+2019-02-23 20:53:00 INFO  Main:77 - 195267161: Расписание
+2019-02-23 20:53:00 INFO  Main:294 - Checking message
+2019-02-23 20:53:00 INFO  Main:438 - Getting timetable today for id: 195267161
+2019-02-23 20:53:00 INFO  Main:425 - Ok
+2019-02-23 20:53:00 INFO  Main:426 - Result:1
+2019-02-23 20:53:04 INFO  Main:77 - 195267161: Звонки
+2019-02-23 20:53:04 INFO  Main:294 - Checking message
+2019-02-23 20:53:52 INFO  Main:50 - Starting...
+2019-02-23 20:53:52 INFO  Main:105 - Reading config file
+2019-02-23 20:53:54 INFO  LongPoll:195 - GetLongPollServerResponse: 
+{"response":{"server":"imv4.vk.com/im0069","key":"9e6495fd027034f612ee6079aff483e38e9b9435","pts":10007990,"ts":1825670094}}
+
+2019-02-23 20:53:54 INFO  LongPoll:220 - Started listening to events from VK LongPoll server...
+2019-02-23 20:53:54 INFO  Main:60 - OK
+2019-02-23 20:53:54 INFO  Main:61 - Waiting messages...
+2019-02-23 20:53:57 INFO  Main:77 - 195267161: Расписание
+2019-02-23 20:53:57 INFO  Main:294 - Checking message
+2019-02-23 20:53:57 INFO  Main:438 - Getting timetable today for id: 195267161
+2019-02-23 20:53:57 INFO  Main:425 - Ok
+2019-02-23 20:53:57 INFO  Main:426 - Result:1

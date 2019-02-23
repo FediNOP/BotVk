@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -27,7 +28,7 @@ public class Main {
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
     private static Group group;
 
-    private static Map<Integer, String> usersID = new HashMap<>();
+    private static List<User> users = new ArrayList<>();
     private static Map<Integer, Integer> newUserStage = new HashMap<>();
     private static int newUserYear = 0;
     private static String newUserGroup;
@@ -50,7 +51,7 @@ public class Main {
 
         dataBase = new DataBase();
         readConfigFile();
-        dataBase.connect();
+        users = dataBase.getUsers();
         keyboards.loadKeyboards();
 
         group = new Group(id,token);
@@ -73,7 +74,7 @@ public class Main {
 
             group.onSimpleTextMessage(message -> {
 
-                logger.info(message.authorId() + ": " + message.getText());
+                logger.info(message.authorId() + ": " + new String(message.getText().getBytes(), Charset.defaultCharset()));
 
                 if (dataBase.checkUser(message.authorId())) {
 
@@ -233,7 +234,7 @@ public class Main {
 
             if (DataBase.checkGroup(newUserGroup + " " + message.getText())) {
 
-                usersID.put(message.authorId(), newUserGroup + " " + message.getText());
+                users.add(new User(message.authorId(), newUserGroup + " " + message.getText()));
                 dataBase.addUser(message.authorId(), newUserGroup + " " + message.getText());
                 newUserStage.remove(message.authorId());
                 message.keyboard(keyboards.getKeyb("menu")).text("Вы подписаны на бота");
@@ -250,7 +251,7 @@ public class Main {
             if (message.getText().matches("[-+]?\\d+"))
                 if (dataBase.checkTeacher(Integer.parseInt(message.getText()))) {
                     String teacher = dataBase.getTeachers().get(Integer.parseInt(message.getText()));
-                    usersID.put(message.authorId(), teacher);
+                    users.add(new User(message.authorId(), teacher));
                     dataBase.addUser(message.authorId(), teacher);
                     newUserStage.remove(message.authorId());
                     message.keyboard(keyboards.getKeyb("menu")).text("Здравствуйте, " + teacher);
@@ -333,7 +334,7 @@ public class Main {
 
 
             case "отписаться от бота":
-                usersID.remove(message.authorId());
+                users.remove(message.authorId());
                 DataBase.removeUser(message.authorId());
                 message = newUser(message);
                 message.text("Вы отписались от бота");
@@ -375,7 +376,7 @@ public class Main {
 
         if (text.contains("status")) {
 
-            message.text("UsersId: " + usersID.size() + "\n"
+            message.text("UsersId: " + users.size() + "\n"
                     + "TotalMemory: " + Runtime.getRuntime().totalMemory() + "\n"
                     + "FreeMemory: " + Runtime.getRuntime().freeMemory() + "\n"
                     + "Used Memory: " + (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()));
@@ -385,10 +386,19 @@ public class Main {
 
         } else if (text.contains("sendall")) {
 
-            for (int id : usersID.keySet()) {
+            for (int i = 0; i<users.size(); i++) {
 
-                sendMessage(message.getText().replaceAll("!sendall", ""), id);
+                try {
 
+                    Thread.sleep(100);
+                    sendMessage(message.getText().replaceAll("!sendall", ""), id);
+
+                }catch (Exception e){
+
+                    logger.error("",e);
+                    e.printStackTrace();
+
+                }
             }
 
 

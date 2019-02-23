@@ -6,8 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="612b2ffa-8663-4474-bfe8-481ae9118e12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" afterDir="false" />
+    <list default="true" id="612b2ffa-8663-4474-bfe8-481ae9118e12" name="Default Changelist" comment="Исправлен баг с соеднением">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/nop/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
@@ -15,13 +15,17 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bot_logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/Bot_logs.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Bot_main_jar/Bot_main.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bot_main_jar/Bot_main.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/ru/nop/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ru/nop/DataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ru/nop/Keyboards.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ru/nop/Keyboards.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ru/nop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ru/nop/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ru/nop/Weather.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ru/nop/Weather.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nop/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nop/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/nop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nop/Keyboards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nop/Keyboards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nop/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nop/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nop/Weather.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -145,62 +149,67 @@
     <session id="2147165239">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="35" />
+          <entry key="project.closed" value="41" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.30" value="2" />
           <entry key="project.open.time.32" value="4" />
-          <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.34" value="2" />
+          <entry key="project.open.time.35" value="2" />
+          <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="35" />
+          <entry key="project.opened" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cfg" value="8" />
+          <entry key="cfg" value="9" />
           <entry key="gradle" value="6" />
-          <entry key="java" value="58" />
-          <entry key="log" value="14" />
+          <entry key="java" value="72" />
+          <entry key="log" value="16" />
           <entry key="properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="6" />
-          <entry key="JAVA" value="58" />
-          <entry key="Log" value="14" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="JAVA" value="72" />
+          <entry key="Log" value="16" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cfg" value="185" />
+          <entry key="cfg" value="204" />
           <entry key="gradle" value="5" />
-          <entry key="java" value="11863" />
+          <entry key="java" value="12848" />
           <entry key="log" value="3" />
           <entry key="properties" value="16" />
-          <entry key="txt" value="289" />
+          <entry key="txt" value="320" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="5" />
-          <entry key="JAVA" value="11863" />
+          <entry key="JAVA" value="12848" />
           <entry key="Log" value="3" />
-          <entry key="PLAIN_TEXT" value="474" />
+          <entry key="PLAIN_TEXT" value="524" />
           <entry key="Properties" value="16" />
         </counts>
       </usages-collector>
@@ -214,17 +223,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="290" selection-start-line="290" selection-end-line="290" />
+            <state relative-caret-position="246">
+              <caret line="388" column="35" selection-start-line="388" selection-start-column="35" selection-end-line="388" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#start#0;class#Main#0" />
-                <element signature="method#main#0;class#Main#0" />
                 <element signature="method#readConfigFile#0;class#Main#0" />
-                <element signature="method#newUser#0;class#Main#0" />
-                <element signature="method#getGroupsNumsKeyb#0;class#Main#0" />
-                <element signature="method#checkCommand#0;class#Main#0" />
                 <element signature="method#sendMessage#0;class#Main#0" />
+                <element signature="method#getTimeToBreak#0;class#Main#0" />
                 <element signature="method#checkOnpasxalka#0;class#Main#0" />
               </folding>
             </state>
@@ -232,13 +237,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Weather.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Time.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-112">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -246,8 +248,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bot_logs.log">
           <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="36960">
-              <caret line="2310" column="137" selection-start-line="2310" selection-start-column="54" selection-end-line="2310" selection-end-column="137" />
+            <state relative-caret-position="-12329">
+              <caret line="2742" column="7" selection-start-line="2742" selection-start-column="7" selection-end-line="2742" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/DataBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="441" column="18" selection-start-line="441" selection-start-column="18" selection-end-line="441" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setDateBase#0;class#DataBase#0" />
+                <element signature="method#connect#0;class#DataBase#0" />
+                <element signature="method#checkUser#0;class#DataBase#0" />
+                <element signature="method#checkGroup#0;class#DataBase#0" />
+                <element signature="method#checkTeacher#0;class#DataBase#0" />
+                <element signature="method#getGroupsNames#0;class#DataBase#0" />
+                <element signature="method#getTeachers#0;class#DataBase#0" />
+                <element signature="method#addUser#0;class#DataBase#0" />
+                <element signature="method#removeUser#0;class#DataBase#0" />
+                <element signature="method#logErr#0;class#DataBase#0" />
+                <element signature="method#getGroups#0;class#DataBase#0" />
+                <element signature="method#getTimeTable#0;class#DataBase#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -670,20 +705,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/Demo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nop/Time.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nop/Weather.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nop/CommandRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nop/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nop/Weather.java" />
         <option value="$PROJECT_DIR$/config.cfg" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nop/Keyboards.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/nop/Main.java" />
-        <option value="$PROJECT_DIR$/src/test/java/nop/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nop/Users.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nop/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/nop/DataBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/nop/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="73" />
-    <option name="y" value="-20" />
-    <option name="width" value="1002" />
+    <option name="x" value="591" />
+    <option name="y" value="-9" />
+    <option name="width" value="1007" />
     <option name="height" value="1060" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -708,7 +745,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -724,6 +760,12 @@
             <path>
               <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -744,27 +786,6 @@
               <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="nop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="nop" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -789,10 +810,11 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548581756803" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550937509068" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Ditch/Bot" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15625" />
@@ -800,20 +822,20 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\fedi7\Desktop\Bot\src\main\java\com" />
-      <recent name="C:\Users\fedi7\Desktop\Bot\src\test\resources" />
-      <recent name="C:\Users\fedi7\Desktop\Bot\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ru.nop" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\fedi7\Desktop\Bot" />
       <recent name="C:\Users\fedi7\Desktop\Bot\src\main\java\ru\nop" />
       <recent name="C:\Users\fedi7\Desktop\Bot\src\main\resources" />
       <recent name="C:\Users\fedi7\Desktop\Bot\src\main\java" />
       <recent name="C:\Users\fedi7\Desktop\Bot\src\main\java\com\petersamokhin\bots\sdk\longpoll\responses" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.nop" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fedi7\Desktop\Bot\src\main\java\com" />
+      <recent name="C:\Users\fedi7\Desktop\Bot\src\test\resources" />
+      <recent name="C:\Users\fedi7\Desktop\Bot\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -828,7 +850,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Bot [jar]">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.nop.Main" />
       <module name="Bot_main" />
@@ -977,7 +999,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548081969498</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Исправлен баг с соеднением">
+      <created>1548642395340</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1548642395340</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -991,9 +1020,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.17168142" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.18466076" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1002,7 +1030,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50121653" side_tool="true" weight="0.22831859" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296837" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49911505" weight="0.34063262" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49911505" visible="true" weight="0.34063262" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49852508" weight="0.39902675" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1023,37 +1051,6 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3297935" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.16460177" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50121653" side_tool="true" weight="0.22831859" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3296837" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49911505" visible="true" weight="0.34063262" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49852508" weight="0.39902675" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3296837" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3296837" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5014749" side_tool="true" weight="0.39902675" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49970502" weight="0.3296837" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.3296837" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32360098" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24955752" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Gradle" order="7" weight="0.20058997" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3297935" />
-    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.cfg" />
@@ -1066,7 +1063,8 @@
     <MESSAGE value="Added commands runner module and repaired weather module" />
     <MESSAGE value="Project code will be rewrite, this one closed" />
     <MESSAGE value="Проект переписан" />
-    <option name="LAST_COMMIT_MESSAGE" value="Проект переписан" />
+    <MESSAGE value="Исправлен баг с соеднением" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлен баг с соеднением" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1091,21 +1089,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mafia.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="410" selection-start-line="410" selection-end-line="410" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/ref/Reference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="163" column="31" selection-start-line="163" selection-start-column="31" selection-end-line="163" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/text/DateFormat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1149,20 +1132,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/clients/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3152">
-          <caret line="212" column="72" selection-start-line="212" selection-start-column="72" selection-end-line="212" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/longpoll/LongPoll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/calls/CallSync.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -1177,13 +1146,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/calls/Call.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/longpoll/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1191,21 +1153,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/clients/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Date.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/API.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="198" column="94" selection-start-line="198" selection-start-column="94" selection-end-line="198" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
@@ -1228,38 +1176,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bot_log_file.log" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Time.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/CommandRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/longpoll/UpdatesHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Keyboards.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="54" column="105" selection-start-line="54" selection-start-column="105" selection-end-line="54" selection-end-column="105" />
         </state>
       </provider>
     </entry>
@@ -1291,49 +1211,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/DataBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="90" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#checkUser#0;class#DataBase#0" />
-            <element signature="method#checkGroup#0;class#DataBase#0" />
-            <element signature="method#checkTeacher#0;class#DataBase#0" />
-            <element signature="method#getGroupsNames#0;class#DataBase#0" />
-            <element signature="method#getTeachers#0;class#DataBase#0" />
-            <element signature="method#removeUser#0;class#DataBase#0" />
-            <element signature="method#logErr#0;class#DataBase#0" />
-            <element signature="method#getGroups#0;class#DataBase#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="290" selection-start-line="290" selection-end-line="290" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#start#0;class#Main#0" />
-            <element signature="method#main#0;class#Main#0" />
-            <element signature="method#readConfigFile#0;class#Main#0" />
-            <element signature="method#newUser#0;class#Main#0" />
-            <element signature="method#getGroupsNumsKeyb#0;class#Main#0" />
-            <element signature="method#checkCommand#0;class#Main#0" />
-            <element signature="method#sendMessage#0;class#Main#0" />
-            <element signature="method#checkOnpasxalka#0;class#Main#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Bot_logs.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="36960">
-          <caret line="2310" column="137" selection-start-line="2310" selection-start-column="54" selection-end-line="2310" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -1343,11 +1220,135 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Weather.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="128">
+          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/clients/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2498">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/longpoll/UpdatesHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="355" column="28" selection-start-line="355" selection-start-column="28" selection-end-line="355" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/longpoll/LongPoll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/clients/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="212" column="72" selection-start-line="212" selection-start-column="72" selection-end-line="212" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/API.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-754">
+          <caret line="198" column="94" selection-start-line="198" selection-start-column="94" selection-end-line="198" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/CallbackApiHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1792">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/petersamokhin/bots/sdk/utils/vkapi/calls/Call.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Keyboards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/DataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="441" column="18" selection-start-line="441" selection-start-column="18" selection-end-line="441" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setDateBase#0;class#DataBase#0" />
+            <element signature="method#connect#0;class#DataBase#0" />
+            <element signature="method#checkUser#0;class#DataBase#0" />
+            <element signature="method#checkGroup#0;class#DataBase#0" />
+            <element signature="method#checkTeacher#0;class#DataBase#0" />
+            <element signature="method#getGroupsNames#0;class#DataBase#0" />
+            <element signature="method#getTeachers#0;class#DataBase#0" />
+            <element signature="method#addUser#0;class#DataBase#0" />
+            <element signature="method#removeUser#0;class#DataBase#0" />
+            <element signature="method#logErr#0;class#DataBase#0" />
+            <element signature="method#getGroups#0;class#DataBase#0" />
+            <element signature="method#getTimeTable#0;class#DataBase#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bot_logs.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-12329">
+          <caret line="2742" column="7" selection-start-line="2742" selection-start-column="7" selection-end-line="2742" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="388" column="35" selection-start-line="388" selection-start-column="35" selection-end-line="388" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#readConfigFile#0;class#Main#0" />
+            <element signature="method#sendMessage#0;class#Main#0" />
+            <element signature="method#getTimeToBreak#0;class#Main#0" />
+            <element signature="method#checkOnpasxalka#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nop/Time.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>

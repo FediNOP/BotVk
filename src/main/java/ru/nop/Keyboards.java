@@ -21,7 +21,7 @@ public class Keyboards {
 
         List<String> names = DataBase.getGroupsNames().stream().distinct().collect(Collectors.toList());
         Keyboard groupsNamesKeyboard = new Keyboard().setOneTime(true);
-        int partitionSize = names.size()/3+1;
+        int partitionSize = names.size()/3;
         List<List<String>> name = new LinkedList<>();
 
         for (int i = 1; i < names.size(); i += partitionSize)

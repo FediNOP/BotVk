@@ -51,6 +51,8 @@ public class DataBase {
 
         try {
 
+            connect();
+
             final String sql = "SELECT count(*) from users WHERE id = ?";
 
             PreparedStatement ps = connection.prepareStatement(sql);
@@ -76,6 +78,8 @@ public class DataBase {
     public static boolean checkGroup(String name){
 
         try {
+
+            connect();
 
             final String sql = "SELECT count(*) from groups WHERE name = ?";
 
@@ -106,6 +110,8 @@ public class DataBase {
 
         try {
 
+            connect();
+
             final String sql = "SELECT count(*) FROM teachers WHERE id = ?";
 
             PreparedStatement ps = connection.prepareStatement(sql);
@@ -130,6 +136,8 @@ public class DataBase {
     }
 
     public static List<String> getGroupsNames() {
+
+        connect();
 
         List<String> result = new ArrayList<>();
         result.add("");
@@ -158,8 +166,9 @@ public class DataBase {
 
     }
 
-
     public static List<String> getTeachers() {
+
+        connect();
 
         List<String> result = new LinkedList<>();
         result.add("");
@@ -194,6 +203,8 @@ public class DataBase {
 
         try {
 
+            connect();
+
             final String sql = "INSERT INTO `users`(`id`, `groupName`) VALUES (?,?)";
 
             PreparedStatement ps = connection.prepareStatement(sql);
@@ -213,6 +224,8 @@ public class DataBase {
     }
 
     public static String getUser(int id){
+
+        connect();
 
         final String sql = "SELECT `groupName` FROM `users` WHERE id = ?";
 
@@ -247,6 +260,8 @@ public class DataBase {
 
         try{
 
+            connect();
+
             PreparedStatement ps = connection.prepareStatement(sql);
             ps.setInt(1,id);
 
@@ -270,9 +285,11 @@ public class DataBase {
 
     public List<String> getGroups(int year, String group) {
 
+        connect();
+
         List<String> result = new ArrayList<>();
 
-        final String sql = "SELECT level, count, number FROM `groups` WHERE abbreviation = ? AND level = ?";
+        final String sql = "SELECT name FROM `groups` WHERE abbreviation = ? AND level = ?";
 
         try {
 
@@ -282,7 +299,7 @@ public class DataBase {
             ResultSet resultSet = ps.executeQuery();
 
             while (resultSet.next())
-                result.add(resultSet.getString("level") + "-" + resultSet.getString("count") + "-" + resultSet.getString("number"));
+                result.add(resultSet.getString("name").replaceAll(group,"").trim());
 
             return result;
 
@@ -299,6 +316,8 @@ public class DataBase {
     }
 
     public static String[] getTimeTable(int id, int addDay){
+
+        connect();
 
         int day = DateTime.now().plusDays(addDay).dayOfWeek().get();
         final String sql;
@@ -357,26 +376,32 @@ public class DataBase {
             if(isStudent)
                 result += resultSet.getString("_day") + " " + resultSet.getString("_group") + "\n\n";
             else
-                result += resultSet.getString("_day") + " " + resultSet.getString("_teacher") + "\n\ns";
+                result += resultSet.getString("_day") + " " + resultSet.getString("_teacher") + "\n\n";
 
             String offsetDay = resultSet.getString("_day");
 
             do {
+                if (addDay == -1 && !offsetDay.equals(resultSet.getString("_day"))) {
 
+                    offsetDay = resultSet.getString("_day");
+                    result += "\n" + resultSet.getString("_day") + "\n";
+
+                }
 
                 result += resultSet.getInt("_number") + ". ";
 
-                if (resultSet.getInt("_subgroup") > 1)
+                if (resultSet.getInt("_subgroup") == 2 && isStudent)
                     result += "Подгруппа №2\n";
 
 
                 result += resultSet.getString("_lesson") + ". ";
 
                 if (isStudent)
-                    result += resultSet.getString("_teacher");
+                    result += "\n" + resultSet.getString("_teacher");
+                else
+                    result += "\nГруппа: " + resultSet.getString("_group");
 
-                result += "\nКабинет: " + resultSet.getString("_room") + " "
-                        + resultSet.getString("_action") + "\n";
+                result += "\nКабинет: " + resultSet.getString("_room") + "\n";
 
 
                 if (addDay == -1 && !offsetDay.equals(resultSet.getString("_day"))) {
@@ -411,6 +436,35 @@ public class DataBase {
 
         }
 
+
+    }
+
+    public static List<User> getUsers(){
+
+        List<User> users = new ArrayList<>();
+        final String sql = "SELECT * FROM `users`";
+
+
+        try {
+
+            connect();
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ResultSet resultSet = ps.executeQuery();
+
+            while (resultSet.next())
+                users.add(new User(resultSet.getInt("id"),resultSet.getString("groupName")));
+
+
+        }catch (SQLException e){
+
+            logger.error("",e);
+            return null;
+
+        }
+
+
+
+        return users;
 
     }
 
